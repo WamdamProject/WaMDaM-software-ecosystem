@@ -14,6 +14,7 @@ Think of WaMDaM as a repository of water management data (purple cylinder) and a
 3.	Download the Mozilla Firefox SQLite Manager Add-on to interact with the SQLite database and query WaMDaM tables    
 4.	If you’re familiar with Python, you may use of adapt Python scripts to visualize results
 
+
 ## Getting started: Use WaMDaM for your own data. How Can I use WaMDaM?   
 1.	Get your data files 
     Understand their concepts in the WaMDaM framework
@@ -28,7 +29,7 @@ Think of WaMDaM as a repository of water management data (purple cylinder) and a
    
 
 ### What can you do with WaMDaM not possible before? Why WaMDaM?
-WaMDaM is an effort to standarize how we organize water management data which supports eight features altogether that do not exist in prior methods to enable users to: 
+WaMDaM is an effort to standardize how we organize water management data which supports eight features altogether that partially exist in prior methods to enable users to: 
 1. Support different water resources systems components that are used in water management models like hydrology, infrastructure, and demand sites as reusable modules or sets of systems components.   
 2. Represent connectivity and interactions between components in space through networks of nodes and links as used in systems modeling. 
 3. Support scenarios that track topologic changes in networks, metadata and data values. 
@@ -39,12 +40,12 @@ WaMDaM is an effort to standarize how we organize water management data which su
 8. Developed in an open-source software environment.  
 
 
-### How Can I use WaMDaM? 
-1. Download the Wizard and Excel Workbook Template.  
-2. Prepare your dataset into the Excel Workbook. Optionally register your data with select controlled vocabulary to help you relate and search synonymous terms across datasets.  
-3. Use the Wizard to load the Workbook into a WaMDaM SQLite database on your machine (no server needed)  
-4. Use Mozilla Firefox SQLite Manager Add-on to interact with the SQLite database and query WaMDaM tables    
-5. Check out WaMDaM use cases as examples of what WaMDaM could do
+
+### WaMDaM Schemas and Information Model documentation  
+* View primary [documentation](https://github.com/WamdamProject/WaMDaM_Information_Model) for the WaMDaM Information Model* 
+
+* Support for multiple RDBMS: MS SQL Server, MySQL, PostgreSQL, and SQLite
+* [https://github.com/WamdamProject/WaMDaM_Information_Model](https://github.com/WamdamProject/WaMDaM_Information_Model) 
 
 
 ### WaMDaM Application and use cases  
@@ -58,14 +59,6 @@ A Python-based Graphical User Interface to validate and load water management da
 * [WaMDaM Wizard](https://github.com/WamdamProject/WaMDaM_Wizard) 
 By using the Wizard, users are not expected to understand the underlying WaMDaM database of schema. Users just need to understand how to fit their data into these concepts: ObjectType, Attribute, Instance, Network, and Scenario. 
 
-
-### WaMDaM Schemas and Information Model documentation  
-* View primary [documentation](https://github.com/WamdamProject/WaMDaM_Information_Model) for the WaMDaM Information Model* 
-
-* Support for multiple RDBMS: MS SQL Server, MySQL, PostgreSQL, and SQLite
-* [https://github.com/WamdamProject/WaMDaM_Information_Model](https://github.com/WamdamProject/WaMDaM_Information_Model) 
-
-
 ### WaMDaM Controlled vocabulary  
 A Python/Django-based web application for managing the WaMDaM controlled vocabularies
 * Online submittal and moderation of new terms and changes to existing terms
@@ -74,11 +67,9 @@ A Python/Django-based web application for managing the WaMDaM controlled vocabul
 * [https://github.com/WamdamProject/WaMDaM_ControlledVocabularies]()
 
 
-
 ### WaMDaM Publications and Presentations  
 List of all the presentations and publications on WaMDaM products since inspection 
 [https://github.com/WamdamProject/WaMDaM_Publications](https://github.com/WamdamProject/WaMDaM_Publications)
-
 
 
 ## Do you have feedback on WaMDaM? Tell us what interest you 
@@ -94,7 +85,7 @@ For alternative licensing arrangements, contact Adel M. Abdallah or David E. Ros
 WaMDaM and related software development have been developed under funding from several different sources. It was primarily supported by the National Science Foundation <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482" target="_blank">CI-Water Project</a> and later from the <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1208732" target="_blank">iUtah Project</a>. 
 Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.    
 
-WaMDaM has been developed at and also additionally funded by the Utah Water Research Lab at Utah State University, Logan Utah during the period of August, 2012-2017. Thanks to Dr. Steven Burian at the Unviversity of Utah, Salt Lake City Utah for hosting Adel Abdallah as a visiting scholar 2014-2017.
+WaMDaM has been developed at and also additionally funded by the Utah Water Research Lab at Utah State University, Logan Utah during the period of August, 2012-2017. Thanks to Dr. Steven Burian at the University of Utah, Salt Lake City Utah for hosting Adel Abdallah as a visiting scholar 2014-2017.
 
 David Tarboton, Josué Medellín-Azuara, and Stephen Knox provided thoughtful feedback and comments on earlier designs and manuscript drafts. We thank our collaborators and our research group for their feedback. 
 
