@@ -21,7 +21,7 @@ Think of WaMDaM as a repository of water management data (purple cylinder) and a
     Understand their concepts in the WaMDaM framework
 2.	Download the Excel workbook templates
     Prepare your data and fit it into WaMDaM workbooks.  Optionally register your data with select controlled vocabulary to help you relate and search synonymous terms across datasets.  
-3.	Download the [WaMDaM Wizard](https://github.com/WamdamProject/WaMDaM_Wizard) 
+3.	Download the [WaMDaM Wizard](https://github.com/WamdamProject/WaMDaM_Wizard#download-the-wizard-gui-for-windows-7-and-10-64-bit-operating-systems) 
     Use the Wizard to load the data files into a WaMDaM SQLite database on your machine (no server needed)  
 4.	Download the Firefox SQLite Manager
     Use or adapt SQL queries on GitHub and execute them in SQLite Manager 
