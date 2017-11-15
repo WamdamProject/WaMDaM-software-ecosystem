@@ -1,14 +1,30 @@
 # Welcome to the WaMDaM Organization
 This is a meta-repository to help navigate the many repositories under the [WaMDaMProject GitHub Organization](https://github.com/WamdamProject).
 
-
 WaMDaM is both an information model and a couple of supporting software ecosystem. WaMDaM tools are designed to organize, identify, and compare systems water management data in a single database. 
 
 Think of WaMDaM as a repository of water management data (purple cylinder) and a translator between numerous data sources on the left and different models on the right (see flowchart). WaM-DaM translates two aspects of the data: the syntax (i.e., structure) and semantics (terminology). WaMDaM intends to speed the time to find, organize, and synthesize data from different data sources, and prepare data for modeling.
 
-### Computationally reproduce EMS WaMDaM journal article results
-If you're interested in reproducing the figures of the article. Follow the instructions here  
 
+## Getting started: Work with WaMDaM application use cases (Reproduce reported results)
+
+1.	Download the SQLite file with loaded data for the twelve US and Bear River Watershed datasets 
+2.	Download the WaMDaM Wizard 
+3.	Download the Mozilla Firefox SQLite Manager Add-on to interact with the SQLite database and query WaMDaM tables    
+4.	If you’re familiar with Python, you may use of adapt Python scripts to visualize results
+
+## Getting started: Use WaMDaM for your own data. How Can I use WaMDaM?   
+1.	Get your data files 
+    Understand their concepts in the WaMDaM framework
+2.	Download the Excel workbook templates
+    Prepare your data and fit it into WaMDaM workbooks.  Optionally register your data with select controlled vocabulary to help you relate and search synonymous terms across datasets.  
+3.	Download the WaMDaM Wizard 
+    Use the Wizard to load the data files into a WaMDaM SQLite database on your machine (no server needed)  
+4.	Download the Firefox SQLite Manager
+    Use or adapt SQL queries on GitHub and execute them in SQLite Manager 
+    If you’re familiar with Python, you may use of adapt Python scripts to visualize results   
+
+   
 
 ### What can you do with WaMDaM not possible before? Why WaMDaM?
 WaMDaM is an effort to standarize how we organize water management data which supports eight features altogether that do not exist in prior methods to enable users to: 
