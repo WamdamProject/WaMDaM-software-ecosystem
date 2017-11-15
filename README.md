@@ -3,7 +3,8 @@ This is a meta-repository to help navigate the many repositories under the [WaMD
 
 WaMDaM is both an information model and a couple of supporting software ecosystem. WaMDaM tools are designed to organize, identify, and compare systems water management data in a single database. 
 
-Think of WaMDaM as a repository of water management data (purple cylinder) and a translator between numerous data sources on the left and different models on the right (see flowchart). WaM-DaM translates two aspects of the data: the syntax (i.e., structure) and semantics (terminology). WaMDaM intends to speed the time to find, organize, and synthesize data from different data sources, and prepare data for modeling.
+Think of WaMDaM as a repository of water management data (purple cylinder) and a translator between numerous data sources on the left and different models on the right. WaM-DaM translates two aspects of the data: the syntax (i.e., structure) and semantics (terminology). WaMDaM intends to speed the time to find, organize, and synthesize data from different data sources, and prepare data for modeling.
+![](https://github.com/WamdamProject/WaMDaM-software-ecosystem/blob/master/files/WaMDaM_workflow.jpg)
 
 
 ## Getting started: Work with WaMDaM application use cases (Reproduce reported results)
