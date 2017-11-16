@@ -7,7 +7,7 @@ Think of WaMDaM as a repository of water management data (purple cylinder) and a
 ![](/files/WaMDaM_workflow.jpg)
 
 
-## Getting started: Work with WaMDaM application use cases (Reproduce reported results)
+## Getting started: Work with WaMDaM use cases (Reproduce reported results)
 
 1.	Download the [SQLite](https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/3SQLite_database/ReadMe.md) file with loaded data for the twelve US and Bear River Watershed datasets. Download and set up SQLite Manager 
 2.	Download the [WaMDaM Wizard](https://github.com/WamdamProject/WaMDaM_Wizard) 
