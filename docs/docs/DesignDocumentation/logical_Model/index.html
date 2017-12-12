@@ -1,0 +1,1108 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation of the Water Management Data Model (WaMDaM)">
+      
+      
+        <link rel="canonical" href="https://docs.wamdam.org/DesignDocumentation/logical_Model/">
+      
+      
+        <meta name="author" content="Adel M. Abdallah">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.1.0">
+    
+    
+      
+        <title>Logical Model Schema - WaMDaM Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-3368aa6b74.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-95ad5566f9.palette.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    
+      <body data-md-color-primary="blue" data-md-color-accent="indigo">
+    
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://docs.wamdam.org" title="WaMDaM Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">home</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                WaMDaM Docs
+              </span>
+              <span class="md-header-nav__topic">
+                Logical Model Schema
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/WamdamProject/Docs.WaMDaM.org/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Docs.WaMDaM.org
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Getting_started/Download/" title="Getting Started" class="md-tabs__link">
+          Getting Started
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../UseCases/Data_Sources/" title="Use cases" class="md-tabs__link">
+          Use cases
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Desing_Req/" title="Design documentation" class="md-tabs__link md-tabs__link--active">
+          Design documentation
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../About/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon">home</i>
+      
+    </span>
+    WaMDaM Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/WamdamProject/Docs.WaMDaM.org/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Docs.WaMDaM.org
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Why_WaMDaM/" title="Why WaMDaM?" class="md-nav__link">
+      Why WaMDaM?
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Rationale/" title="Rationale" class="md-nav__link">
+      Rationale
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Team/" title="The Team" class="md-nav__link">
+      The Team
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Publications/" title="Publications" class="md-nav__link">
+      Publications
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../OpenSource/" title="Open Source" class="md-nav__link">
+      Open Source
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Limitations/" title="Limitations" class="md-nav__link">
+      Limitations
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../SponsorsCredit/" title="Sponsors and Credit" class="md-nav__link">
+      Sponsors and Credit
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../License/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Getting_started/Download/" title="Download" class="md-nav__link">
+      Download
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Getting_started/PrepareData/" title="Prepare Data" class="md-nav__link">
+      Prepare Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Getting_started/Use_Wizard/" title="Use Wizard" class="md-nav__link">
+      Use Wizard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Getting_started/Best_practices/" title="Best Practices" class="md-nav__link">
+      Best Practices
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Getting_started/controlled_vocabularies/" title="Controlled Vocabulary" class="md-nav__link">
+      Controlled Vocabulary
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Use cases
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        Use cases
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../UseCases/Data_Sources/" title="Data Sources" class="md-nav__link">
+      Data Sources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../UseCases/Download/" title="Download" class="md-nav__link">
+      Download
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../usecases/use_case_1/" title="Use case 1" class="md-nav__link">
+      Use case 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../usecases/use_case_2/" title="Use case 2" class="md-nav__link">
+      Use case 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../usecases/use_case_3/" title="Use case 3" class="md-nav__link">
+      Use case 3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../usecases/use_case_4/" title="Use case 4" class="md-nav__link">
+      Use case 4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../usecases/use_case_5/" title="Use case 5" class="md-nav__link">
+      Use case 5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../usecases/use_case_6/" title="Use case 6" class="md-nav__link">
+      Use case 6
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12" checked>
+    
+    <label class="md-nav__link" for="nav-12">
+      Design documentation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Design documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Desing_Req/" title="Design Requirment" class="md-nav__link">
+      Design Requirment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../info_model/" title="Design documentation" class="md-nav__link">
+      Design documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../info_model/" title="Information Model" class="md-nav__link">
+      Information Model
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Logical Model Schema
+      </label>
+    
+    <a href="./" title="Logical Model Schema" class="md-nav__link md-nav__link--active">
+      Logical Model Schema
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-the-relational-model" title="Why the Relational Model?" class="md-nav__link">
+    Why the Relational Model?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema" title="Schema" class="md-nav__link">
+    Schema
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapping-many-to-many-relationships" title="Mapping many-to-many relationships" class="md-nav__link">
+    Mapping many-to-many relationships
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#normalized-design" title="Normalized Design" class="md-nav__link">
+    Normalized Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapping-data-types" title="Mapping data types" class="md-nav__link">
+    Mapping data types
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dual-values-and-numeric-values" title="Dual Values and Numeric Values" class="md-nav__link">
+    Dual Values and Numeric Values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seasonal-numeric-values" title="Seasonal Numeric Values:" class="md-nav__link">
+    Seasonal Numeric Values:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descriptor-values" title="Descriptor Values:" class="md-nav__link">
+    Descriptor Values:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-series" title="Time Series:" class="md-nav__link">
+    Time Series:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-attribute-series" title="Multi Attribute Series" class="md-nav__link">
+    Multi Attribute Series
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electronic-files" title="Electronic Files" class="md-nav__link">
+    Electronic Files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Physical_Model/" title="Physical Model Implementations" class="md-nav__link">
+      Physical Model Implementations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ControlledVocabulary/" title="Controlled Vocabulary" class="md-nav__link">
+      Controlled Vocabulary
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-the-relational-model" title="Why the Relational Model?" class="md-nav__link">
+    Why the Relational Model?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema" title="Schema" class="md-nav__link">
+    Schema
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapping-many-to-many-relationships" title="Mapping many-to-many relationships" class="md-nav__link">
+    Mapping many-to-many relationships
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#normalized-design" title="Normalized Design" class="md-nav__link">
+    Normalized Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapping-data-types" title="Mapping data types" class="md-nav__link">
+    Mapping data types
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dual-values-and-numeric-values" title="Dual Values and Numeric Values" class="md-nav__link">
+    Dual Values and Numeric Values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seasonal-numeric-values" title="Seasonal Numeric Values:" class="md-nav__link">
+    Seasonal Numeric Values:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descriptor-values" title="Descriptor Values:" class="md-nav__link">
+    Descriptor Values:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-series" title="Time Series:" class="md-nav__link">
+    Time Series:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-attribute-series" title="Multi Attribute Series" class="md-nav__link">
+    Multi Attribute Series
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electronic-files" title="Electronic Files" class="md-nav__link">
+    Electronic Files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/WamdamProject/Docs.WaMDaM.org/tree/master/Edit_MD_Files/DesignDocumentation/logical_Model.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="logical-data-model">Logical Data Model<a class="headerlink" href="#logical-data-model" title="Permanent link">&para;</a></h1>
+<h2 id="why-the-relational-model">Why the Relational Model?<a class="headerlink" href="#why-the-relational-model" title="Permanent link">&para;</a></h2>
+<p>We chose the Relational Model for three reasons:<br />
+<strong>i)</strong> it supports conditional data queries that meet the seventh design requirement <br />
+<strong>ii)</strong> it is platform independent as it can be implemented on different operating systems using different relational database systems<br />
+<strong>iii)</strong> it supports a standardized and stable Structured Query Language (SQL) compared to recent NoSQL languages like Graph Database   </p>
+<p><img alt="" src="../images/WaMDaM_logical.png" /></p>
+<h2 id="schema">Schema<a class="headerlink" href="#schema" title="Permanent link">&para;</a></h2>
+<p>WaMDaM schema or entity relationship diagram is available at this interactive site. Check out the interactive schema <a href="http://schema.wamdam.org/diagrams/01_WaMDaM.html">Schema</a> </p>
+<h2 id="mapping-many-to-many-relationships">Mapping many-to-many relationships<a class="headerlink" href="#mapping-many-to-many-relationships" title="Permanent link">&para;</a></h2>
+<p><strong>First</strong>, we decided that a Dataset may have zero or many Object Types and an Object Type could have zero or many Attributes. An Object or Attribute Category may apply to zero or many Object types or Attributes, respectively. We simplified the potential many-to-many relationship between Datasets and Object Types, between Object Types and Attributes, and between Object Types and Category to each to become one-to-many. The simplification is based on the use cases above and data sources we worked with later in Section 4. Thus we do not directly support the following cases: an Attribute with its unit to belong to many Object Types, an Object Type to belong to many Datasets, an Object to belong to many Categories, or an Attribute to belong to many Categories. Using one-to-many relationship here could lead to less data storage efficiency, but it has a simpler design and more importantly an easier query syntax than earlier designs (Abdallah and Rosenberg, 2014). Future work may reevaluate this tradeoff for other data sources and use cases.  </p>
+<p><strong>Second</strong>, an Object Type can have zero or many Instances and each Instance inherits all the Object Attributes. An Attribute for a specific Instance then can have metadata and data values. An Attribute can only have one Data Type (e.g., time series or numeric value). We discuss metadata later in this section. A Network can have one or many Scenarios. A Scenario contains all the Instances, their Attributes, and Attributes Data Values and Metadata. A Network has a spatial reference and elevation datum. Within a Scenario, an Attribute of an Object Type can be associated with many Instances of the same Object. </p>
+<p>At the same time, an Instance can have many Attributes of its parent Object Type. The “Mapping” bridge table handle this many-to-many relationship between Object Types, Instances, and Attributes. For example, a Reservoir Object Type can have many attributes like volume and elevation. At the same time, there could be dozens of local reservoir instances where each of them has specific volume and elevation values. Instances of a parent Object Type can be accessed through a dummy Attribute for each Object Type called “ObjectInstances” which requires a software business rule to create it. We avoided connecting the Object Types table directly to the Instances table because it creates a circular reference problem as in an earlier preliminary design (Abdallah and Rosenberg, 2014). A circular reference in the database may allow two non-unique transaction paths to insert or delete data values which is problematic to the database integrity that requires a one unique transaction path (Connolly and Begg, 2010).   </p>
+<p>The “Scenario Mapping” bridge table handles the many-to-many relationship, where an Attribute for an Instance can belong to many Scenarios, while a Scenarios can have many combinations of Attribute and Instances. For example, the same reservoir inflow time series can belong to the “current” and “future” scenarios, while the “current” scenario can have many other reservoir attributes. Finally, the “Data Values Mapper” bridge table maps the relationships where an Instance and its Attribute can have many data values, while a Data Value can belong to many other Instances</p>
+<p>Here we generally refer to a Data Value being the whole block of time series or multi column array. The Mapping bridge table is the central table in WaMDaM where data values for different formats are connected to their Attributes, metadata, Instances, and Scenarios. When two Scenarios share the same combination of network topology (i.e., nodes and links), metadata, and data values, they are referenced (i.e., reused) from the Mapping table into the “Scenario Mapping” bridge table with no duplication of data values storage. Later in the sixth use case in Section 4, users will use the Scenario Mapping table as a basis to compare similarities and differences of scenarios for the same network. This key design aspect is very important to allow version control and comparison between many scenarios within the same network as they often share most of the base scenario with some changes. </p>
+<h2 id="normalized-design">Normalized Design<a class="headerlink" href="#normalized-design" title="Permanent link">&para;</a></h2>
+<p>We used the database normalization technique which designs the data model in an effort to eliminate redundancy and increase design generality and parsimony in a in three main areas: metadata, node and link instances, and multi-attributes series (Connolly and Begg, 2010).<br />
+<strong>First</strong>, in prior approaches, metadata of organizations, people, sources, and methods are sometimes represented in one table which accepts a generic definition of metadata like in HydraPlatform (Meier et al., 2014) and HarmoniRib (Refsgaard et al., 2005).  </p>
+<p>Although such generic design can accommodate uncertain data metadata structures but the tradeoff is harder capabilities to directly query and access the metadata. In WaMDaM we divided metadata into separate required tables. We intended to keep a structure of formality to allow persistent access to its data and metadata. Therefore, the querying method to manipulate and compare data will be persistent across the used data sources or study area boundary. A persistent data model provides an opportunity to build software tools and programming workflows to read data from and write to a known structure (Maidment, 2002).  </p>
+<p><strong>Second</strong>, the WaMDaM design presented here also normalized how prior approaches represented separate node and link tables into one shared Instances table and another Connection sub-table as introduced earlier in the conceptual design. Since the node and link instances have similar attributes, the Instances table represents both of them and the connectivity between them in another sub-table. The Connection sub-table only represent the unique start and end nodes for link Instances. Importantly, the Instances table allows users to use the same query to access data values for either nodes or links. The tradeoff of this simplicity requires a software business rule to enforce the integrity of connectivity between nodes and links. A software business rule needs to insure that a link must have a start and end nodes.   </p>
+<p><strong>Third</strong>, we separated time series and multi-attribute series data types into two tables each. Each type has a table for additional specific metadata that apply to the second table with data values. In both types, we adapted the concept of Network Common Data Form (NetCDF) the Open Geospatial Consortium (OGC) Core Encoding Standard (OGC, 2011). NetCDF defines its dataset with global metadata (e.g., source of NetCDF file) and then defines local metadata (e.g., unit of variable) and data values (Gan et al., In Preperation). Next, we discuss how the design represents data values for the data types.</p>
+<h2 id="mapping-data-types">Mapping data types<a class="headerlink" href="#mapping-data-types" title="Permanent link">&para;</a></h2>
+<p>An attribute of a node or link instance can have one or many values in each data type. A data value can be shared among many Instances. The same data value (s) for an attribute also can be shared between two scenarios without duplication. Next we elaborate on the specific aspects in each data type. </p>
+<h3 id="dual-values-and-numeric-values">Dual Values and Numeric Values<a class="headerlink" href="#dual-values-and-numeric-values" title="Permanent link">&para;</a></h3>
+<p>The Dual values table mange the actual values either zero or one and allows users to optionally register this value with a controlled Dual Value Meaning attribute that takes values like “Active” or “Inactive” with a definition for each. The numeric values table strictly manage numeric values only. </p>
+<h3 id="seasonal-numeric-values">Seasonal Numeric Values:<a class="headerlink" href="#seasonal-numeric-values" title="Permanent link">&para;</a></h3>
+<p>This table manages numeric values that change with categorical time defined here as a season name. Users may optionally register the season name with a controlled term. Then they can provide a numeric value for each season name as much as needed. For each record of season name and value, there is a season order field to preserve the seasons and data values order as they are entered which can also be used to sort the season values.  </p>
+<h3 id="descriptor-values">Descriptor Values:<a class="headerlink" href="#descriptor-values" title="Permanent link">&para;</a></h3>
+<p>The design allows users to store values like “hydropower” and optionally register them with controlled vocabulary. The same field also allows users to store any descriptive text. Earlier design had two separate “controlled” and “free” descriptor tables which could be confusing to users to choose from (Abdallah and Rosenberg, 2014). The same attribute can have multiple descriptor values. For example, “purpose” of Hyrum Reservoir takes the values of “Hydropower”, “Recreation”, and “Irrigation”. While the same “purpose” value can be shared across other reservoirs leading to one unique value stored for the entire reservoirs dataset.  </p>
+<h3 id="time-series">Time Series:<a class="headerlink" href="#time-series" title="Permanent link">&para;</a></h3>
+<p>The first table in time series data captures additional key global metadata for the entire block of time series: i) Begin and End Date/Time fields which represent the extent of a time series, ii) Year Type to specific whether it is a “water year” or “calendar year” as both of them are used in water management datasets, iii) Aggregation Statistic which is a vocabulary for describing the calculated statistic over an Interval associated with recorded observations (e.g., average, cumulative)., and vi) an Aggregation Interval which indicates the time period of the aggregation statistic (e.g., 1) within an Aggregation Interval Unit (e.g., day, month). The second table records data values and their time stamp. The reviewed water management models and used datasets are often derived and curated time series data which does not report metadata to each individual time series value, therefore WaMDaM does not support such micro metadata. WaMDaM is not intended to replace the specialized time series database systems like CUAHSI but rather to consume data from them. Separating time series metadata from the individual values is also more practical to water management use cases in the in attempt to balance between the principles and practicality of metadata usage as recommended by Duval et al. (2002) as mentioned earlier.  </p>
+<h3 id="multi-attribute-series">Multi Attribute Series<a class="headerlink" href="#multi-attribute-series" title="Permanent link">&para;</a></h3>
+<p>The first table MultiAttributeSeries stores the attributes that constitute the array along with their metadata of source, method, and unit. The second table MultiAttributeSeriesValues stores data values and their sequential order for each attribute. The sequential order field preserves the order and pairing of data values across many attributes within the same array. Data values of the multi attribute series are flexible to have numeric or text values which allows storing a wide range of related descriptive and numeric values for many cases. Future work based on use cases may identify the tradeoff of this flexibility on maintaining the integrity of stored values. Each attribute or column has its metadata and data values and can be accessed by itself or with the other columns. As part of the normalized design of these two tables, a MultiAttributeSeries can take as many attributes (i.e., columns) and data values. Both the MultiAttributeSeries attribute and each sub-attribute may optionally be registered with controlled vocabulary terms.</p>
+<h3 id="electronic-files">Electronic Files<a class="headerlink" href="#electronic-files" title="Permanent link">&para;</a></h3>
+<p>Users could attach copies like images, maps, csv, and text files to an attribute with this defined data type. They are stored as Binary Large OBject (BLOB) in the database. We added a controlled vocabulary called Electronic File Format that has the list of supported and defined physical formats to help users understand the type of file and how to open it.  </p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../info_model/" title="Information Model" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Information Model
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Physical_Model/" title="Physical Model Implementations" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Physical Model Implementations
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 Adel M. Abdallah
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/amabdallah" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/adelmabdallah" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/adelmabdallah/" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-a5397a53ce.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+    
+    
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>

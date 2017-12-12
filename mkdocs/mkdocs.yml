@@ -1,0 +1,121 @@
+# WaMDaM Docs config file
+# Adel Abdallah, Utah State University
+# Dec. 2017
+
+
+# Copyright (c) 2016-2017 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+
+# Repository
+repo_name: Docs.WaMDaM.org
+repo_url: https://github.com/WamdamProject/Docs.WaMDaM.org
+edit_uri: "https://github.com/WamdamProject/Docs.WaMDaM.org/tree/master/Edit_MD_Files"
+
+# Copyright
+copyright: 'Copyright &copy; 2017 Adel M. Abdallah'
+
+# Project information
+site_name: WaMDaM Docs
+docs_dir: Edit_MD_Files
+site_description: Documentation of the Water Management Data Model (WaMDaM)
+site_author: Adel M. Abdallah
+site_url: https://docs.wamdam.org
+site_dir: docs
+
+
+# Page tree
+pages:
+  - Home: index.md
+  - Why WaMDaM?: Why_WaMDaM.md
+  - Rationale: Rationale.md
+  - The Team: Team.md  
+  - Publications: Publications.md 
+  - Open Source: OpenSource.md
+  - Limitations: Limitations.md
+  - Sponsors and Credit: SponsorsCredit.md
+  - License: License.md
+  - Getting Started: 
+    - Download: Getting_started/Download.md
+    - Prepare Data: Getting_started/PrepareData.md 
+    - Use Wizard: Getting_started/Use_Wizard.md
+    - Best Practices: Getting_started/Best_practices.md
+    - Controlled Vocabulary: Getting_started/controlled_vocabularies.md
+  - Use cases:
+    - Data Sources: UseCases/Data_Sources.md
+    - Download: UseCases/Download.md
+    - Use case 1: usecases/use_case_1.md
+    - Use case 2: usecases/use_case_2.md
+    - Use case 3: usecases/use_case_3.md
+    - Use case 4: usecases/use_case_4.md
+    - Use case 5: usecases/use_case_5.md
+    - Use case 6: usecases/use_case_6.md
+  - Design documentation: 
+    - Design Requirment: DesignDocumentation/Desing_Req.md
+    - Design documentation: DesignDocumentation/info_model.md
+    - Information Model: DesignDocumentation/info_model.md
+    - Logical Model Schema: DesignDocumentation/logical_Model.md
+    - Physical Model Implementations: DesignDocumentation/Physical_Model.md
+    - Controlled Vocabulary: DesignDocumentation/ControlledVocabulary.md
+  - About: 
+    - About: About.md 
+
+
+# Customization
+extra:
+  social:
+    - type: github-alt
+      link: https://github.com/amabdallah
+    - type: twitter
+      link: https://twitter.com/adelmabdallah
+    - type: linkedin
+      link: https://linkedin.com/in/adelmabdallah/ 
+# Configuration
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    primary: Blue
+    accent: indigo
+# https://material.io/icons/
+  logo:
+    icon: home
+  font:
+    text: Roboto
+    code: Roboto Mono
+# Google Analytics
+google_analytics:
+  - !!python/object/apply:os.getenv ["UA-110152372-1"]
+#  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  - auto
+   
+  
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde  
