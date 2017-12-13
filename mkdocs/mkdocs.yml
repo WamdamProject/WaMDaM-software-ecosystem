@@ -19,7 +19,7 @@
 # Repository
 repo_name: WaMDaM-software-ecosystem
 repo_url: https://github.com/WamdamProject/WaMDaM-software-ecosystem
-edit_uri: "https://github.com/WamdamProject/WaMDaM-software-ecosystem/tree/master/Edit_MD_Files"
+edit_uri: "https://github.com/WamdamProject/WaMDaM-software-ecosystem/tree/master/mkdocs/Edit_MD_Files"
 
 # Copyright
 copyright: 'Copyright &copy; 2017 Adel M. Abdallah'

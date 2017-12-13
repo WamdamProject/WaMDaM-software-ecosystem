@@ -1,0 +1,1024 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation of the Water Management Data Model (WaMDaM)">
+      
+      
+        <link rel="canonical" href="https://docs.wamdam.org/usecases/use_case_4/">
+      
+      
+        <meta name="author" content="Adel M. Abdallah">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.1.0">
+    
+    
+      
+        <title>Use case 4 - WaMDaM Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-3368aa6b74.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-95ad5566f9.palette.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    
+      <body data-md-color-primary="blue" data-md-color-accent="indigo">
+    
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://docs.wamdam.org" title="WaMDaM Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">home</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                WaMDaM Docs
+              </span>
+              <span class="md-header-nav__topic">
+                Use case 4
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/WamdamProject/WaMDaM-software-ecosystem/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      WaMDaM-software-ecosystem
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Home" class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../Getting_started/Download/" title="Getting Started" class="md-tabs__link">
+          Getting Started
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Data_Sources/" title="Use cases" class="md-tabs__link md-tabs__link--active">
+          Use cases
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../DesignDocumentation/Desing_Req/" title="Design documentation" class="md-tabs__link">
+          Design documentation
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../About/" title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon">home</i>
+      
+    </span>
+    WaMDaM Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/WamdamProject/WaMDaM-software-ecosystem/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      WaMDaM-software-ecosystem
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Why_WaMDaM/" title="Why WaMDaM?" class="md-nav__link">
+      Why WaMDaM?
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Rationale/" title="Rationale" class="md-nav__link">
+      Rationale
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Team/" title="The Team" class="md-nav__link">
+      The Team
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Publications/" title="Publications" class="md-nav__link">
+      Publications
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../OpenSource/" title="Open Source" class="md-nav__link">
+      Open Source
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../Limitations/" title="Limitations" class="md-nav__link">
+      Limitations
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../SponsorsCredit/" title="Sponsors and Credit" class="md-nav__link">
+      Sponsors and Credit
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../License/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Getting_started/Download/" title="Download" class="md-nav__link">
+      Download
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Getting_started/PrepareData/" title="Prepare Data" class="md-nav__link">
+      Prepare Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Getting_started/Use_Wizard/" title="Use Wizard" class="md-nav__link">
+      Use Wizard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Getting_started/Best_practices/" title="Best Practices" class="md-nav__link">
+      Best Practices
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Getting_started/controlled_vocabularies/" title="Controlled Vocabulary" class="md-nav__link">
+      Controlled Vocabulary
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
+    
+    <label class="md-nav__link" for="nav-11">
+      Use cases
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        Use cases
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Data_Sources/" title="Data Sources" class="md-nav__link">
+      Data Sources
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Download/" title="Download" class="md-nav__link">
+      Download
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../use_case_1/" title="Use case 1" class="md-nav__link">
+      Use case 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../use_case_2/" title="Use case 2" class="md-nav__link">
+      Use case 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../use_case_3/" title="Use case 3" class="md-nav__link">
+      Use case 3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Use case 4
+      </label>
+    
+    <a href="./" title="Use case 4" class="md-nav__link md-nav__link--active">
+      Use case 4
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problem" title="Problem" class="md-nav__link">
+    Problem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" title="Solution" class="md-nav__link">
+    Solution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" title="Next" class="md-nav__link">
+    Next
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../use_case_5/" title="Use case 5" class="md-nav__link">
+      Use case 5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../use_case_6/" title="Use case 6" class="md-nav__link">
+      Use case 6
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Design documentation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Design documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DesignDocumentation/Desing_Req/" title="Design Requirment" class="md-nav__link">
+      Design Requirment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DesignDocumentation/info_model/" title="Design documentation" class="md-nav__link">
+      Design documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DesignDocumentation/info_model/" title="Information Model" class="md-nav__link">
+      Information Model
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DesignDocumentation/logical_Model/" title="Logical Model Schema" class="md-nav__link">
+      Logical Model Schema
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DesignDocumentation/Physical_Model/" title="Physical Model Implementations" class="md-nav__link">
+      Physical Model Implementations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../DesignDocumentation/ControlledVocabulary/" title="Controlled Vocabulary" class="md-nav__link">
+      Controlled Vocabulary
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-13">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../About/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problem" title="Problem" class="md-nav__link">
+    Problem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" title="Solution" class="md-nav__link">
+    Solution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" title="Next" class="md-nav__link">
+    Next
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/WamdamProject/WaMDaM-software-ecosystem/tree/master/mkdocs/Edit_MD_Files/usecases/use_case_4.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="use-case-4">Use case 4<a class="headerlink" href="#use-case-4" title="Permanent link">&para;</a></h1>
+<p><strong>Identify and compare data that describe infrastructure across many sources</strong>  </p>
+<p><strong>Example</strong><br />
+What is the volume, purpose, evaporation, and elevation of Hyrum Reservoir Utah?   </p>
+<h3 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h3>
+<p>Identifying data that describe the water system infrastructure like a reservoir purpose and its bathymetry requires specific and time consuming methods to query and manipulate them. </p>
+<h3 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">&para;</a></h3>
+<p>WaMDaM enables organizing all of such data types according to one method. We use the controlled instance name of “Hyrum Reservoir” and a set of controlled attribute names to identify infrastructure related data: “Volume”, “Elevation”, and “Purpose”. The query result in multiple values for available data types (e.g., numeric, time series). The query identified four different curves for volume-elevation and many volumes for Hyrum Reservoir. There are also two time series of storage and elevation which have the same time step and extent which allows plotting both of them as a fourth empirically derived storage and elevation curve (Figure 9). </p>
+<p>First of all, there appears to be a systematic displacement in elevation between the upper (red) and lower (black-grey) curves. Second the curves cover different ranges of volume. We identified the following insights after deliberate discussions in a meeting and many emails on the differences between them from the two main sources, the state of Utah where the reservoir is located and the BOR who owns the dam. We found that the upper (red) curves indicate the usable “live storage” which does not account for the unusable “dead storage” while the lower curves indicate the “total storage”. The BOR reported “dead storage” as 3012 acre-feet at the elevation of 4629.6 feet. Relevant to semantic differences, dead storage is also known in the WEAP Model as “Top of Inactive” and in WASH as “MinCap”. We found that subtracting or adding dead storage below the elevation of 4629.6 feet reproduces similar lower or upper curves. On the other hand, water managers at the Utah Division of Water Resources suggested that the extended lower two identical black and gray curves (they actually extend longer up to 70,000 acre-feet volume and 4,750 feet elevation (not shown)) could have been used to project future bathymetry extrapolation if the dam height is elevated.   </p>
+<p>The data sources did not report the time it is used to measure the curves nor the specific method of estimating storage or elevation. In correspondence with the BOR, we found that water elevation in a reservoir is measured using a pressure transducer and the storage is computed from the elevation in a formula they have for the reservoir. We also found that the BOR updated the bathometry estimates for Hyrum Reservoir in 2006 which changed compared to the initial estimates in 1935. The total storage has decreased by 1,179 which is 6% less or the original storage due to decrease in both the dead and live storage. Table A7 in the Appendix lists all the identified volume values for Hyrum Reservoir and how the Utah and US Dams datasets and the WEAP and WASH models were reporting different storage values from the old and the new bathometry values without clear indication of which one it was. They also used these different native terms where none of them distinguished between live and total storage: Storage Capacity, STORG_ACFT, MAX_STOR, MaxCap. The query returns all the attribute with their different native terms because we registered each attribute with the controlled vocabulary term. The percentage of dead storage to total storage is relatively high about 17% in this small reservoir and misusing the total or live storage could make a big difference in modeling results.  </p>
+<p>The data sources did not report the time it is used to measure the curves nor the specific method of estimating storage or elevation. In correspondence with the BOR, we found that water elevation in a reservoir is measured using a pressure transducer and the storage is computed from the elevation in a formula they have for the reservoir. We also found that the BOR updated the bathometry estimates for Hyrum Reservoir in 2006 which changed compared to the initial estimates in 1935. The total storage has decreased by 1,179 which is 6% less or the original storage due to decrease in both the dead and live storage. Table A7 in the Appendix lists all the identified volume values for Hyrum Reservoir and how the Utah and US Dams datasets and the WEAP and WASH models were reporting different storage values from the old and the new bathometry values without clear indication of which one it was. They also used these different native terms where none of them distinguished between live and total storage: Storage Capacity, STORG_ACFT, MAX_STOR, MaxCap. The query returns all the attribute with their different native terms because we registered each attribute with the controlled vocabulary term. The percentage of dead storage to total storage is relatively high about 17% in this small reservoir and misusing the total or live storage could make a big difference in modeling results. </p>
+<p>Such above differences are not clearly defined in the datasets and they were not obvious until we compared them together from multiple datasets and asked about their metadata. The use of clear and consistent terminology and metadata to describe water system components can be very important for modeling and management of the system. WaMDaM provides an opportunity to improve how the use of terminology and metadata as users may look into metadata and contact the people who provided or created it to identify potential reasons for the differences which could be from using different methods, and assumptions if available. Organizing all the datasets with such different data types enables a more readily way to access and comparing them that was not possible before.</p>
+<table>
+<thead>
+<tr>
+<th>Use Case</th>
+<th align="center">Query</th>
+<th align="right">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NumericValues_otherTypes</td>
+<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.1NumericValues_otherTypes.sql">Query</a></td>
+<td align="right"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.1NumericValues_otherTypes.csv">Result</a> csv</td>
+</tr>
+<tr>
+<td>MultiAttributeValues</td>
+<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.2MultiAttributeValues.sql">Query</a></td>
+<td align="right"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.2MultiAttributeValues.csv">Result</a> csv</td>
+</tr>
+<tr>
+<td>MergeTimeSeriesValues</td>
+<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.3MergeTimeSeriesValues.sql">Query</a></td>
+<td align="right"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.3MergeTimeSeriesValues.csv">Result</a> csv</td>
+</tr>
+<tr>
+<td>NumericValues_Metadata</td>
+<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.4NumericValues_Metadata.sql">Query</a></td>
+<td align="right"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.4NumericValues_Metadata.csv">Result</a> csv</td>
+</tr>
+<tr>
+<td>MultipleTimeSeriesColumnsSameTimeStamp</td>
+<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.5MultipleTimeSeriesColumnsSameTimeStamp.sql">Query</a></td>
+<td align="right"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.5MultipleTimeSeriesColumnsSameTimeStamp.csv">Result</a> csv</td>
+</tr>
+<tr>
+<td>MultipleDescriptorValues_HydroPower</td>
+<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.6MultipleDescriptorValues_HydroPower.sql">Query</a></td>
+<td align="right"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.6MultipleDescriptorValues_HydroPower.csv">Result</a> csv</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Use Case figure</th>
+<th align="center">Python Script</th>
+<th align="right">Interactive figure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Figure</td>
+<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/6Figures_Python/4_HyrumReservoir_Curves.py">script</a></td>
+<td align="right"><a href="http://htmlpreview.github.io/?https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/7Figures_HTML/4_HyrumReservoir_Curves.py.html">Figure</a></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="../../UseCases/images/UseCase4.png" /> 
+<strong>Figure 1</strong>: Five volume-elevation curves and volume values at three stages in Hyrum Reservoir, Utah as reported by multiple sources. Volume vertical lines are extended to the full range to cross all curves and for simplicity. Color-coded curves lighter to darker indicate larger volume at the same elevation. Color coded blue vertical lines indicate larger volume at low to high elevations. </p>
+<p>The query earlier also returns many values about the reservoir purposes from the US Dams dataset (Table A8). The original data shapefile only stores the Descriptor Value code and keeps the definition separate in PDF of HTML pages. WaMDaM provides both so users can look up what each code means. Here Hyrum Reservoir is not reported to have hydropower as one of its purposes. In running the query on other reservoirs in Utah, we discovered that the purpose “H” which denotes Hydropower does not exist for other reservoirs in Utah that are known to generate hydropower like the Jordanelle Reservoir which has a capacity of 13 Megawatts. In a comparative analysis between the US Dams dataset and the US Hydropower dataset, another query searched for all the reservoirs in Utah that have Hydropower as recorded in the National Hydropower Datasets which retuned 73 plants. However, the National Dams dataset only returned 9 dams in Utah “UT” that have Hydropower “H” as one of its purposes. The latter query used the attribute “State” to select the search boundary which is another way other than using the coordinates. Here users can filter and search for nodes and links based on the values of their attributes. The Hydropower dataset returned that Hyrum Reservoir has a small hydropower plant with 0.5 Megawatts. In this case the comparison reveals that the Hydropower Dataset is more reliable in this regard and the US Dams dataset needs to be updated.  </p>
+<p>Populating WaMDaM with multiple datasets from different sources (like hydropower and dams datasets) can complement each other and provide either similar, different, or additional data than otherwise of one dataset. Bringing all values together allows comparisons not only to the values but possibly to the underlying assumptions and methods among them. </p>
+<h3 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h3>
+<p>After identifying water supply, demand, and infrastructure, in the next use case users can identify the connectivity of a node site, inflow into and outflow of it which represents the mix of natural and built water management network. </p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../use_case_3/" title="Use case 3" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Use case 3
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../use_case_5/" title="Use case 5" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Use case 5
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 Adel M. Abdallah
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/amabdallah" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/adelmabdallah" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/adelmabdallah/" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-a5397a53ce.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+    
+    
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>
