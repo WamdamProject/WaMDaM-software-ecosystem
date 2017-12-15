@@ -11,41 +11,6 @@ Think of WaMDaM as a repository of water management data (purple cylinder) and a
 
 [1]:/mkdocs
 [2]:/docs
-
-## Getting started: Work with WaMDaM use cases (Reproduce reported results)
-
-1.	Download the [SQLite](https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/3SQLite_database/ReadMe.md) file with loaded data for the twelve US and Bear River Watershed datasets. 
- Download and set up SQLite Manager 
-2.	Use or adapt SQL queries on GitHub and execute them in SQLite Manager 
-3. If you’re familiar with Python, you may use of adapt Python scripts to visualize results
-
-
-
-## Getting started: Use WaMDaM for your own data. How Can I use WaMDaM?   
-1.	Get your data files 
-    Understand their concepts in the WaMDaM framework
-2.	Download the Excel workbook templates
-    Prepare your data and fit it into WaMDaM workbooks.  Optionally register your data with select controlled vocabulary to help you relate and search synonymous terms across datasets.  
-3.	Download the [WaMDaM Wizard](https://github.com/WamdamProject/WaMDaM_Wizard#download-the-wizard-gui-for-windows-7-and-10-64-bit-operating-systems) 
-    Use the Wizard to load the data files into a WaMDaM SQLite database on your machine (no server needed)  
-4.	Download the Firefox SQLite Manager
-    Use or adapt SQL queries on GitHub and execute them in SQLite Manager 
-    If you’re familiar with Python, you may use of adapt Python scripts to visualize results   
-
-   
-
-### What can you do with WaMDaM not possible before? Why WaMDaM?
-WaMDaM is an effort to standardize how we organize water management data which supports eight features altogether that partially exist in prior methods to enable users to: 
-1. Support different water resources systems components that are used in water management models like hydrology, infrastructure, and demand sites as reusable modules or sets of systems components.   
-2. Represent connectivity and interactions between components in space through networks of nodes and links as used in systems modeling. 
-3. Support scenarios that track topologic changes in networks, metadata and data values. 
-4. Support multiple data types that are used in systems modeling like time series and multidimensional arrays.  
-5. Uses consistent contextual metadata to unambiguously interpret data values.
-6. Uses controlled vocabulary to relate inconsistent terms across data sources and models.  
-7. Enables conditional data queries to access and compare subsets of data and metadata 
-8. Developed in an open-source software environment.  
-
-
 # ODM2 GitHub Repositories and Software Ecosystem
 
 
@@ -58,8 +23,8 @@ WaMDaM is an effort to standardize how we organize water management data which s
 
 ### 2. WaMDaM Application and use cases  
 Demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets.
-[https://github.com/WamdamProject/WaMDaM_UseCases](https://github.com/WamdamProject/WaMDaM_UseCases
-) 
+[https://github.com/WamdamProject/WaMDaM_UseCases](https://github.com/WamdamProject/WaMDaM_UseCases)
+ 
 
 
 ### 3. WaMDaM Wizard  
