@@ -1,11 +1,16 @@
 # Welcome to the WaMDaM Organization
-This is a meta-repository to help navigate the many repositories under the [WaMDaMProject GitHub Organization](https://github.com/WamdamProject).
+This is a meta-repository to help users navigate the many repositories under the [WaMDaMProject GitHub Organization](https://github.com/WamdamProject).
+
+It also hosts the [MKDocs design files][1] and their output HTML pages [(docs)][2] for Docs.WaMDaM.org http://Docs.WaMDaM.org
 
 WaMDaM is both an information model and a couple of supporting software ecosystem. WaMDaM tools are designed to organize, identify, and compare multiple systems water management data in a single database. 
 
 Think of WaMDaM as a repository of water management data (purple cylinder) and a translator between numerous data sources on the left and different models on the right. WaM-DaM translates two aspects of the data: the syntax (i.e., structure) and semantics (terminology). WaMDaM intends to speed the time to find, organize, and synthesize data from different data sources, and prepare data for modeling.
 ![](/mkdocs/Edit_MD_Files/images/Workflow.png)
 
+
+[1]:/master/mkdocs
+[2]:/master/docs
 
 ## Getting started: Work with WaMDaM use cases (Reproduce reported results)
 
