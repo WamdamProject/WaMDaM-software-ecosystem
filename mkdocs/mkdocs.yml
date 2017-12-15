@@ -29,7 +29,7 @@ site_name: WaMDaM Docs
 docs_dir: Edit_MD_Files
 site_description: Documentation of the Water Management Data Model (WaMDaM)
 site_author: Adel M. Abdallah
-site_url: https://docs.wamdam.org
+site_url: http://docs.wamdam.org
 site_dir: docs
 
 
