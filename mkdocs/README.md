@@ -1,5 +1,11 @@
 # WaMDaM Docs Generator
 
+This package uses the [GitHub Markdown files][1] to automatically generate the beautiful HTML project documentation presented at [docs.wamdam.org][2] 
+ 
+
+[1]:/mkdocs/Edit_MD_Files
+[2]:http://docs.wamdam.org/
+
 ## Installation
 
 This project is built upon a themed version of `mkdocs` named [material-mkdocs][https://squidfunk.github.io/mkdocs-material/].
