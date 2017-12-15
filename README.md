@@ -14,25 +14,26 @@ Think of WaMDaM as a repository of water management data (purple cylinder) and a
 # ODM2 GitHub Repositories and Software Ecosystem
 
 
-### 1. WaMDaM Schemas and Information Model documentation  
-* View primary [documentation](https://github.com/WamdamProject/WaMDaM_Information_Model) for the WaMDaM Information Model* 
+## 1. WaMDaM Schemas and Information Model documentation  
 
 * Support for multiple RDBMS: MS SQL Server, MySQL, PostgreSQL, and SQLite
 * [https://github.com/WamdamProject/WaMDaM_Information_Model](https://github.com/WamdamProject/WaMDaM_Information_Model) 
 
+http://schema.wamdam.org/diagrams/01_WaMDaM.html
 
-### 2. WaMDaM Application and use cases  
+
+## 2. WaMDaM Application and use cases  
 Demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets.
 [https://github.com/WamdamProject/WaMDaM_UseCases](https://github.com/WamdamProject/WaMDaM_UseCases)
  
 
 
-### 3. WaMDaM Wizard  
+## 3. WaMDaM Wizard  
 A Python-based Graphical User Interface to validate and load water management data mainly from an Excel Template into a SQLite WaMDaM compliant database.  
 * [WaMDaM Wizard](https://github.com/WamdamProject/WaMDaM_Wizard) 
 By using the Wizard, users are not expected to understand the underlying WaMDaM database of schema. Users just need to understand how to fit their data into these concepts: ObjectType, Attribute, Instance, Network, and Scenario. 
 
-### 4. WaMDaM Controlled vocabulary  
+## 4. WaMDaM Controlled vocabulary  
 A Python/Django-based web application for managing the WaMDaM controlled vocabularies
 * Online submittal and moderation of new terms and changes to existing terms
 * Views of all existing vocabularies and terms
@@ -40,7 +41,7 @@ A Python/Django-based web application for managing the WaMDaM controlled vocabul
 * [https://github.com/WamdamProject/WaMDaM_ControlledVocabularies]()
 
 
-### 5. WaMDaM Publications and Presentations  
+## 5. WaMDaM Publications and Presentations  
 List of all the presentations and publications on WaMDaM products since inspection 
 [https://github.com/WamdamProject/WaMDaM_Publications](https://github.com/WamdamProject/WaMDaM_Publications)
 
@@ -49,12 +50,12 @@ List of all the presentations and publications on WaMDaM products since inspecti
 [Quick survey](https://goo.gl/forms/SQROuovc2Cs4bmZB3)
 
 
-### Licensing  
+## Licensing  
 WaMDaM and materials in this GitHub repository are disturbed under a BSD 3-Clause [LICENSE](/LICENSE). 
 For alternative licensing arrangements, contact Adel M. Abdallah or David E. Rosenberg directly.    
   
 
-### Sponsors and Credit 
+## Sponsors and Credit 
 WaMDaM and related software development have been developed under funding from several different sources. It was primarily supported by the National Science Foundation <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482" target="_blank">CI-Water Project</a> and later from the <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1208732" target="_blank">iUtah Project</a>. 
 Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.    
 
