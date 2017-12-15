@@ -9,8 +9,8 @@ Think of WaMDaM as a repository of water management data (purple cylinder) and a
 ![](/mkdocs/Edit_MD_Files/images/Workflow.png)
 
 
-[1]:/master/mkdocs
-[2]:/master/docs
+[1]:/mkdocs
+[2]:/docs
 
 ## Getting started: Work with WaMDaM use cases (Reproduce reported results)
 
