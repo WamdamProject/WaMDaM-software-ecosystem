@@ -1,7 +1,7 @@
 # Welcome to the WaMDaM Organization
 This is a meta-repository to help users navigate the many repositories under the [WaMDaMProject GitHub Organization](https://github.com/WamdamProject).
 
-It also hosts the [MKDocs design files][1] and their output HTML pages [(docs)][2] for Docs.WaMDaM.org http://Docs.WaMDaM.org
+It also hosts the [MKDocs design files][1] and their output HTML pages [(docs)][2] for [Docs.WaMDaM.org][3] 
 
 WaMDaM is both an information model and a couple of supporting software ecosystem. WaMDaM tools are designed to organize, identify, and compare multiple systems water management data in a single database. 
 
@@ -11,6 +11,7 @@ Think of WaMDaM as a repository of water management data (purple cylinder) and a
 
 [1]:/mkdocs
 [2]:/docs
+[3]:http://Docs.WaMDaM.org
 # ODM2 GitHub Repositories and Software Ecosystem
 
 
