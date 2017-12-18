@@ -15,13 +15,15 @@ Think of WaMDaM as a repository of water management data (blue cylinder) and a t
 # ODM2 GitHub Repositories and Software Ecosystem
 
 
-## 1. WaMDaM Schemas and Information Model documentation  
+## 1. [WaMDaM Schemas and Information Model copies][4]  
 
-* Support for multiple RDBMS: MS SQL Server, MySQL, PostgreSQL, and SQLite
-* [https://github.com/WamdamProject/WaMDaM_Information_Model](https://github.com/WamdamProject/WaMDaM_Information_Model) 
+* [Entity Relationship diagrams for WaMDaM schema 1.0][5]
 
-http://schema.wamdam.org/diagrams/01_WaMDaM.html
+* [DDL scripts and copies for RDBMS: MS SQL Server, MySQL, PostgreSQL, and SQLite][6]
 
+[4]:https://github.com/WamdamProject/WaMDaM_Information_Model
+[5]:http://schema.wamdam.org/diagrams/01_WaMDaM.html
+[6]:https://github.com/WamdamProject/WaMDaM_Information_Model/tree/master/schemas
 
 ## 2. WaMDaM Application and use cases  
 Demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets.
