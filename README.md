@@ -6,7 +6,7 @@ The repo also hosts the [MKDocs design files][1] and their output HTML pages [(d
 The Water Management Data Model (WaMDaM) is an information model and a couple of supporting software ecosystem. WaMDaM tools are designed to organize, identify, and compare multiple systems water management data in a single database. 
 
 Think of WaMDaM as a repository of water management data (blue cylinder) and a translator between numerous data sources on the left and different models on the right. WaMDaM translates two aspects of the data: the syntax (i.e., structure) and semantics (terminology). WaMDaM intends to speed the time to find, organize, and synthesize data from different data sources, and prepare data for modeling.
-![](/mkdocs/Edit_MD_Files/images/Workflow.emf)
+![](/mkdocs/Edit_MD_Files/images/Workflow.jpg)
 
 
 [1]:/mkdocs
