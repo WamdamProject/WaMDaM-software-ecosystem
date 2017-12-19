@@ -62,7 +62,7 @@ We would love to hear from you through this [quick survey](https://goo.gl/forms/
 
 
 ## [Authors][21]
-* **Adel Abdallah
+* **Adel Abdallah**
 * **David Rosenberg**
 
 [21]:http://docs.wamdam.org/Team/
