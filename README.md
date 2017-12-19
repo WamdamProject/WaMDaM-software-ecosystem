@@ -26,33 +26,33 @@ Think of WaMDaM as a repository of water management data (blue cylinder) and a t
 [6]:https://github.com/WamdamProject/WaMDaM_Information_Model/tree/master/schemas
 
 
-## 2. [WaMDaM Data Loader Wizard][6]  
+## 2. [WaMDaM Data Loader Wizard][7]  
 A Python-based Graphical User Interface to validate and load water management data mainly from an Excel Template into a SQLite WaMDaM compliant database.  
 By using the Wizard, users are not expected to understand the underlying WaMDaM database of schema. Users just need to understand how to fit their data into these concepts: ObjectType, Attribute, Instance, Network, and Scenario. 
 
-[6]:https://github.com/WamdamProject/WaMDaM_Wizard
+[7]:https://github.com/WamdamProject/WaMDaM_Wizard
 
-## 3. [WaMDaM Controlled vocabulary][7]  
+## 3. [WaMDaM Controlled vocabulary][8]  
 A Python/Django-based web application for managing the WaMDaM controlled vocabularies
 * Online submittal and moderation of new terms and changes to existing terms
 * Views of all existing vocabularies and terms
 * Application deployed at [vocabulary.wamdam.org](http://vocabulary.wamdam.org)
 
-[7]:https://github.com/WamdamProject/WaMDaM_ControlledVocabularies
+[8]:https://github.com/WamdamProject/WaMDaM_ControlledVocabularies
 
-## 4. [WaMDaM Application and use cases][8]  
+## 4. [WaMDaM Application and use cases][9]  
 Demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets.
  
 *   
 *  
 
-[8]:https://github.com/WamdamProject/WaMDaM_UseCases
+[9]:https://github.com/WamdamProject/WaMDaM_UseCases
  
 
-## 5. [WaMDaM Publications and Presentations][9] 
+## 5. [WaMDaM Publications and Presentations][10] 
 List of all the presentations and publications on WaMDaM products since inspection 
 
-[9]:https://github.com/WamdamProject/WaMDaM_Publications
+[10]:https://github.com/WamdamProject/WaMDaM_Publications
 
 
 ## Do you have feedback on WaMDaM? Tell us what interest you 
