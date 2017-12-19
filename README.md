@@ -32,13 +32,13 @@ By using the Wizard, users are not expected to understand the underlying WaMDaM 
 
 [6]:https://github.com/WamdamProject/WaMDaM_Wizard
 
-## 3. WaMDaM Controlled vocabulary  
+## 3. [WaMDaM Controlled vocabulary][7]  
 A Python/Django-based web application for managing the WaMDaM controlled vocabularies
 * Online submittal and moderation of new terms and changes to existing terms
 * Views of all existing vocabularies and terms
 * Application deployed at [vocabulary.wamdam.org](http://vocabulary.wamdam.org)
-* [https://github.com/WamdamProject/WaMDaM_ControlledVocabularies]()
 
+[7]:https://github.com/WamdamProject/WaMDaM_ControlledVocabularies
 
 ## 4. [WaMDaM Application and use cases][8]  
 Demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets.
@@ -52,7 +52,7 @@ Demonstrate how WaMDaM enables systematic data query and comparisons across mult
 ## 5. [WaMDaM Publications and Presentations][9] 
 List of all the presentations and publications on WaMDaM products since inspection 
 
-[]:https://github.com/WamdamProject/WaMDaM_Publications
+[9]:https://github.com/WamdamProject/WaMDaM_Publications
 
 
 ## Do you have feedback on WaMDaM? Tell us what interest you 
