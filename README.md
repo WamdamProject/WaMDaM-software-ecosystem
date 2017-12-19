@@ -23,7 +23,7 @@ Think of WaMDaM as a repository of water management data (blue cylinder) and a t
 
 [4]:https://github.com/WamdamProject/WaMDaM_Information_Model
 [5]:http://schema.wamdam.org/diagrams/01_WaMDaM.html
-[6]:https://github.com/WamdamProject/WaMDaM_Information_Model/tree/master/schemas
+[6]:https://github.com/WamdamProject/WaMDaM_Information_Model/tree/master/database_schemas
 
 
 ## 2. [WaMDaM Data Loader Wizard][7]  
