@@ -25,18 +25,14 @@ Think of WaMDaM as a repository of water management data (blue cylinder) and a t
 [5]:http://schema.wamdam.org/diagrams/01_WaMDaM.html
 [6]:https://github.com/WamdamProject/WaMDaM_Information_Model/tree/master/schemas
 
-## 2. WaMDaM Application and use cases  
-Demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets.
-[https://github.com/WamdamProject/WaMDaM_UseCases](https://github.com/WamdamProject/WaMDaM_UseCases)
- 
 
-
-## 3. WaMDaM Wizard  
+## 2. [WaMDaM Data Loader Wizard][6]  
 A Python-based Graphical User Interface to validate and load water management data mainly from an Excel Template into a SQLite WaMDaM compliant database.  
-* [WaMDaM Wizard](https://github.com/WamdamProject/WaMDaM_Wizard) 
 By using the Wizard, users are not expected to understand the underlying WaMDaM database of schema. Users just need to understand how to fit their data into these concepts: ObjectType, Attribute, Instance, Network, and Scenario. 
 
-## 4. WaMDaM Controlled vocabulary  
+[6]:https://github.com/WamdamProject/WaMDaM_Wizard
+
+## 3. WaMDaM Controlled vocabulary  
 A Python/Django-based web application for managing the WaMDaM controlled vocabularies
 * Online submittal and moderation of new terms and changes to existing terms
 * Views of all existing vocabularies and terms
@@ -44,9 +40,19 @@ A Python/Django-based web application for managing the WaMDaM controlled vocabul
 * [https://github.com/WamdamProject/WaMDaM_ControlledVocabularies]()
 
 
-## 5. WaMDaM Publications and Presentations  
+## 4. [WaMDaM Application and use cases][8]  
+Demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets.
+ 
+*   
+*  
+
+[8]:https://github.com/WamdamProject/WaMDaM_UseCases
+ 
+
+## 5. [WaMDaM Publications and Presentations][9] 
 List of all the presentations and publications on WaMDaM products since inspection 
-[https://github.com/WamdamProject/WaMDaM_Publications](https://github.com/WamdamProject/WaMDaM_Publications)
+
+[]:https://github.com/WamdamProject/WaMDaM_Publications
 
 
 ## Do you have feedback on WaMDaM? Tell us what interest you 
