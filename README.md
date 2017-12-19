@@ -17,6 +17,8 @@ Think of WaMDaM as a repository of water management data (blue cylinder) and a t
 
 ## 1. [WaMDaM Schemas and Information Model copies][4]  
 
+* [docs.wamdam.org/DesignDocumentation/Desing_Req/][20]
+
 * [Entity Relationship diagrams for WaMDaM schema 1.0][5]
 
 * [DDL scripts and copies for RDBMS: MS SQL Server, MySQL, PostgreSQL, and SQLite][6]
@@ -24,7 +26,7 @@ Think of WaMDaM as a repository of water management data (blue cylinder) and a t
 [4]:https://github.com/WamdamProject/WaMDaM_Information_Model
 [5]:http://schema.wamdam.org/diagrams/01_WaMDaM.html
 [6]:https://github.com/WamdamProject/WaMDaM_Information_Model/tree/master/database_schemas
-
+[20]:http://docs.wamdam.org/DesignDocumentation/Desing_Req/
 
 ## 2. [WaMDaM Data Loader Wizard][7]  
 A Python-based Graphical User Interface to validate and load water management data mainly from an Excel Template into a SQLite WaMDaM compliant database.  
@@ -55,16 +57,17 @@ List of all the presentations and publications on WaMDaM products since inspecti
 [10]:https://github.com/WamdamProject/WaMDaM_Publications
 
 
-## Do you have feedback on WaMDaM? Tell us what interest you 
-[Quick survey](https://goo.gl/forms/SQROuovc2Cs4bmZB3)
+## Do you have feedback on WaMDaM? Tell us what interest you  
+We would love to hear from you through this [quick survey](https://goo.gl/forms/SQROuovc2Cs4bmZB3)
 
-
-## Licensing  
-WaMDaM and materials in this GitHub repository are disturbed under a BSD 3-Clause [LICENSE](/LICENSE). 
- 
 
 ## [Sponsors and Credit][11] 
 WaMDaM and related software development have been developed under funding from several different sources. It was primarily supported by the National Science Foundation <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482" target="_blank">CI-Water Project</a> and later from the <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1208732" target="_blank">iUtah Project</a>. 
 Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.    
 
 [11]:http://docs.wamdam.org/SponsorsCredit/
+
+
+## Licensing  
+WaMDaM and materials in this GitHub repository are disturbed under a BSD 3-Clause [LICENSE](/LICENSE). 
+ 
