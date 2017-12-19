@@ -61,6 +61,13 @@ List of all the presentations and publications on WaMDaM products since inspecti
 We would love to hear from you through this [quick survey](https://goo.gl/forms/SQROuovc2Cs4bmZB3)
 
 
+## [Authors][21]
+* **Adel Abdallah
+* **David Rosenberg**
+
+[21]:http://docs.wamdam.org/Team/
+
+
 ## [Sponsors and Credit][11] 
 WaMDaM and related software development have been developed under funding from several different sources. It was primarily supported by the National Science Foundation <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482" target="_blank">CI-Water Project</a> and later from the <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1208732" target="_blank">iUtah Project</a>. 
 Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.    
