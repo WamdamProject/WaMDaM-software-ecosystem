@@ -43,8 +43,8 @@ A Python/Django-based web application for managing the WaMDaM controlled vocabul
 ## 4. [WaMDaM Application and use cases][9]  
 Demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets.
  
-*   
-*  
+*  National and regional used data Sources with a focus on the Bear River Watershed, USA 
+*  Six basic uses cases, their SQL script, results, and discussion
 
 [9]:https://github.com/WamdamProject/WaMDaM_UseCases
  
@@ -61,14 +61,10 @@ List of all the presentations and publications on WaMDaM products since inspecti
 
 ## Licensing  
 WaMDaM and materials in this GitHub repository are disturbed under a BSD 3-Clause [LICENSE](/LICENSE). 
-For alternative licensing arrangements, contact Adel M. Abdallah or David E. Rosenberg directly.    
-  
+ 
 
-## Sponsors and Credit 
+## [Sponsors and Credit][11] 
 WaMDaM and related software development have been developed under funding from several different sources. It was primarily supported by the National Science Foundation <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1135482" target="_blank">CI-Water Project</a> and later from the <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1208732" target="_blank">iUtah Project</a>. 
 Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.    
 
-WaMDaM has been developed at and also additionally funded by the Utah Water Research Lab at Utah State University, Logan Utah during the period of August, 2012-2017. Thanks to Dr. Steven Burian at the University of Utah, Salt Lake City Utah for hosting Adel Abdallah as a visiting scholar 2014-2017.
-
-David Tarboton, Josué Medellín-Azuara, and Stephen Knox provided thoughtful feedback and comments on earlier designs and manuscript drafts. We thank our collaborators and our research group for their feedback. 
-
+[11]:http://docs.wamdam.org/SponsorsCredit/
