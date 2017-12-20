@@ -1,6 +1,21 @@
 # Prepare your data
 
 
+## Download the WaMDaM Workbook     
+Templates for Input Data to prepare your data into it. Each dataset into one workbook
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+|Donwlaod|  <i class="fa fa-file-excel-o fa-2x"></i>       |Use it for |
+|---| :---------------: |:------------- |
+|WaMDaM Workbook Template  |<a class="github-button" href="https://github.com/WamdamProject/WaMDaM_Wizard/blob/master/WorkbookTemplates/InputData_Template/WaMDaM_InputData_template.xlsm?raw=true" data-icon="octicon-cloud-download" data-size="large" aria-label="Download ntkme/github-buttons on GitHub">Download</a>| Generic template for any data source to WaMDaM|
+|Prepre shapefile template   | <a class="github-button" href="https://github.com/WamdamProject/WaMDaM_Wizard/blob/master/WorkbookTemplates/Prepare_transform_data_templates/Shapefile.xlsx?raw=true" data-icon="octicon-cloud-download" data-size="large" aria-label="Download ntkme/github-buttons on GitHub">Download</a> |Transform the shapefile columns into WaMDaM sheets |
+|Prepare time series template| <a class="github-button" href="https://github.com/WamdamProject/WaMDaM_Wizard/blob/master/WorkbookTemplates/Prepare_transform_data_templates/Prepare_Pivot_TimeSeries_data.xlsx?raw=true" data-icon="octicon-cloud-download" data-size="large" aria-label="Download ntkme/github-buttons on GitHub">Download</a>|Transform time series data into WaMDaM sheets|
+|Prepare seasonal data template| <a class="github-button" href="https://github.com/WamdamProject/WaMDaM_Wizard/blob/master/WorkbookTemplates/Prepare_transform_data_templates/AllSeaosnalData_templates.xlsx?raw=true" data-icon="octicon-cloud-download" data-size="large" aria-label="Download ntkme/github-buttons on GitHub">Download</a>|Transform seasonal data into WaMDaM sheets|
+
+
 ## Why Excel?
 We chose Excel as a generic input data medium with a custom Excel workbook that has 17 sheets with fixed column headers for the main tables of input data in WaMDaM. Each dataset is prepared to a single workbook one-at-a-time. The sheets are related with each other through dropdown lists to help users for example to relate metadata elements to the attributes and data values
 

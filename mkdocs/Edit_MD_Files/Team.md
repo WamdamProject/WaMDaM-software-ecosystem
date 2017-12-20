@@ -12,13 +12,16 @@ email: amabdallah@aggiemail.usu.edu
 Associate Professor: Systems Analysis  
 email: David.Rosenberg.edu
 
-[Jeffery Horsburgh](http://jeffh.usu.edu)  
-Assistant Professor, Hydroinformatics  
-email:  Jeff.Horsburgh@USU.edu 
+
+## Developers
+These talented people helped in implementing and testing different aspects of the pseudocode of WaMDaM Wizard and adapting the controlled vocabulary system. Stephanie Reeder and Pabitra Dash provided valuable insights into the early design architecture.      
+* Jose Guerrero
+* Kevin Larry
+* Kwang Yingjien 
 
 
-## Colloborators     
-These people provided valuable feedback and insights into earlier designs,  materials, and informal discussions of WaMDaM design and its software   
+## Feedback and Input from Colleages     
+These people in sevend institutions provided valuable feedback and insights into earlier designs and materials, they shared models and datasets, or exchanged informal discussions on WaMDaM design and its software at different stages of its development   
 
 1. **Utah Water Research Laboratory and Utah State University**   
 David Tarboton, Jeffery Horsburgh, Pabitra Dash, Toney Castronova, Stephanie Reeder     
@@ -41,11 +44,6 @@ David Rheinheimer
 7. **University of Wyoming**   
 Fred Ogden, Yoshiyuki Zen Igarashi 
 
-## Developers
-These talented people helped in implementing and testing different aspects of the pseudocode of WaMDaM Wizard and the controlled vocabulary system. Stephanie Reeder and Pabitra Dash provided valuable insights into the early design architecture.      
-
-* Jose Guerrero
-* Kevin Larry
-* Kwang Yingjien  
+ 
 
 

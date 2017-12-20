@@ -8,14 +8,17 @@ Think of WaMDaM as a repository of water management data (blue cylinder) and a t
 WaMDaM translates two aspects of the data: the **syntax** (i.e., structure) and **semantics** (terminology). WaMDaM intends to speed the time to find, organize, and synthesize data from different data sources, and prepare data for modeling.
 ![](/images/Workflow.png)
 
+## Workflow of using WaMDaM
+These are the high level steps to use WaMDaM
+![](/Getting_started/images/Use_WaMDaM.jpg)
 
 ## Getting Started
 
-The [Getting Started](/Getting_started/Download.md) section guides you how to set up a WaMDaM Wizard and load your data into a SQLite database. 
+The [Getting Started](/Getting_started/Steps.md) section guides you how to set up a WaMDaM Wizard and load your data into a SQLite database. 
 
 
 ## Application and use cases  
-Check out the [use cases](/UseCases/Data_Sources.md) that demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets 
+Check out the [use cases](/UseCases/Application.md) that demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets 
 
 
    

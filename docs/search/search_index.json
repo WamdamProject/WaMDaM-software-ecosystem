@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to the WaMDaM documentations\n\n\nOverview\n\n\nWaMDaM is both an information model and a couple of supporting software ecosystem. WaMDaM tools are designed to organize, identify, and compare multiple systems water management data in a single database. \n\n\nThink of WaMDaM as a repository of water management data (blue cylinder) and a translator between numerous data sources on the left and different models on the right.   \n\n\nWaMDaM translates two aspects of the data: the \nsyntax\n (i.e., structure) and \nsemantics\n (terminology). WaMDaM intends to speed the time to find, organize, and synthesize data from different data sources, and prepare data for modeling.\n\n\n\nGetting Started\n\n\nThe \nGetting Started\n section guides you how to set up a WaMDaM Wizard and load your data into a SQLite database. \n\n\nApplication and use cases\n\n\nCheck out the \nuse cases\n that demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets \n\n\nInformation Model\n\n\n\n\nView primary \ndocumentation\n for the WaMDaM Information Model* \n\n\n\n\nCross-platform implementations\n\n\nSupport for multiple RDBMS: MS SQL Server, MySQL, PostgreSQL, and SQLite\n\n\nWaMDaM Controlled vocabulary\n\n\nA Python/Django-based web application for managing the WaMDaM controlled vocabularies\n* Online submittal and moderation of new terms and changes to existing terms\n* Views of all existing vocabularies and terms\n* Application deployed at \nvocabulary.wamdam.org\n\n* \nhttps://github.com/WamdamProject/WaMDaM_ControlledVocabularies\n\n\nWaMDaM Wizard\n\n\nA Python-based Graphical User Interface to validate and load water management data mainly from an Excel Template into a SQLite WaMDaM compliant database.\n\n* \nWaMDaM Wizard\n \nBy using the Wizard, users are not expected to understand the underlying WaMDaM database of schema. Users just need to understand how to fit their data into these concepts: ObjectType, Attribute, Instance, Network, and Scenario. \n\n\n\n\nFeedback\n\n\nDo you have feedback on WaMDaM? \nThe Team\n would love to hear from you.\n\nLet us know what interest you in WaMDaM in this \nQuick survey", 
+            "text": "Welcome to the WaMDaM documentations\n\n\nOverview\n\n\nWaMDaM is both an information model and a couple of supporting software ecosystem. WaMDaM tools are designed to organize, identify, and compare multiple systems water management data in a single database. \n\n\nThink of WaMDaM as a repository of water management data (blue cylinder) and a translator between numerous data sources on the left and different models on the right.   \n\n\nWaMDaM translates two aspects of the data: the \nsyntax\n (i.e., structure) and \nsemantics\n (terminology). WaMDaM intends to speed the time to find, organize, and synthesize data from different data sources, and prepare data for modeling.\n\n\n\nWorkflow of using WaMDaM\n\n\nThese are the high level steps to use WaMDaM\n\n\n\nGetting Started\n\n\nThe \nGetting Started\n section guides you how to set up a WaMDaM Wizard and load your data into a SQLite database. \n\n\nApplication and use cases\n\n\nCheck out the \nuse cases\n that demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets \n\n\nInformation Model\n\n\n\n\nView primary \ndocumentation\n for the WaMDaM Information Model* \n\n\n\n\nCross-platform implementations\n\n\nSupport for multiple RDBMS: MS SQL Server, MySQL, PostgreSQL, and SQLite\n\n\nWaMDaM Controlled vocabulary\n\n\nA Python/Django-based web application for managing the WaMDaM controlled vocabularies\n* Online submittal and moderation of new terms and changes to existing terms\n* Views of all existing vocabularies and terms\n* Application deployed at \nvocabulary.wamdam.org\n\n* \nhttps://github.com/WamdamProject/WaMDaM_ControlledVocabularies\n\n\nWaMDaM Wizard\n\n\nA Python-based Graphical User Interface to validate and load water management data mainly from an Excel Template into a SQLite WaMDaM compliant database.\n\n* \nWaMDaM Wizard\n \nBy using the Wizard, users are not expected to understand the underlying WaMDaM database of schema. Users just need to understand how to fit their data into these concepts: ObjectType, Attribute, Instance, Network, and Scenario. \n\n\n\n\nFeedback\n\n\nDo you have feedback on WaMDaM? \nThe Team\n would love to hear from you.\n\nLet us know what interest you in WaMDaM in this \nQuick survey", 
             "title": "Home"
         }, 
         {
@@ -14,6 +14,11 @@
             "location": "/#overview", 
             "text": "WaMDaM is both an information model and a couple of supporting software ecosystem. WaMDaM tools are designed to organize, identify, and compare multiple systems water management data in a single database.   Think of WaMDaM as a repository of water management data (blue cylinder) and a translator between numerous data sources on the left and different models on the right.     WaMDaM translates two aspects of the data: the  syntax  (i.e., structure) and  semantics  (terminology). WaMDaM intends to speed the time to find, organize, and synthesize data from different data sources, and prepare data for modeling.", 
             "title": "Overview"
+        }, 
+        {
+            "location": "/#workflow-of-using-wamdam", 
+            "text": "These are the high level steps to use WaMDaM", 
+            "title": "Workflow of using WaMDaM"
         }, 
         {
             "location": "/#getting-started", 
@@ -107,23 +112,23 @@
         }, 
         {
             "location": "/Team/", 
-            "text": "The WaMDaM Team\n\n\nWaMDaM deveopment has been led by Adel Abdallah for his PhD dissertation at Utah Water Research Lab, Utah State University under the advising of Dr. David Rosenberg.  \n\n\nThe timing, availability of funding, expertise, and passion for WaMDaM development were incredible by all means. We were encouraged by a great interest from national and international scientists and practitioners in standardizing the way we communicate systems water management data.\n\n\nAdel Abdallah\n \n\nPhD Candidate: Systems Analysis Informatics\n\nemail: \n\n\nDavid Rosenberg\n \n\nAssociate Professor: Systems Analysis\n\nemail: David.Rosenberg.edu\n\n\nJeffery Horsburgh\n\nAssistant Professor, Hydroinformatics\n\nemail:  \n \n\n\nColloborators\n\n\nThese people provided valuable feedback and insights into earlier designs,  materials, and informal discussions of WaMDaM design and its software   \n\n\n\n\n\n\nUtah Water Research Laboratory and Utah State University\n \n\nDavid Tarboton, Jeffery Horsburgh, Pabitra Dash, Toney Castronova, Stephanie Reeder     \n\n\n\n\n\n\nUniversity of Manchester, UK\n   \n\nJulien Harou, Stephen Knox, and Philipp Meier\n\n\n\n\n\n\nUniversity of California, Davis\n \n\nJosue Medellin-Azuara, Quinn Hart, Jay Lund\n\n\n\n\n\n\nUniversity of Utah\n \n\nSteve Burian, Erfan Goharian     \n\n\n\n\n\n\nBrigham Young University, Utah\n \n\nDan Ames, Nathan Swain\n\n\n\n\n\n\nUniversity of Massachusetts Amhers\n \n\nDavid Rheinheimer  \n\n\n\n\n\n\nUniversity of Wyoming\n \n\nFred Ogden, Yoshiyuki Zen Igarashi \n\n\n\n\n\n\nDevelopers\n\n\nThese talented people helped in implementing and testing different aspects of the pseudocode of WaMDaM Wizard and the controlled vocabulary system. Stephanie Reeder and Pabitra Dash provided valuable insights into the early design architecture.      \n\n\n\n\nJose Guerrero\n\n\nKevin Larry\n\n\nKwang Yingjien", 
+            "text": "The WaMDaM Team\n\n\nWaMDaM deveopment has been led by Adel Abdallah for his PhD dissertation at Utah Water Research Lab, Utah State University under the advising of Dr. David Rosenberg.  \n\n\nThe timing, availability of funding, expertise, and passion for WaMDaM development were incredible by all means. We were encouraged by a great interest from national and international scientists and practitioners in standardizing the way we communicate systems water management data.\n\n\nAdel Abdallah\n \n\nPhD Candidate: Systems Analysis Informatics\n\nemail: \n\n\nDavid Rosenberg\n \n\nAssociate Professor: Systems Analysis\n\nemail: David.Rosenberg.edu\n\n\nDevelopers\n\n\nThese talented people helped in implementing and testing different aspects of the pseudocode of WaMDaM Wizard and adapting the controlled vocabulary system. Stephanie Reeder and Pabitra Dash provided valuable insights into the early design architecture.    \n\n* Jose Guerrero\n* Kevin Larry\n* Kwang Yingjien \n\n\nFeedback and Input from Colleages\n\n\nThese people in sevend institutions provided valuable feedback and insights into earlier designs and materials, they shared models and datasets, or exchanged informal discussions on WaMDaM design and its software at different stages of its development   \n\n\n\n\n\n\nUtah Water Research Laboratory and Utah State University\n \n\nDavid Tarboton, Jeffery Horsburgh, Pabitra Dash, Toney Castronova, Stephanie Reeder     \n\n\n\n\n\n\nUniversity of Manchester, UK\n   \n\nJulien Harou, Stephen Knox, and Philipp Meier\n\n\n\n\n\n\nUniversity of California, Davis\n \n\nJosue Medellin-Azuara, Quinn Hart, Jay Lund\n\n\n\n\n\n\nUniversity of Utah\n \n\nSteve Burian, Erfan Goharian     \n\n\n\n\n\n\nBrigham Young University, Utah\n \n\nDan Ames, Nathan Swain\n\n\n\n\n\n\nUniversity of Massachusetts Amhers\n \n\nDavid Rheinheimer  \n\n\n\n\n\n\nUniversity of Wyoming\n \n\nFred Ogden, Yoshiyuki Zen Igarashi", 
             "title": "The Team"
         }, 
         {
             "location": "/Team/#the-wamdam-team", 
-            "text": "WaMDaM deveopment has been led by Adel Abdallah for his PhD dissertation at Utah Water Research Lab, Utah State University under the advising of Dr. David Rosenberg.    The timing, availability of funding, expertise, and passion for WaMDaM development were incredible by all means. We were encouraged by a great interest from national and international scientists and practitioners in standardizing the way we communicate systems water management data.  Adel Abdallah   \nPhD Candidate: Systems Analysis Informatics \nemail:   David Rosenberg   \nAssociate Professor: Systems Analysis \nemail: David.Rosenberg.edu  Jeffery Horsburgh \nAssistant Professor, Hydroinformatics \nemail:", 
+            "text": "WaMDaM deveopment has been led by Adel Abdallah for his PhD dissertation at Utah Water Research Lab, Utah State University under the advising of Dr. David Rosenberg.    The timing, availability of funding, expertise, and passion for WaMDaM development were incredible by all means. We were encouraged by a great interest from national and international scientists and practitioners in standardizing the way we communicate systems water management data.  Adel Abdallah   \nPhD Candidate: Systems Analysis Informatics \nemail:   David Rosenberg   \nAssociate Professor: Systems Analysis \nemail: David.Rosenberg.edu", 
             "title": "The WaMDaM Team"
         }, 
         {
-            "location": "/Team/#colloborators", 
-            "text": "These people provided valuable feedback and insights into earlier designs,  materials, and informal discussions of WaMDaM design and its software       Utah Water Research Laboratory and Utah State University   \nDavid Tarboton, Jeffery Horsburgh, Pabitra Dash, Toney Castronova, Stephanie Reeder         University of Manchester, UK     \nJulien Harou, Stephen Knox, and Philipp Meier    University of California, Davis   \nJosue Medellin-Azuara, Quinn Hart, Jay Lund    University of Utah   \nSteve Burian, Erfan Goharian         Brigham Young University, Utah   \nDan Ames, Nathan Swain    University of Massachusetts Amhers   \nDavid Rheinheimer      University of Wyoming   \nFred Ogden, Yoshiyuki Zen Igarashi", 
-            "title": "Colloborators"
+            "location": "/Team/#developers", 
+            "text": "These talented people helped in implementing and testing different aspects of the pseudocode of WaMDaM Wizard and adapting the controlled vocabulary system. Stephanie Reeder and Pabitra Dash provided valuable insights into the early design architecture.     \n* Jose Guerrero\n* Kevin Larry\n* Kwang Yingjien", 
+            "title": "Developers"
         }, 
         {
-            "location": "/Team/#developers", 
-            "text": "These talented people helped in implementing and testing different aspects of the pseudocode of WaMDaM Wizard and the controlled vocabulary system. Stephanie Reeder and Pabitra Dash provided valuable insights into the early design architecture.         Jose Guerrero  Kevin Larry  Kwang Yingjien", 
-            "title": "Developers"
+            "location": "/Team/#feedback-and-input-from-colleages", 
+            "text": "These people in sevend institutions provided valuable feedback and insights into earlier designs and materials, they shared models and datasets, or exchanged informal discussions on WaMDaM design and its software at different stages of its development       Utah Water Research Laboratory and Utah State University   \nDavid Tarboton, Jeffery Horsburgh, Pabitra Dash, Toney Castronova, Stephanie Reeder         University of Manchester, UK     \nJulien Harou, Stephen Knox, and Philipp Meier    University of California, Davis   \nJosue Medellin-Azuara, Quinn Hart, Jay Lund    University of Utah   \nSteve Burian, Erfan Goharian         Brigham Young University, Utah   \nDan Ames, Nathan Swain    University of Massachusetts Amhers   \nDavid Rheinheimer      University of Wyoming   \nFred Ogden, Yoshiyuki Zen Igarashi", 
+            "title": "Feedback and Input from Colleages"
         }, 
         {
             "location": "/Publications/", 
@@ -246,49 +251,69 @@
             "title": "BSD 3-Clause License"
         }, 
         {
-            "location": "/Getting_started/Download/", 
-            "text": "Download\n\n\nWaMDaM Wizard is a desktop data loader from a spreadsheet template to a SQLite database. The SQLite database is created based on the WaMDaM data model. \n\n\n1. Download the WaMDaM Excel Workbook\n\n\nTemplates for Input Data to prepare your data into it. Each dataset into one workbook\n\n\n\n\nDownload\n\n\n\n\n\n\n\n\n2. Download the Wizard GUI\n\n\n\n\n\n\n\n\nChoose one\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExecutable (.exe)\n\n\nDownload\n\n\nDownload\n\n\n\n\n\n\n\n\nInstaller (msi)\n\n\nDownload\n\n\nDownload\n\n\n\n\n\n\n\n\nRun from source code\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSteps to use WaMDaM\n\n\n\n\nWizard info for developers\n\n\n\n\n\n\nHere is the schema that the Wizard works within: \nWaMDaM Schema\n. \n\n\n\n\n\n\nThe Wizard is built using Python 2.7 and the \nwxPython\n GUI library with the help of \nwxFormBuilder\n.  \n\n\n\n\n\n\nWhy WaMDaM Wizard?\n\n\nThe WaMDaM Wizard is an open-source, cross-platform, Python-based graphical user software to interact with WaMDaM database. By using the Wizard, users are not expected to understand the underlying WaMDaM database of schema. Users just need to understand how to fit their data into these concepts: ObjectType, Attribute, Instance, Network, and Scenario. \nThe Wizard mainly allows users to automatically:    \n\n\n\n\n\n\n1.\n Read, validate, and load data from a spreadsheet template in SQLite  \n\n\n\n\n\n\n2.\n Use data preparation tools to help manipulate and transform users data to fit into the spreadsheet template. \n\n\n\n\n\n\n3.\n Import data directly from supported web-services (e.g., time series data from CUAHSI)  \n\n\n\n\n\n\n4.\n Use pre-defined functions to query and compare scenario data from multiple datasets loaded in WaMDaM   \n\n\n\n\n\n\n5.\n Export data loaded into WaMDaM to multiple supported models (in-progress)", 
-            "title": "Download"
+            "location": "/Getting_started/Steps/", 
+            "text": "Getting Started\n\n\nFollow these eight steps in order to install WaMDaM Wizard, populate your data into WaMDaM SQLite database, and implement use cases. \n\n\n1. Install WaMDaM Wizard\n\n\nWaMDaM Wizard is a desktop data loader from a spreadsheet template to a SQLite database. The SQLite database is created based on the WaMDaM data model. \nDownload the software for Windows 7 or 10 64 bit from the table below. You also can find out all the \nWaMDaM_Wizard releases\n on GitHub.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChoose one\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\nExecutable (.exe) [230 MB]\n\n\nDownload\n\n\nGood option if you don't have Admin access to install it\n\n\n\n\n\n\nInstaller (msi) [27 MB]\n\n\nDownload\n\n\nLighter to donwload and probably faster to run\n\n\n\n\n\n\nRun from source code\n\n\n\n\nGood option to debug potential issues and improve it\n\n\n\n\n\n\n\n\nOnce you installed the Wizard, double click at the Wizard's shortcut and this main window should appear.  \n\n\n\n\n2. Connect to SQLite\n\n\nIn WaMDaM Wizard you can either create and connect to a new or existing SQLite database instance on your machine. The Wizard automatically creats a blank WaMDaM SQLite file for you based on WaMDaM data model schema.   \n\n\n3. Prepare your data into Excel\n\n\nFollow the \ninstructions here\n on how to prepare your data into WaMDaM Excel Workbook and register terms with controlled vocabulary. \n\n\n4. Use the Wizard importers\n\n\n\n\nImport from Excel workbooks your prepared in Step 3\n\n\nImporters time series data from CUAHSI\n\n\nImport reservoir related data from the US Reclamation Water Information System. \n\n\n\n\n5. Open the SQLite database\n\n\nUse the SQLite Manager to inspect the loaded data into WaMDaM. If you dont have it, download and install the Mozilla Firefox SQLite Manager Add-on and use it to open the SQLite database file. \nFollow these \nsteps\n here.    \n\n\n6. Execute use case queries\n\n\nUse and adapt queries from WaMDaM use cases and execute them in the SQLite Manager. \n\n\n7. Compare scenarios\n\n\n8. Visualize query results\n\n\nUse and adapt Python scripts to v", 
+            "title": "Steps"
         }, 
         {
-            "location": "/Getting_started/Download/#download", 
-            "text": "WaMDaM Wizard is a desktop data loader from a spreadsheet template to a SQLite database. The SQLite database is created based on the WaMDaM data model.", 
-            "title": "Download"
+            "location": "/Getting_started/Steps/#getting-started", 
+            "text": "Follow these eight steps in order to install WaMDaM Wizard, populate your data into WaMDaM SQLite database, and implement use cases.", 
+            "title": "Getting Started"
         }, 
         {
-            "location": "/Getting_started/Download/#1-download-the-wamdam-excel-workbook", 
-            "text": "Templates for Input Data to prepare your data into it. Each dataset into one workbook   Download", 
-            "title": "1. Download the WaMDaM Excel Workbook"
+            "location": "/Getting_started/Steps/#1-install-wamdam-wizard", 
+            "text": "WaMDaM Wizard is a desktop data loader from a spreadsheet template to a SQLite database. The SQLite database is created based on the WaMDaM data model. \nDownload the software for Windows 7 or 10 64 bit from the table below. You also can find out all the  WaMDaM_Wizard releases  on GitHub.       Choose one   Note      Executable (.exe) [230 MB]  Download  Good option if you don't have Admin access to install it    Installer (msi) [27 MB]  Download  Lighter to donwload and probably faster to run    Run from source code   Good option to debug potential issues and improve it     Once you installed the Wizard, double click at the Wizard's shortcut and this main window should appear.", 
+            "title": "1. Install WaMDaM Wizard"
         }, 
         {
-            "location": "/Getting_started/Download/#2-download-the-wizard-gui", 
-            "text": "Choose one         Executable (.exe)  Download  Download     Installer (msi)  Download  Download     Run from source code", 
-            "title": "2. Download the Wizard GUI"
+            "location": "/Getting_started/Steps/#2-connect-to-sqlite", 
+            "text": "In WaMDaM Wizard you can either create and connect to a new or existing SQLite database instance on your machine. The Wizard automatically creats a blank WaMDaM SQLite file for you based on WaMDaM data model schema.", 
+            "title": "2. Connect to SQLite"
         }, 
         {
-            "location": "/Getting_started/Download/#steps-to-use-wamdam", 
+            "location": "/Getting_started/Steps/#3-prepare-your-data-into-excel", 
+            "text": "Follow the  instructions here  on how to prepare your data into WaMDaM Excel Workbook and register terms with controlled vocabulary.", 
+            "title": "3. Prepare your data into Excel"
+        }, 
+        {
+            "location": "/Getting_started/Steps/#4-use-the-wizard-importers", 
+            "text": "Import from Excel workbooks your prepared in Step 3  Importers time series data from CUAHSI  Import reservoir related data from the US Reclamation Water Information System.", 
+            "title": "4. Use the Wizard importers"
+        }, 
+        {
+            "location": "/Getting_started/Steps/#5-open-the-sqlite-database", 
+            "text": "Use the SQLite Manager to inspect the loaded data into WaMDaM. If you dont have it, download and install the Mozilla Firefox SQLite Manager Add-on and use it to open the SQLite database file. \nFollow these  steps  here.", 
+            "title": "5. Open the SQLite database"
+        }, 
+        {
+            "location": "/Getting_started/Steps/#6-execute-use-case-queries", 
+            "text": "Use and adapt queries from WaMDaM use cases and execute them in the SQLite Manager.", 
+            "title": "6. Execute use case queries"
+        }, 
+        {
+            "location": "/Getting_started/Steps/#7-compare-scenarios", 
             "text": "", 
-            "title": "Steps to use WaMDaM"
+            "title": "7. Compare scenarios"
         }, 
         {
-            "location": "/Getting_started/Download/#wizard-info-for-developers", 
-            "text": "Here is the schema that the Wizard works within:  WaMDaM Schema .     The Wizard is built using Python 2.7 and the  wxPython  GUI library with the help of  wxFormBuilder .", 
-            "title": "Wizard info for developers"
-        }, 
-        {
-            "location": "/Getting_started/Download/#why-wamdam-wizard", 
-            "text": "The WaMDaM Wizard is an open-source, cross-platform, Python-based graphical user software to interact with WaMDaM database. By using the Wizard, users are not expected to understand the underlying WaMDaM database of schema. Users just need to understand how to fit their data into these concepts: ObjectType, Attribute, Instance, Network, and Scenario. \nThe Wizard mainly allows users to automatically:        1.  Read, validate, and load data from a spreadsheet template in SQLite      2.  Use data preparation tools to help manipulate and transform users data to fit into the spreadsheet template.     3.  Import data directly from supported web-services (e.g., time series data from CUAHSI)      4.  Use pre-defined functions to query and compare scenario data from multiple datasets loaded in WaMDaM       5.  Export data loaded into WaMDaM to multiple supported models (in-progress)", 
-            "title": "Why WaMDaM Wizard?"
+            "location": "/Getting_started/Steps/#8-visualize-query-results", 
+            "text": "Use and adapt Python scripts to v", 
+            "title": "8. Visualize query results"
         }, 
         {
             "location": "/Getting_started/PrepareData/", 
-            "text": "Prepare your data\n\n\nWhy Excel?\n\n\nWe chose Excel as a generic input data medium with a custom Excel workbook that has 17 sheets with fixed column headers for the main tables of input data in WaMDaM. Each dataset is prepared to a single workbook one-at-a-time. The sheets are related with each other through dropdown lists to help users for example to relate metadata elements to the attributes and data values\n\n\nThe Wizard maps all the bridge tables\u2019 complex relationships and users do not need to know anything about primary or foreign keys.\n\n\nPreprare data order\n\n\nFirst\n: Load the controlled vocabulary or leave them blank.  \n\nControlled vocabulary are available in the template workbook and users can update them in a button on the workbook\u2019s homepage sheet. The button calls the online registry application user interface and updates the list of vocabularies in the sheet. Then the CVs are available as dropdown lists in each sheet where they apply.  \n\n\nSecond\n: Define metadata that will be used for the Attributes and Instances.   \n\n\nThird\n: Define the data structure of Object Types and Attributes. \n\n\nFourth\n: Add the master network, scenario, and nodes and links. \n\n\nFifth\n: Load data values to each attribute of each Instance. \n\n\nSimple case\n\n\nUsers have to populate at least six sheets for any dataset and they can populate more as the complexity of the dataset increases. In a simple case, the three sheets of Organizations\nPeople, Sources\nMethods, Networks\nScenarios can be populated with only two rows each.", 
+            "text": "Prepare your data\n\n\nDownload the WaMDaM Workbook\n\n\nTemplates for Input Data to prepare your data into it. Each dataset into one workbook\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDonwlaod\n\n\n\n\nUse it for\n\n\n\n\n\n\n\n\n\n\nWaMDaM Workbook Template\n\n\nDownload\n\n\nGeneric template for any data source to WaMDaM\n\n\n\n\n\n\nPrepre shapefile template\n\n\nDownload\n\n\nTransform the shapefile columns into WaMDaM sheets\n\n\n\n\n\n\nPrepare time series template\n\n\nDownload\n\n\nTransform time series data into WaMDaM sheets\n\n\n\n\n\n\nPrepare seasonal data template\n\n\nDownload\n\n\nTransform seasonal data into WaMDaM sheets\n\n\n\n\n\n\n\n\nWhy Excel?\n\n\nWe chose Excel as a generic input data medium with a custom Excel workbook that has 17 sheets with fixed column headers for the main tables of input data in WaMDaM. Each dataset is prepared to a single workbook one-at-a-time. The sheets are related with each other through dropdown lists to help users for example to relate metadata elements to the attributes and data values\n\n\nThe Wizard maps all the bridge tables\u2019 complex relationships and users do not need to know anything about primary or foreign keys.\n\n\nPreprare data order\n\n\nFirst\n: Load the controlled vocabulary or leave them blank.  \n\nControlled vocabulary are available in the template workbook and users can update them in a button on the workbook\u2019s homepage sheet. The button calls the online registry application user interface and updates the list of vocabularies in the sheet. Then the CVs are available as dropdown lists in each sheet where they apply.  \n\n\nSecond\n: Define metadata that will be used for the Attributes and Instances.   \n\n\nThird\n: Define the data structure of Object Types and Attributes. \n\n\nFourth\n: Add the master network, scenario, and nodes and links. \n\n\nFifth\n: Load data values to each attribute of each Instance. \n\n\nSimple case\n\n\nUsers have to populate at least six sheets for any dataset and they can populate more as the complexity of the dataset increases. In a simple case, the three sheets of Organizations\nPeople, Sources\nMethods, Networks\nScenarios can be populated with only two rows each.", 
             "title": "Prepare Data"
         }, 
         {
             "location": "/Getting_started/PrepareData/#prepare-your-data", 
             "text": "", 
             "title": "Prepare your data"
+        }, 
+        {
+            "location": "/Getting_started/PrepareData/#download-the-wamdam-workbook", 
+            "text": "Templates for Input Data to prepare your data into it. Each dataset into one workbook       Donwlaod   Use it for      WaMDaM Workbook Template  Download  Generic template for any data source to WaMDaM    Prepre shapefile template  Download  Transform the shapefile columns into WaMDaM sheets    Prepare time series template  Download  Transform time series data into WaMDaM sheets    Prepare seasonal data template  Download  Transform seasonal data into WaMDaM sheets", 
+            "title": "Download the WaMDaM Workbook"
         }, 
         {
             "location": "/Getting_started/PrepareData/#why-excel", 
@@ -316,6 +341,16 @@
             "title": "Instructions to use the Wizard"
         }, 
         {
+            "location": "/Getting_started/CompareScenarios/", 
+            "text": "Compare Scenarios", 
+            "title": "Compare Scenarios"
+        }, 
+        {
+            "location": "/Getting_started/CompareScenarios/#compare-scenarios", 
+            "text": "", 
+            "title": "Compare Scenarios"
+        }, 
+        {
             "location": "/Getting_started/Best_practices/", 
             "text": "", 
             "title": "Best Practices"
@@ -331,32 +366,32 @@
             "title": "WaMDaM Controlled Vocabularies"
         }, 
         {
-            "location": "/UseCases/Data_Sources/", 
+            "location": "/UseCases/Application/", 
             "text": "Data Sources\n\n\nDemonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets. \n\n\n\n\nFigure 1:\n Flowchart of the steps that users follow to use WaMDaM   \n\n\nApplication: The Bear River Watershed, Utah\n\n\nWe demonstrate the WaMDaM design and use cases using twelve data sources and models in the Bear River Watershed which spans three states, Utah, Idaho, and Wyoming. The Watershed covers an area 3,300 square miles (8,547 square kilometers) and it is the largest source of water to the Great Salt Lake in Utah.     \n\n\nThe Watershed is an interesting one because it has various unique and overlapping available data provided by the three states, the Bear River Commission, national US datasets, and three existing systems models: BRSDM which allocates water based on priority for the upper Bear River Basin, a WEAP model which allocate water on priority, and a WASH model which allocates water to maximum suitable habitat areas in the Lower Bear River.   \n\n\nNote that when developers organize their model\u2019s input data into WaMDaM, models become a new source of data. We select a few locations in the Watershed to demonstrate use cases as each location has data from multiple sources: Stewart Dam site in Idaho, Hyrum Reservoir, Bear River Migratory Bird Refuge, and Cache County in Utah which is a major water use area in the Bear River Watershed.   \n\n\n \n\nFigure 2\n: The Bear River Watershed in the Western US and example available data sources used to demonstrate WaMDaM. Use cases are for the entire watershed, Lower Bear, Cache County. Large stars from top to bottom are for sites referred to in use cases: Stewart Dam site, Hyrum Reservoir, and the Bear River Migratory Bird Refuge. \n\n\nUsed datasets\n\n\nWe loaded twelve different and models into a single WaMDaM database SQLite file. The datasets cover natural and built water supply and demand, infrastructure connectivity, with different data types, networks and scenarios that cover the WaMDaM capabilities. \nEach of the \ndatasets on GitHub\n below is prepared and copied into a WaMDaM Excel workbook. Then we loaded all of them one-at-a-time inton a single SQLite database file.\n\n\n\nTable 1: Summary of example water management datasets used to demonstrate use cases to organize and compare heterogeneous and disparate data sources using WaMDaM \n\n\nDownload the SQLite file and SQLite Manager\n\n\nFollow the \nsteps\n here to use to execute the use cases next\n\n\nUse Cases in the Bear River Watershed, Utah\n\n\nThe following presented use cases help users identify and compare two fundamental aspects of water management data: data values with different types and connectivity of scenarios and networks.  \n\n\nUse case 1\n:\n identify data availability for attributes needed by a model in a study area. \nWhat attributes that have available data to develop a WEAP and WASH models in the Upper Bear River watershed?\n\n\nUse case 2\n:\n identify and compare time series and seasonal discharge data across data sources. \nWhat is the discharge at the node \u201cbelow Stewart Dam\u201d in Idaho?\n\n\nUse case 3\n:\n identify and compare demand data for a site as reported in many sources.\nWhat is the total agriculture water use or demand in Cache Valley, Utah?\n\n\nUse case 4\n:\n identify and compare infrastructure data across many data sources. \nWhat is the volume, purpose, evaporation, and elevation of Hyrum Reservoir Utah?\n\n\nUse case 5\n:\n identify inflow and outflow into and out of a node water system component and compare them across data sources or models.\nWhat is the inflow and outflow of Hyrum Reservoir, Utah? \n\n\nUse case 6\n:\n compare differences in network topology and data values between two model scenarios.\nWhat is the difference in input data between the two scenarios or the Bear River WEAP model?", 
-            "title": "Data Sources"
+            "title": "Application"
         }, 
         {
-            "location": "/UseCases/Data_Sources/#data-sources", 
+            "location": "/UseCases/Application/#data-sources", 
             "text": "Demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets.    Figure 1:  Flowchart of the steps that users follow to use WaMDaM", 
             "title": "Data Sources"
         }, 
         {
-            "location": "/UseCases/Data_Sources/#application-the-bear-river-watershed-utah", 
+            "location": "/UseCases/Application/#application-the-bear-river-watershed-utah", 
             "text": "We demonstrate the WaMDaM design and use cases using twelve data sources and models in the Bear River Watershed which spans three states, Utah, Idaho, and Wyoming. The Watershed covers an area 3,300 square miles (8,547 square kilometers) and it is the largest source of water to the Great Salt Lake in Utah.       The Watershed is an interesting one because it has various unique and overlapping available data provided by the three states, the Bear River Commission, national US datasets, and three existing systems models: BRSDM which allocates water based on priority for the upper Bear River Basin, a WEAP model which allocate water on priority, and a WASH model which allocates water to maximum suitable habitat areas in the Lower Bear River.     Note that when developers organize their model\u2019s input data into WaMDaM, models become a new source of data. We select a few locations in the Watershed to demonstrate use cases as each location has data from multiple sources: Stewart Dam site in Idaho, Hyrum Reservoir, Bear River Migratory Bird Refuge, and Cache County in Utah which is a major water use area in the Bear River Watershed.       Figure 2 : The Bear River Watershed in the Western US and example available data sources used to demonstrate WaMDaM. Use cases are for the entire watershed, Lower Bear, Cache County. Large stars from top to bottom are for sites referred to in use cases: Stewart Dam site, Hyrum Reservoir, and the Bear River Migratory Bird Refuge.", 
             "title": "Application: The Bear River Watershed, Utah"
         }, 
         {
-            "location": "/UseCases/Data_Sources/#used-datasets", 
+            "location": "/UseCases/Application/#used-datasets", 
             "text": "We loaded twelve different and models into a single WaMDaM database SQLite file. The datasets cover natural and built water supply and demand, infrastructure connectivity, with different data types, networks and scenarios that cover the WaMDaM capabilities. \nEach of the  datasets on GitHub  below is prepared and copied into a WaMDaM Excel workbook. Then we loaded all of them one-at-a-time inton a single SQLite database file.  \nTable 1: Summary of example water management datasets used to demonstrate use cases to organize and compare heterogeneous and disparate data sources using WaMDaM", 
             "title": "Used datasets"
         }, 
         {
-            "location": "/UseCases/Data_Sources/#download-the-sqlite-file-and-sqlite-manager", 
+            "location": "/UseCases/Application/#download-the-sqlite-file-and-sqlite-manager", 
             "text": "Follow the  steps  here to use to execute the use cases next", 
             "title": "Download the SQLite file and SQLite Manager"
         }, 
         {
-            "location": "/UseCases/Data_Sources/#use-cases-in-the-bear-river-watershed-utah", 
+            "location": "/UseCases/Application/#use-cases-in-the-bear-river-watershed-utah", 
             "text": "The following presented use cases help users identify and compare two fundamental aspects of water management data: data values with different types and connectivity of scenarios and networks.    Use case 1 :  identify data availability for attributes needed by a model in a study area. \nWhat attributes that have available data to develop a WEAP and WASH models in the Upper Bear River watershed?  Use case 2 :  identify and compare time series and seasonal discharge data across data sources. \nWhat is the discharge at the node \u201cbelow Stewart Dam\u201d in Idaho?  Use case 3 :  identify and compare demand data for a site as reported in many sources.\nWhat is the total agriculture water use or demand in Cache Valley, Utah?  Use case 4 :  identify and compare infrastructure data across many data sources. \nWhat is the volume, purpose, evaporation, and elevation of Hyrum Reservoir Utah?  Use case 5 :  identify inflow and outflow into and out of a node water system component and compare them across data sources or models.\nWhat is the inflow and outflow of Hyrum Reservoir, Utah?   Use case 6 :  compare differences in network topology and data values between two model scenarios.\nWhat is the difference in input data between the two scenarios or the Bear River WEAP model?", 
             "title": "Use Cases in the Bear River Watershed, Utah"
         }, 

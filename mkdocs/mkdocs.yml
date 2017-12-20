@@ -45,13 +45,14 @@ pages:
   - Sponsors and Credit: SponsorsCredit.md
   - License: License.md
   - Getting Started: 
-    - Download: Getting_started/Download.md
+    - Steps: Getting_started/Steps.md
     - Prepare Data: Getting_started/PrepareData.md 
     - Use Wizard: Getting_started/Use_Wizard.md
+    - Compare Scenarios: Getting_started/CompareScenarios.md  
     - Best Practices: Getting_started/Best_practices.md
     - Controlled Vocabulary: Getting_started/controlled_vocabularies.md
   - Use cases:
-    - Data Sources: UseCases/Data_Sources.md
+    - Application: UseCases/Application.md
     - Download: UseCases/Download.md
     - Use case 1: usecases/use_case_1.md
     - Use case 2: usecases/use_case_2.md
