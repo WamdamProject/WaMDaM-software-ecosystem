@@ -3,12 +3,12 @@ Below are lists of all the presentations and publications on WaMDaM products sin
 
 They reflect the progression of ideas and discussions over five years that shaped the final WaMDaM product presented here.  
 
-They also reflect the type and mumber of audiences that WaMDaM was presented to and ultimately benefited from their feedback.    
+They also reflect the type and number of audiences that WaMDaM was presented to and ultimately benefited from their feedback.    
   
  
 ## Peer-reviewed journal articles   
 * Prepared: A New Information Model to Organize, Identify, and Compare Water Management Data
-for Systems Models. Journal of Environmental Modelling and Software  
+for Systems Models. Journal of Environmental Modeling and Software  
 
 * In preparation:
  

@@ -8,9 +8,15 @@ Templates for Input Data to prepare your data into it. Each dataset into one wor
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 
-|Donwlaod|  <i class="fa fa-file-excel-o fa-2x"></i>       |Use it for |
+|Download|  <i class="fa fa-file-excel-o fa-2x"></i>       |Use it for |
 |---| :---------------: |:------------- |
 |WaMDaM Workbook Template  |<a class="github-button" href="https://github.com/WamdamProject/WaMDaM_Wizard/blob/master/WorkbookTemplates/InputData_Template/WaMDaM_InputData_template.xlsm?raw=true" data-icon="octicon-cloud-download" data-size="large" aria-label="Download ntkme/github-buttons on GitHub">Download</a>| Generic template for any data source to WaMDaM|
+
+
+## Data Preparation Utility 
+
+|Download|  <i class="fa fa-file-excel-o fa-2x"></i>       |Use it for |
+|---| :---------------: |:------------- |
 |Prepre shapefile template   | <a class="github-button" href="https://github.com/WamdamProject/WaMDaM_Wizard/blob/master/WorkbookTemplates/Prepare_transform_data_templates/Shapefile.xlsx?raw=true" data-icon="octicon-cloud-download" data-size="large" aria-label="Download ntkme/github-buttons on GitHub">Download</a> |Transform the shapefile columns into WaMDaM sheets |
 |Prepare time series template| <a class="github-button" href="https://github.com/WamdamProject/WaMDaM_Wizard/blob/master/WorkbookTemplates/Prepare_transform_data_templates/Prepare_Pivot_TimeSeries_data.xlsx?raw=true" data-icon="octicon-cloud-download" data-size="large" aria-label="Download ntkme/github-buttons on GitHub">Download</a>|Transform time series data into WaMDaM sheets|
 |Prepare seasonal data template| <a class="github-button" href="https://github.com/WamdamProject/WaMDaM_Wizard/blob/master/WorkbookTemplates/Prepare_transform_data_templates/AllSeaosnalData_templates.xlsx?raw=true" data-icon="octicon-cloud-download" data-size="large" aria-label="Download ntkme/github-buttons on GitHub">Download</a>|Transform seasonal data into WaMDaM sheets|

@@ -23,7 +23,7 @@ Check out the [use cases](/UseCases/Application.md) that demonstrate how WaMDaM 
 
    
 ##  Information Model  
-* View primary [documentation](https://github.com/WamdamProject/WaMDaM_Information_Model) for the WaMDaM Information Model* 
+* View primary [documentation](http://docs.wamdam.org/DesignDocumentation/info_model/) for the WaMDaM Information Model 
 
 
 ## Cross-platform implementations

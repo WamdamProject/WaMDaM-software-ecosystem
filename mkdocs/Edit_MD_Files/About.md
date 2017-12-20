@@ -2,7 +2,7 @@
 The Water Management Data Model (WaMDaM) is a novel method that describes and implements database design and its software to organize and compare systems water resources management data. 
 
 
-## [How to use it?](/Getting_started)
+## [How to use it?](/Getting_started/Steps)
 The WaMDaM Wizard is a desktop data loader from a spreadsheet template to SQLite or MySQL databases
 
 
@@ -11,7 +11,7 @@ It enables users to manage and integrate data: CUAHSI time series data, network 
 
 
 ## [Team](/Team)
-WaMDaM is developed and maintained primarily by Adel Abdallah for his PhD dissertation with the help of a team of professors and developers at Utah State University, Logan, Utah and other institutions nationally and internationally. 
+WaMDaM is developed and maintained primarily by Adel Abdallah for his PhD dissertation. Many professors and developers at Utah State University, Logan, Utah and other institutions nationally and internationally provided feedback. 
 
 ## [Funding](/SponsorsCredit):thumbsup: :heart:
 WaMDaM has been primarily funded by the National Science Foundation.    

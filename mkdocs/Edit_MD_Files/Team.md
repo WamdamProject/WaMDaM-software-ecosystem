@@ -1,27 +1,29 @@
 ## The WaMDaM Team
 
-WaMDaM deveopment has been led by Adel Abdallah for his PhD dissertation at Utah Water Research Lab, Utah State University under the advising of Dr. David Rosenberg.  
+Adel Abdallah has been the lead in WaMDaM development as part of his PhD dissertation at Utah State University under the advising of Dr. David Rosenberg.  
 
 The timing, availability of funding, expertise, and passion for WaMDaM development were incredible by all means. We were encouraged by a great interest from national and international scientists and practitioners in standardizing the way we communicate systems water management data.
 
 [Adel Abdallah](http://rosenberg.usu.edu/students.htm)   
-PhD Candidate: Systems Analysis Informatics  
+PhD Candidate: Systems Analysis Hydroinformatics  
 email: amabdallah@aggiemail.usu.edu
 
 [David Rosenberg](http://rosenberg.usu.edu/)   
 Associate Professor: Systems Analysis  
-email: David.Rosenberg.edu
+email: david.rosenberg@usu.edu
 
 
-## Developers
-These talented people helped in implementing and testing different aspects of the pseudocode of WaMDaM Wizard and adapting the controlled vocabulary system. Stephanie Reeder and Pabitra Dash provided valuable insights into the early design architecture.      
-* Jose Guerrero
-* Kevin Larry
-* Kwang Yingjien 
+
+## Programmers
+These talented people helped in implementing and testing different aspects of the pseudocode of WaMDaM Wizard and adapting the controlled vocabulary system. Stephanie Reeder and Pabitra Dash provided valuable insights into the early design architecture.   
+   
+* Kevin Larry  
+* Kwang Yingjien   
+* Jose Guerrero  
 
 
-## Feedback and Input from Colleages     
-These people in sevend institutions provided valuable feedback and insights into earlier designs and materials, they shared models and datasets, or exchanged informal discussions on WaMDaM design and its software at different stages of its development   
+## Feedback and input from Colleagues     
+These people at seven institutions provided valuable feedback and insights into earlier designs and materials, they shared models and datasets, or exchanged informal discussions on WaMDaM design and its software at different stages of its development   
 
 1. **Utah Water Research Laboratory and Utah State University**   
 David Tarboton, Jeffery Horsburgh, Pabitra Dash, Toney Castronova, Stephanie Reeder     

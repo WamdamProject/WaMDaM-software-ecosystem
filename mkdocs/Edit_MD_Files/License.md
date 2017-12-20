@@ -5,7 +5,7 @@
 
 **Berkeley Software Distribution (BSD)**
 
-Copyright (c) 2017, Adel M. Abdallah and David E. Rosenberg
+Copyright (c) 2018, Water Management Data Model
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
