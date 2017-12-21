@@ -46,7 +46,7 @@ A Python/Django-based web application for managing the WaMDaM controlled vocabul
 Demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets.
  
 *  National and regional used data Sources with a focus on the Bear River Watershed, USA 
-*  Six basic uses cases, their SQL script, results, and discussion
+*  Four basic uses cases, their SQL script, results, and discussion
 
 [9]:https://github.com/WamdamProject/WaMDaM_UseCases
  
