@@ -5,4 +5,7 @@ We designed a Python 2.7-based data loader (WaMDaM Wizard) to auto-read input da
 The WaMDaM Wizard has three demo data utilities to help users prepare time series data, seasonal data, and shapefile for input to WaMDaM. The Wizard can import data directly from WaterOneFlow CUAHSI web-services and WaterML files by the U.S. Bureau of Reclamation (USBOR) Water Information System web service https://water.usbr.gov/. The Wizard can also provide users with automated detailed and summary comparisons of network topology, metadata, and data values between scenarios in the same network. See instructions to use WaMDaM on Windows at http://docs.wamdam.org/Getting_started/Steps/
 
 
+For info on the Wizard architecture, please visit the GitHub repo here.
+https://github.com/WamdamProject/WaMDaM_Wizard#wamdam_wizard-architecture
+
 ![](/DesignDocumentation/images/Wizard_Architecture.jpg)
