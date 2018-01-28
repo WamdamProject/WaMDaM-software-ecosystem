@@ -18,4 +18,4 @@ WaMDaM has been primarily funded by the National Science Foundation.
 
 
 ## [License](/OpenSource)
-WaMDaM is Free! Software and source-code are released under the New Berkeley Software Distribution (BSD) 3-Clause License, which allows for liberal reuse. All source code, use cases, and documentation can be accessed at [WaMDaM.org](https://WaMDaM.org)
+WaMDaM is Free! Software and source-code are released under the New Berkeley Software Distribution (BSD) 3-Clause License, which allows for liberal reuse. All source code, use cases, and documentation can be accessed at [WaMDaM.org](http://WaMDaM.org)

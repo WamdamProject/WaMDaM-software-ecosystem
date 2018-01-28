@@ -1,62 +1,37 @@
 # Use case 3
-**Identify and compare demand data for a site as reported in many sources**   
 
-**Example** 
-What is the total agriculture water use or demand in Cache County, Utah?   
+**How does connectivity of natural and built infrastructure components compare in a particular area across datasets?**   
+
 
 ### Problem  
-Identifying water use and demand data is probably the most difficult task in populating models with data. Likely in part because the source of data is specific to each study area compared to water supply data that are often available from national or regional sources like USGS and BOR. In Appendix B, we identify nine issues that users need to consider while working with and importing demand data into WaMDaM. They provide a better context to the results of the use case.  
+After identifying data values that describe water systems components, researchers must determine how water supply, demand, and other system components are connected to correctly represent components in models. 
 
-### Solution   
-In the use case query, we aggregated and converted demand values to answer the use case question of how much water demand for agriculture in a geo-spatial boundary for Cache County in Utah, controlled attribute name “flow”, and instance category of “Agriculture”. We aggregated the data within the county for each data source and converted the units to acre-feet (Figure 8). The Figure shows data from four different sources: WEAP and WASH models, and the Water Data Exchange database (WaDE) by the Western States Water Council (http://www.westernstateswater.org/wade/). The comparison here intends to show how WaMDaM enables querying all of them together and what each data source has data for. Users then can make an informed decision to choose the aggregation level or site specific demand data to their own model. Users also could possibly incorporate the total values for two equivalent estimates (two top curves) to test a model sensitivity to different demands.   
-
-
-We note that the number of available demand sites within the area is not necessarily an indicator of the demand volume per year but here it may indicate whether the reported value is aggregated from many or comes from one site. In Figure 8, one comparison point is that three models often represent demand as constant through years while the WaDE as new data source, can improve these models by considering variable demand. A second point is that data sources either have data for all the country area like in the WEAP Model 2017 and WaDE. Or they may cover part of the area like in the WASH and WEAP 2010 models based on the locations of the sites in the County compared to the WEAP 2017 model. The first two top curves in Figure 7 are comparable to each other as they cover the whole county in Utah and they have attributes of diverted or delivered water compared to consumptive water as in the third curve (from top) for WaDE. Obviously, the low values of the bottom two curves indicate that both WASH and WEAP 2010 models represent part of Cache County’s demand as their study area and sites do not include all the county.  
-
-Table 1: Key different conceptual terms for demand available in models and data sources
-![](/UseCases/images/DemandTerms.png) 
+### Solution  
+This use case employs the features of controlled vocabularies and the connectivity of nodes and links through networks to help modelers search for water system components and their connectivity across datasets. For example, what links flow into and out of Hyrum Reservoir in the Little Bear River Utah? 
 
 
-All these differences are context specific and require knowledge of them before making comparisons which still make it challenging to correctly interpret data values and compare them. WaMDaM begins to enable such comparisons by organizing all the data sources into one database with mapping of terms through controlled vocabulary. We do not foresee WaMDaM to fully automate how the data is aggregated or grouped in this use case or others. There could be assumptions embedded in how the data is represented and grouped. WaMDaM however documents metadata which could help users more accurately interpret data values. 
+Results show that Hyrum Reservoir supplies two demand sites in the WEAP 2010 model and three different demand sites in the USU WEAP 2017 and WASH models (Figure 9). The latter two models also return flow back into Hyrum Reservoir from Hyrum and Paradise Canals. The WASH model has the same schematic as the USU WEAP 2017 model but uses different labels for its nodes and links (Figure 9-C). Identifying and comparing connectivity between supply and demand sites across datasets can assist molders to more accurately incorporate simplified representations of supply and demand relationships like the WEAP 2010 model or more detailed representations like WEAP 2017 and WASH models into their water allocation models.
+
+WaMDaM here enabled a more readily and consistent method to search for water system components as nodes and links and compare their connectivity across sources. This connectivity aspect of is an important improvement over the existing time series data discovery tools which identifies standalone nodes. With WaMDaM, users can identify how and where water flows from and into nodes. Future software tools may help users visualize and filter the results based on model, scenario, object type and categories. 
+
 
 | Use Case        | Query           | Result  |
 | ------------- |:-------------:| -----:|
-|IdentifyDemandSites     | [Query][3] | [Result][4] csv |
-| Identify Demand Sites Seasonal Values     | [Query][5] | [Result][6] csv |
-| Identify DemandSites Time Series Values     | [Query][7] | [Result][8] csv |
-| Water Rights     | [Query][9] | [Result][10] csv |
-
-
-| Use Case figure       | Python Script   | Interactive figure  |
-| ------------|:----------:| -----:|
-|Figure a     | [script][1] | [Figure][2]  |
+|NumericValues_otherTypes     | [Query][1] | [Result][2] csv |
+|MultiAttributeValues    | [Query][3] | [Result][4] csv |
 
 
 
-![](/UseCases/images/UseCase3.png) 
-Figure 1: Differences in aggregated water demand for Cache County Utah across WEAP and WASH models and the WaDE web-service. Native attribute terms are in quotes. The curves are color coded from dark to light blue to indicate higher to lower overall demand volumes
-
-In addition to demand data, the query also can return water rights data from the WaDE data source under the controlled Object Type “Demand Site” and attribute name of “Flow”. For example, the “WATER RESEARCH LAB. UTAH STATE UNIVERSITY” has two water rights. One of them is 84 AF/Year and 146 cfs for the beneficiary use descriptor value of “Power”. So WaMDaM organizes descriptive and numeric data for water rights.
+![](/UseCases/images/networks.png) 
+**Figure 1**: Schematics of water system node and link components that flow in or out of Hyrum Reservoir for three models in the Lower Bear River Watershed, Utah. Arrows indicate directions of flow. Nodes or links with the same color and shape belong to same controlled Object Type across models.
 
 ### Next  
-After identifying supply and demand data, the next use case identifies data that describe water infrastructure like reservoir bathymetry curves.      
-
-[1]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/6Figures_Python/3.3dentifyDemandSites_TimeSeriesValues.py
-[2]:http://htmlpreview.github.io/?https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/7Figures_HTML/3.3dentifyDemandSites_TimeSeriesValues.html
-
-[3]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/3.1IdentifyDemandSites.sql
-[4]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/3.1IdentifyDemandSites.csv
-
-[5]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/3.2dentifyDemandSites_SeasonalValues.sql
-[6]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/3.2dentifyDemandSites_SeasonalValues.csv
-
-[7]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/3.3dentifyDemandSites_TimeSeriesValues.sql
-[8]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/3.3dentifyDemandSites_TimeSeriesValues.csv
+The next use case allows users to compare similarities and differences in network topology, metadata, and data values between two scenarios of any model in WaMDaM. 
 
 
-[9]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/3.4WaterRights.sql
-[10]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/3.4WaterRights.csv
+[1]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/5.1FindNodeLinkInstances_Hyrum.sql
+[2]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/5.1FindNodeLinkInstances_Hyrum.csv
 
 
-
-
+[3]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/5.2FindNodeLinkInstances_refuge.sql
+[4]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/5.2FindNodeLinkInstances_refuge.csv

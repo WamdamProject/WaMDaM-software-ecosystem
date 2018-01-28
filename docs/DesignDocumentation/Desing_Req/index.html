@@ -591,30 +591,6 @@
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../usecases/use_case_5/" title="Use case 5" class="md-nav__link">
-      Use case 5
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../usecases/use_case_6/" title="Use case 6" class="md-nav__link">
-      Use case 6
-    </a>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -674,22 +650,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#questions" title="Questions" class="md-nav__link">
-    Questions
+  <a href="#use-cases" title="Use cases" class="md-nav__link">
+    Use cases
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#synthesis-of-design-features" title="Synthesis of design features" class="md-nav__link">
-    Synthesis of design features
+  <a href="#synthesized-design-features-and-definitions" title="Synthesized design features and definitions" class="md-nav__link">
+    Synthesized design features and definitions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#features-in-details" title="Features in details" class="md-nav__link">
-    Features in details
+  <a href="#features-definitions" title="Features definitions" class="md-nav__link">
+    Features definitions
   </a>
   
     <nav class="md-nav">
@@ -771,8 +747,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../info_model/" title="Design documentation" class="md-nav__link">
-      Design documentation
+    <a href="../DesignApproach/" title="Design Approach" class="md-nav__link">
+      Design Approach
     </a>
   </li>
 
@@ -821,6 +797,18 @@
   <li class="md-nav__item">
     <a href="../ControlledVocabulary/" title="Controlled Vocabulary" class="md-nav__link">
       Controlled Vocabulary
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../WaMDaM_Wizard/" title="WaMDaM Wizard" class="md-nav__link">
+      WaMDaM Wizard
     </a>
   </li>
 
@@ -887,22 +875,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#questions" title="Questions" class="md-nav__link">
-    Questions
+  <a href="#use-cases" title="Use cases" class="md-nav__link">
+    Use cases
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#synthesis-of-design-features" title="Synthesis of design features" class="md-nav__link">
-    Synthesis of design features
+  <a href="#synthesized-design-features-and-definitions" title="Synthesized design features and definitions" class="md-nav__link">
+    Synthesized design features and definitions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#features-in-details" title="Features in details" class="md-nav__link">
-    Features in details
+  <a href="#features-definitions" title="Features definitions" class="md-nav__link">
+    Features definitions
   </a>
   
     <nav class="md-nav">
@@ -986,56 +974,39 @@
                   <a href="https://github.com/WamdamProject/WaMDaM-software-ecosystem/tree/master/mkdocs/Edit_MD_Files/DesignDocumentation/Desing_Req.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="design-requirements-synthesis-of-prior-approaches">Design Requirements: Synthesis of Prior Approaches<a class="headerlink" href="#design-requirements-synthesis-of-prior-approaches" title="Permanent link">&para;</a></h1>
-<h2 id="questions">Questions<a class="headerlink" href="#questions" title="Permanent link">&para;</a></h2>
-<p>We identified six different example use cases to guide the design of WaMDaM, demonstrate its capabilities, and define its objectives. The use cases focus on a user’s perspective where each one is standalone but they complement each other. The use cases, although not inclusive to all possibilities, represent an attempt to cover important and key aspects of the domain of models’ data requirements, supply, demand, and infrastructure, connectivity, and scenario comparisons. We draw details on the current practices and use cases to organize data from literature, from our research group experience, and informal conversations with collaborators and stakeholders.   </p>
-<p>The overarching goal of the use cases is to demonstrate how WaMDaM as a one method enables systematic data query and comparisons across multiple different models and datasets. The ability to perform systematic comparisons across overlapping datasets in a study area is fundamental to data analysis (Caramani, 2009). We provide the use cases in the form of specific questions as examples to avoid abstraction, but they are intended in principle to apply to other models, attributes, and components as we explain throughout the paper and in Section 4. The specificity here applies to example models and systems components in a selected study area within any selected geo-spatial boundary as discussed later. </p>
-<p><strong>The use cases are:</strong>  </p>
+                <h1 id="design-features">Design features<a class="headerlink" href="#design-features" title="Permanent link">&para;</a></h1>
+<p>We synthesized the design requirements (features, hereafter) from prior approaches in Section 2 with a focus on enabling the key steps to analyze and synthesize data for a water systems model in four use cases.</p>
+<h2 id="use-cases">Use cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h2>
+<p>Water resources modelers and researchers seek to solve integrated water management problems in an area of interest (Brown et al., 2015). They select a modeling tool or develop a new one to solve simulation or optimization water management problems in a study area within a scope like as hydro-economic (Harou et al., 2009), hydro-ecologic (Alminagorta et al., 2016), or priority-based allocation (Sehlke and Jacobson, 2005). Then modelers search among available datasets for input data the model needs in their study area. Having obtained some data, the modeler next needs to determine which datasets and values to use in their model. The molders also need to identify how natural and engineered system components are connected and flow directions among components. Modelers often create modeling scenarios to represent different physical, operation, and socio-economic representations in a systems model. Modelers then seek to identify and communicate differences for changes in network topology, metadata, and data values between the scenarios. We identified four use cases that cover these data query, comparison, and model building activities (Heumann, 2008). </p>
+<p>The use cases are formed by four questions that motivate a WaMDaM design to enable them given that none of the prior approaches has the capability to consistently answer all of them altogether. </p>
 <ol>
-<li>
-<p>What are the data availability in WaMDaM database for attributes needed to develop a WEAP and WASH models in the Bear River Watershed, USA?</p>
-</li>
-<li>
-<p>What is the water supply flow at the site below Stewart Dam in Idaho?</p>
-</li>
-<li>
-<p>What is the water demand for agriculture in Cache County, Utah?</p>
-</li>
-<li>
-<p>What are the purpose (s), volume and elevation curve of Hyrum Reservoir, Utah? what is the source of data?</p>
-</li>
-<li>
-<p>What are the natural and built infrastructure that are connected to Hyrum Reservoir, Utah?</p>
-</li>
-<li>
-<p>What are the differences in network topology, metadata, and input data between the two scenarios within the WEAP and BRSDM Bear River models?</p>
-</li>
+<li>What data are available to develop a model in a particular watershed?</li>
+<li>How do data values for properties of system components differ across datasets? </li>
+<li>What differences are there across datasets in connectivity of natural and built infrastructure components in a particular area? </li>
+<li>What differences are there in network topology, metadata, and input data between two scenarios of a model instance?</li>
 </ol>
-<p>Answering these questions using the existing methods requires many datasets, manual data manipulations that often cannot be reused for other datasets, and thus takes considerable effort and time. Satisfying these use cases is the top design priority while other potential different use cases can be addressed in future work based on users’ experiences. Next we elaborate on our methodology in revering existing systems as a basis to synthesize their strengths into a WaMDaM design. </p>
-<h2 id="synthesis-of-design-features">Synthesis of design features<a class="headerlink" href="#synthesis-of-design-features" title="Permanent link">&para;</a></h2>
-<p>Reviewing existing data management systems like the mentioned above revealed that they support one or some of the features that would allow water managers to organize and compare water management data across multiple sources and models, but no existing method supports all features (Table 1)</p>
-<p>Together, the following eight features can constitute design requirements for a new information model to organize water management data for multiple datasets and models. First, the new method needs to support different water resources systems components that are used in water management models like hydrology, infrastructure, and demand sites as reusable modules or sets of systems components. Second, the method must represent connectivity and interactions between components in space through networks of nodes and links as used in systems modeling. Third, the method must support scenarios that track topologic and data values changes in networks. Fourth, it must support multiple data types that are used in systems modeling like time series and multidimensional arrays. Fifth, it must use consistent contextual metadata to unambiguously interpret data values. Sixth, it must use controlled vocabulary to relate inconsistent terms across data sources and models. Seventh, it must enable conditional data queries to access and compare subsets of data and metadata, and eighth, the method must be developed in an open-source software environment. </p>
-<p><strong>Table 1:</strong> The identified requirements that are supported by select data systems and water resources models for a method to organize and prepare data for multiple datasets and models. An “x” indicates that the feature is supported. WaMDaM is designed to support all of the features
+<h2 id="synthesized-design-features-and-definitions">Synthesized design features and definitions<a class="headerlink" href="#synthesized-design-features-and-definitions" title="Permanent link">&para;</a></h2>
+<p>To answer the use case questions, a new information model must have eight design features that are supported partially in existing systems. Supporting all eight features intends to enables users to systematically query and compare; data availability for models, data values, network connectivity, and scenarios to assist modelers in preparing data for building models. </p>
+<p><strong>Table 1:</strong> The identified requirements (i.e., features) that are supported by select data systems and water resources models for a generalized method to organize water management data. An “x” indicates that the feature is supported. WaMDaM is designed to support all of the features. 
 <img alt="" src="../images/synthesis.png" />           </p>
-<h2 id="features-in-details">Features in details<a class="headerlink" href="#features-in-details" title="Permanent link">&para;</a></h2>
+<h2 id="features-definitions">Features definitions<a class="headerlink" href="#features-definitions" title="Permanent link">&para;</a></h2>
 <h3 id="feature-1">Feature 1<a class="headerlink" href="#feature-1" title="Permanent link">&para;</a></h3>
-<p>Representing multiple systems components like reservoirs and demand sites in reusable data modules would allow researchers to define water system components as objects (i.e., classes) with properties to describe their qualitative or quantitative data (Connolly and Begg, 2010; Wurbs, 2012; Zagona et al., 2001). This representation would then allow users to reuse or add new objects to their model, which makes it an extensible data model design (Connolly and Begg, 2010; Goodall et al., 2011; Kokkonen et al., 2003; Pokorný, 2006). Most of the reviewed systems and water management models have this modular design but often it is limited to a pre-defined set of supported object types. Thus having a modular and extensible design would allow adding or removing modules based on each model’s data need. </p>
+<p>The first feature represents multiple system components (e.g., reservoirs, demand sites, canals) in reusable data objects (i.e., classes or modules) with properties or attributes to describe their qualitative or quantitative data (Connolly and Begg, 2010; Wurbs, 2012; Zagona et al., 2001). This modular representation allows users to reuse existing objects and their attributes or add new ones to satisfy the extensible use (Connolly and Begg, 2010; Goodall et al., 2011; Kokkonen et al., 2003; Pokorný, 2006). Most existing data systems and water management models have modular designs but often modularity is limited to a pre-defined set of supported object types. </p>
 <h3 id="feature-2">Feature 2<a class="headerlink" href="#feature-2" title="Permanent link">&para;</a></h3>
-<p>In the second feature, networks connect node and link representations of systems components in two dimension in space. We use the notion of node as equivalent to a junction or point, and a link as equivalent to arc, connection, curve, line, or an edge as used in different software (HydroLogics, 2009; Rossman, 2000; Zeiler, 1999). Vertex is a type of node that changes the spatial layout of a link but keeps it as one link. Networks help users to organize and then search groups of system components that are related for a purpose (e.g., flow of water through connected pipes) for a particular domain (e.g., drinking water supply) in a specific spatial boundary (Loucks et al., 2005). Most of the reviewed systems support creating instances of their object types, and adding links that connect nodes but it is out of the scope of some models.</p>
+<p>The second feature represents the spatial configuration of system components as networks of nodes (junctions or points) and links between nodes (arcs, connections, curves, lines, or edges of a directed graph) (HydroLogics, 2009; Rossman, 2000; Zeiler, 1999). Networks help users to organize and then search groups of system components that are related for a purpose (e.g., flow of water through connected pipes) for a particular domain (e.g., drinking water supply) in a specific spatial boundary (Loucks et al., 2005). Most the existing data systems support this feature but they use different structures to manage the connectivity of nodes and links. </p>
 <h3 id="feature-3">Feature 3<a class="headerlink" href="#feature-3" title="Permanent link">&para;</a></h3>
-<p>Scenarios track changes in networks for a specific physical, operation, and socio-economic configuration of a systems model which are like versions of the network and its data. A scenario represents one or more of potentially three changes to a network: i) change in topology like adding or removing an infrastructure component, ii) change in metadata like changing a method or data source of an attribute values, iii) or changing data values for one or more component attributes. Many of the reviewed systems have the ability to support scenarios but none of them support the three identified types of scenarios changes. </p>
+<p>The third feature supports scenarios that represent many physical, operation, and socio-economic configurations of a systems model for current and proposed water management alternatives. These scenarios track or version control changes in the baseline networks and data values. A scenario represents one or more of potentially three changes to a network: i) change in topology like adding or removing an infrastructure component, ii) change in metadata like changing a method or data source of an attribute values, iii) or change data values for one or more attributes of a component. Many of the existing systems support scenarios but no systems support all the three scenario changes. </p>
 <h3 id="feature-4">Feature 4<a class="headerlink" href="#feature-4" title="Permanent link">&para;</a></h3>
-<p>Metadata provides ancillary information to help interpret data values of components’ attributes. Metadata also helps users maintain the data provenance that is needed to track the history and context of data of  i) sources, ii) methods, iii) people and iv) organizations that contributed to create a data value (Campbell et al., 2013; Carata et al., 2014; DCMI, 2013; Goodman et al., 2014; Gray et al., 2005; Horsburgh et al., 2008; Pokorný, 2006). Most of the reviewed systems support adding some metadata but often it is either completely optional or not supported explicitly under those four categories. </p>
+<p>The fourth metadata feature provides ancillary information to help users interpret data values of component attributes. Metadata also helps users maintain the data provenance that is needed to track the history and context of i) sources, ii) methods, iii) people, and iv) organizations that contributed to create a data value (Campbell et al., 2013; Carata et al., 2014; DCMI, 2013; Goodman et al., 2014; Gray et al., 2005; Horsburgh et al., 2008; Pokorný, 2006). Separating metadata elements for water management data improves prior approaches that represented them in one table that accept user-specified field-value metadata pairs like in HydraPlatform (Meier et al., 2014) and HarmoniRib (Refsgaard et al., 2005) and are more difficult  to directly query, access, and synthesize. Most of the reviewed systems support adding some metadata but often metadata is either optional or not supported explicitly under those four categories. </p>
 <h3 id="feature-5">Feature 5<a class="headerlink" href="#feature-5" title="Permanent link">&para;</a></h3>
-<p>Controlled vocabularies (CVs) are often a set of agreed upon terms for attributes with definitions that users can use to relate with synonyms across data sources for different networks (Laniak et al., 2013). The only common CVs system that exists for the water resources community was proposed in the ODM and then adopted by CUAHSI. <a href="http://his.cuahsi.org/mastercvreg/cv11.aspx">http://his.cuahsi.org/mastercvreg/cv11.aspx</a>). Relating water management datasets at a basic level would need controlling the Object Type, Attribute Name, and Instance Name. The CUAHSI CVs supports two main types of CVs that would overlap with WaMDaM. The Site Type in CUAHSI is equivalent to Object Type in WaMDaM and the Variable Name is equivalent to Attribute Name in WaMDaM. The water management terms in datasets and models for Object Types and Attributes can be more specific than what is used for observational purposes in CUAHSI. For example, CUAHSI has one CV Site Type term for “Lake, Reservoir, Impoundment” where in water management, each of the sub names in the term has different purpose in the context of water management. WaMDaM uses “attribute” as it extends beyond the often quantitative time series data as in CUAHSI to include qualitative of descriptive data as explained later in Section 3. One additional CV type that is needed in WaMDaM is the ability to control the Instance name which is equivalent to the uncontrolled field in CUAHSI for site code. Later we suggest expanding the CUAHSI CVs system to support water management terms. </p>
+<p>The fifth feature supports multiple data types that modelers use to represent physical, operational, and descriptive attributes of system components: time series, multi attribute series (i.e., arrays or multi-columns), numeric and descriptor parameters, seasonal parameters, and categorical values. An attribute may apply to all network components as one global attribute or to individual components. For example, a time series of inflow applies to one reservoir component while a second time series of evaporation applies to all reservoirs in the network. Many existing systems support a few data types but store them in binary objects and do not describe data with metadata.  The WaMDaM multiple data types feature allows users to store and access different types of data values for properties of systems components.  </p>
 <h3 id="feature-6">Feature 6<a class="headerlink" href="#feature-6" title="Permanent link">&para;</a></h3>
-<p>Data of systems modeling often consist of multiple types that represent physical, operational, and descriptive attributes of components: time series, multi attribute series (i.e., arrays or multi-dimensions), numeric and descriptor parameters, seasonal parameters, and binary dual values (Table 2). We keep in mind that an attribute may apply to all the network components as one global attribute or to each, one-at-a-time as local attribute to one component. For example, a time series of inflow applies to one reservoir component while the same time series of evaporation applies to all the reservoirs in the network. We selected those prominent data types for our use cases and we recognize there are more complex data types for future work like rules or formulas which associate multiple attributes with mathematical symbols. These data types are not exhaustive of what is used in systems models but they satisfy the identified use cases and data sources and models in this study. We require the design to be flexible to address adding or removing data types. Many of the reviewed systems support these data types but they fall short in other design requirements of having structured metadata to describe them. They may also have limited ability to readily allow users a conditional query and access all the data values. One significant improvement WaMDaM would contributes over the CUAHSI data system is the ability to organize multi attribute series or arrays which are pervasive in water management data. </p>
-<p>Table 2: Selected data types, their definitions, and examples in water resources systems models
-<img alt="" src="../images/dataTypes.png" />           </p>
+<p>The sixth feature provides controlled vocabularies (CVs) as sets of suggested optional terms with definitions for object type, attributes, and names of nodes and links to encourage users to relate and retain their native terms across data sources (Laniak et al., 2013). The CUAHSI CVs system (<a href="http://his.cuahsi.org/mastercvreg/cv11.aspx">http://his.cuahsi.org/mastercvreg/cv11.aspx</a>) provides a list of controlled terms for hydrology related observations. </p>
 <h3 id="feature-7">Feature 7<a class="headerlink" href="#feature-7" title="Permanent link">&para;</a></h3>
-<p>Conditional data queries support the loading and retrieval of subsets of data based on selected water system components, attributes, metadata, networks, scenarios, and data types in space and time, without the need for a third party software. Thus, conditional queries enable users to query, synthesize, and compare subsets of water management data and use them in models. Many of the reviewed systems have built-in functionality which limits the ability to freely query and compare data across the elements above. As mentioned in the next section, we choose the relational database theory for WaMDaM, in part to enable conditional data queries.  </p>
+<p>The seventh feature supports conditional data queries to allow users to load and retrieve subsets of data based on selected water system components, attributes, metadata, networks, scenarios, and data types in space and time without the need for a third-party software. Many data systems have built-in functionality, which limits the ability to freely query and compare subsets of data and metadata. Supporting conditional queries allows users to query, synthesize, and compare subsets of water management data and use retrieved data in models. </p>
 <h3 id="feature-8">Feature 8<a class="headerlink" href="#feature-8" title="Permanent link">&para;</a></h3>
-<p>We commit to using WaMDaM in a free and open-source software environment and publish its source-code in GitHub. Meeting this eighth requirement will allow liberal use of the code, promote reproducibility, and help others further advance the method (Easterbrook, 2014; Gil et al., 2016; Goodman et al., 2014).</p>
+<p>The eighth feature uses free and open-source software and requires publishing the source-code in GitHub to allow liberal use of the code, promote reproducibility, and help others further advance the method (Easterbrook, 2014; Gil et al., 2016; Goodman et al., 2014). Many existing data systems are proprietary, require specific tools to access their data, source-code is not available, and there is limited documentation. </p>
+<p>These eight features are incompletely supported by existing methods. Supporting all eight features enables users to systematically query and compare; data availability for models, data values, network connectivity, and scenarios to assist modelers in preparing data for building models. The next section describes how WaMDaM is implemented to support these eight described data features to enable integrated data analysis for modeling through the four identified use cases.</p>
                 
                   
                 
@@ -1054,7 +1025,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../usecases/use_case_6/" title="Use case 6" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../usecases/use_case_4/" title="Use case 4" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1063,19 +1034,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Use case 6
+                Use case 4
               </span>
             </div>
           </a>
         
         
-          <a href="../info_model/" title="Design documentation" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../DesignApproach/" title="Design Approach" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Design documentation
+                Design Approach
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1091,7 +1062,7 @@
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2017 Adel M. Abdallah
+            Copyright &copy; 2018 Adel M. Abdallah
           </div>
         
         powered by

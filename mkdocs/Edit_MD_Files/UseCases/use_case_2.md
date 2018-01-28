@@ -1,34 +1,32 @@
 # Use case 2
 
-**Identify and compare time series and seasonal discharge data across data sources** 
-
-**Example**   
-What is the discharge at the node “below Stewart Dam” in Idaho?   
+**What differences are there across datasets in the data values of properties of a water system component?** 
 
 ### Problem  
-Water supply data for systems models whether in streams or storage systems are often organized in separate and different files and require specific methods to identify and relate similar ones. 
-
+Once modelers have identified the data available for a modeling study, next they need to determine which datasets and values to use in their model. Modelers often use many data management methods to query, manipulate, and join different water management data types (e.g., time series, multi-column arrays) to analyze and prepare them for systems models. Modelers also manually search for descriptive metadata stored separately in many files like PDF documents or HTML pages.   
 
 ### Solution   
-In this example, we identify discharge data “below Stewart Dam” in Idaho which marks the legal beginning of the Lower Bear River Division according to the Bear River Compact and has data from many sources (Bear River Commission, 1980). Here we use the controlled node instance name of “USGS 10046500 BEAR RIVER BL STEWART DAM NR MONTPELIER, ID” and the controlled attribute name of “Flow” to identify all data that exist for it in the WaMDaM database. The query returns time series and seasonal data types from five different datasets which all loaded in WaMDaM database earlier. They are reported by the states of Idaho, Utah, USGS, Bear River Commission, and the Bear River Systems Dynamics model. Each data source has its own native term for the node instance and the attribute (Table C in the Appendix).   
+This use case shows how a modeler can use WaMDaM’s multiple data types, controlled vocabularies, conditional queries, and metadata design features to both query and compare values across datasets.
+ We query and compare results for 1) time series and seasonal streamflow below Stewart Dam, Idaho, 2) water use in Cache Valley, Utah, 3) storage elevation curves for Hyrum Reservoir in Utah, and 4) dam height, hydropower purpose, and number of generators for Flaming Gorge and Shasta Reservoirs.  
 
+### Use Case 2.1  
+**What differences are there across datasets in flow data values below Stewart Dam in Idaho?**   
 
-We first discuss the time series data then we compare how well the seasonal monthly data represent flows in the site. For time series, the datasets have different aggregation statistics (e.g., cumulative monthly, average monthly or daily) and intervals and time extent. They also come in calendar and water year types. Besides the different native terms, some of them use terms that have different conceptual meaning like using the “Storage/delivered volume” in the Utah to describe the discharge. The Bear River commission only reports data from Mid-April to end of September. So April is excluded here to compare full month values.    
+ Use Case 1 identified four flow datasets available for the site below Stewart Dam in Idaho. These datasets were identified using the controlled node instance name “USGS 10046500 BEAR RIVER BL STEWART DAM NR MONTPELIER, ID” and the controlled attribute name “Flow”. The datasets are maintained by USGS, Utah Division of Water Resources (UDWR), Idaho Department of Water Resources (IDWR), and the Bear River Commission (Figure 5-A). We use the time series metadata: attribute unit, year type, aggregation statistic, and aggregation interval unit to aggregate and convert all the time series datasets into a comparable cumulative monthly flow in acre-feet in calendar years. The field Year Type (Section 4.2) allowed us to correctly shift years to the same calendar year that started January 1.  
+ 
+The resulting traces span 92 years from 1923-2015 and show most datasets are identical except for a few discrepancies in 1996 and 1999 (Figure 5-B). Metadata shows that the PacifiCorp power company collected streamgage data before and after USGS record. PacifiCorp shares raw data (not available to us) with each state that states then interpolates values if data is missing. The IDWR flagged deviated data values for potential errors while the UDWR interpolated missing values. This data discrepancy underscores the importance of comparisons and using source, method, and organizations, and time series contextual metadata to convert and interpret data values for each flow data and help users choose a time series for this site like the UDWR dataset with the longest record. 
+ 
 
-
-Many of these important properties of each time series were not reported along with data values except the USGS dataset. Learning about and reporting them into WaMDaM was a laborious task that involved emailing and calling the potentially in-charge people about the metadata. Now, we use SQL to aggregate and convert all the time series data with some overlap given their different unit, year type, and aggregation statistic and aggregation interval unit (Figure 6-A). Users typically have to do these data manipulations for each study area. When they use WaMDaM, they now can reuse them for many sources. Here, the data from multiple sources complement each other, the Utah Division of Water Resources (UDWR) has the longest record and continues with other sources after the USGS sites ends in 1993. From personal communications with the Idaho Department of Water Resources, we learned that the PacifiCorp power company took over the Stewart gage after the USGS discontinued it. PacifiCorp sends the data to the Bear River Commission, Utah, and Idaho. The UDWR mentioned that the PacifiCorp measured flow before the USGS.   
-
-
-Many of these important properties of each time series were not reported along with data values except the USGS dataset. Learning about and reporting them into WaMDaM was a laborious task that involved emailing and calling the potentially in-charge people about the metadata. Now, we use SQL to aggregate and convert all the time series data with some overlap given their different unit, year type, and aggregation statistic and aggregation interval unit (Figure 6-A). Users typically have to do these data manipulations for each study area. When they use WaMDaM, they now can reuse them for many sources. Here, the data from multiple sources complement each other, the Utah Division of Water Resources (UDWR) has the longest record and continues with other sources after the USGS sites ends in 1993. From personal communications with the Idaho Department of Water Resources, we learned that the PacifiCorp power company took over the Stewart gage after the USGS discontinued it. PacifiCorp sends the data to the Bear River Commission, Utah, and Idaho. The UDWR mentioned that the PacifiCorp measured flow before the USGS.   
-
-
-
-Given the similarities, differences, and overlap in data as in Figure 6, a simple question here is which dataset to use as an input for water supply in a potential model. Here we discuss the differences among the datasets and offer a potential suggestion on which one to use. First, the years between 1942 and 1993 are overlapped and reported data average monthly data for the USGS and UDWR datasets. Both of them found to have the same average and standard deviation to one decimal point of 1035.8 and 2927.8 acre-feet of cumulative acre-feet per month. Note that the UDWR is orginally reported as monthly acre-feet where the USGS is reported as daily cfs. Given the accurcy of the UDWR data in comparion with the USGS in the overlappped period, we are confendent to use the UDWR for the period prior the USGS recored back to 1920.    
-
-
-On the other hand, there are three datasets with time series data for the period after 1993 when the USGS period ends. The three overlapping data sources seems to report the same values until their end in 2015 except the descrepency in the years 1996-1997 (Figure 1-B). Our contact at the UDWR mentioned that they use correlation where data did not exist and they are aware of some resonlable discrepancy. Our contact at the IDWR mentioned that their daily data values between October 1995 and April 1996 seemed to be in interpolated. It is unlcear what happen that year and why that is the case but the expert suggested flagging the data for potneial errors. She also suggested that small discrepancies between the three data sourcs are likely differences between preliminary and final gage data from PacifiCorp. She also pointed out that the Idaho dataset is a part of the water rights accounting program and is a tool used to help watermasters regulate the river in priority according to the water rights. She mentioned that because irrigation regulation doe not occur in that October to April time frame, it appears that the winter data was not necessarily reviewed properly. Note that out contact was not working at the IDWR during that time period. This example data descripnacy issue underscores the importance of contexual metadata that can be used to interpret data values over time. We suggest using the UDWR dataset given the confidence in its accuracy previously with the USGS dataset. The integration of the four datasets in WaMDaM is proved valuable to compare them and make an informed decision on which one to use as input to a model.    
-
-## Scripts   
+![](/UseCases/images/UseCase2.1-a.png) 
+**Figure 1:** Compiled time series data of flow below Stewart Dam, Idaho reported by different agencies over time. [A] 1923 to 2015 and [B] a six-year window that highlights similarities and discrepancies among sources.   
+ 
+Flow data in water management datasets also exist in derived seasonal form and modelers may use them as input to models. The same query also returned seasonal data from a fifth source, the BRSDM model, which has three scenarios for monthly flow (dry, normal, and wet) for the same Stewart Dam site (Figure 6-A). The BRSDM model respectively reported average flows for June as 666, 2,506, and 17,181 acre-ft/month for dry, normal, and wet years. The model materials did not document how seasonal monthly values were derived. But by comparing results to June flow values in the longest UDWR time series record (1923 to 2015) we estimated  the dry and wetter flow scenarios have 48% and 3% probabilities of exceedance (Figure 6-B). These results can help define more representative flow values for models with seasonal-based analysis. 
+ 
+  
+![](/UseCases/images/UseCase2.1-b.png) 
+**Figure 2:** [A] Average monthly flow data at Below Stewart Dam site (same site in Figure 5). Color coded from light to dark blue for dry, normal, and wet year scenarios. [B] A cumulative distribution of the all June flow data in the Utah UDWR dataset to evaluate how well the dry and wet years represent the historic record peak flows. 
+ 
+**SQL scripts and results**   
 
 | Use Case        | Query           | Result  |
 | ------------- |:-------------:| -----:|
@@ -48,14 +46,6 @@ To run the Python script, you need to be connected to the internet. The script r
 
 
 
-![](/UseCases/images/UseCase2a.png) 
-Figure 1: [A] Compiled time series data of flow at Below Stewart Dam site in Idaho as reported by four different agencies at overlapping times. [B] A snapshot of [A] that shows the similarity and discrepancy among three sources later 1994 to 2000. 
-
-For seasonal data, the BRSDM model used three scenarios for monthly flow (dry, normal, and wet) for the same site (Figure 7-A). Most of the months across the three scenarios have largely similar values except June and July as they represent the peak flow. We offer this simple comparison example that intends to improve how the BRSDM model could represent monthly peak flows given the extended flow recorded that possibly was not available to the model developers at the time. We compare how likely the dry and wet flow threshold for June as defined in the seasonal parameter to be exceeded with drier or wetter years based on the 92 years of record flow data in the UDWR dataset that spans 1923 to 2015. Using the cumulative distribution function for the flow data in June, there is 48% chance the flow will be lower than “dry” year threshold of 666 acre-ft per month with a magnitude down to 10 times lower than this max value (in June 1977 of 62 acre-ft per month). There also 3% chance the flow will be higher than the “wet” threshold of 17,181 acre-ft per month with a magnitude up to 7 times this max value (June 1923 of 117,000 acre-ft per month) (Figure 2-B). We recognize that a different value or range of the threshold could be used to define what is dry or wet for comparisons. However, we just use the simple one above as an example of the type of comparisons that are enabled as many of both time series and seasonal data types are organized in WaMDaM. We note that the method to assign the seasonal monthly values for each scenarios was not documented in the model.   
-
-
-Here we suggest three potential ways to improve the values of seasonal model that consider the above identified exceedance likelihood. First, keep it as is but report the percentile values as a limitation to it and the likely of exceeding it as dryer or wetter years to better inform the model results. Second, change the average dry, normal, wet values based on selected consistent percentiles. For example, select 10 percentile of dry, 50 percentile for normal, and 90 percentile for wet year. Third, add extreme condition scenarios like extreme dry of 1 percentile and extreme wet of 99 percentile. This comparison is just a one potential example that is enabled by organizing and then identifying both seasonal and time series data using one consistent method.
-
 
 **Python 2.7 script to plot figures of use case**   
 To run the Python script, you need to be connected to the internet. The script reads its data from the csv files hosted on GitHub.  
@@ -65,17 +55,11 @@ To run the Python script, you need to be connected to the internet. The script r
 |Figure A     | [script][9] | [Figure A][13]  |
 |Figure B     | [script][10] | [Figure B][14] |
 
-
-![](/UseCases/images/UseCase2b.png) 
-Figure 2: [A] Seasonal of average monthly flow data at Below Stewart Dam site (same site in Figure 6). Each month here applies to a wet, normal, and dry year categories irrespective of which calendar year. [B] A cumulative distribution of the all June flow data in the Utah UDWR dataset to evaluate how well the dry and wet years represent the historic record peak flows.  
+ 
 
 
-Existing time series data management methods like the Observation Data Model can already organize the different time series data used here. WaMDaM here can organize and compare this time series data long with other types used in water management especially seasonal data. Documenting how seasonal data is derived through metadata is a practice that WaMDaM is designed to support. One additional aspect of WaMDaM that users could benefit from is the use of Boolean values that indicate binary or dual state of node or link instance. For example, searching for the “status” controlled attribute at the same site returns that this site as in the Idaho Dataset is reported as “active” or “inactive” in the USGS dataset.    
 
-
-With this example to choose a controlled term for the instance name, we recognize that defining a specific and descriptive node or link instance name in a watershed, national, or worldwide could be challenging. This is because of the large number of infrastructure instances that could reach thousands or even millions. So there is a need for a robust method to name and organize a potentially growing controlled instance names. The method could benefit from the USGS convention of naming their gage stations that include the institution, site code, name and nearby town or and state. 
-
-### Next   
+**Next**   
 This use case demonstrated organizing water supply data, the next use case demonstrates organizing and comparing water demand data from multiple sources. 
 
 
@@ -99,3 +83,132 @@ This use case demonstrated organizing water supply data, the next use case demon
 [12]:http://htmlpreview.github.io/?https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/7Figures_HTML/2.2bIdentify_aggregate_TimeSeriesValues.html
 [13]:http://htmlpreview.github.io/?https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/7Figures_HTML/2.3Identify_SeasonalValues.html
 [14]:http://htmlpreview.github.io/?https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/7Figures_HTML/2.4_plotcdf.html
+
+
+## Use Case 2.2  
+**What differences are there across datasets in water use in Cache County Utah?**  
+
+Modelers often require data for agriculture and other water uses, which might be derived or estimated, not measured like discharge in rivers. We use controlled vocabulary, metadata, and multiple data types features to enable querying, aggregating, and comparing all the datasets for agriculture water use in Cache County in the Lower Bear River, Utah. The query used “diverted flow” controlled term and returns four time series and seasonal water use values with different estimate methods from three datasets: the WEAP and WASH model instances and the WaDE data source (Figure 3). Using “depleted flow” controlled term returns a fifth time series form the WaDE source (dashed line in Figure 3). We used the source and method descriptions for attributes, node instances, and scenarios to identify how the datasets represent water use in spatial or time extents. Data either represent i) the entire county area annually in one node as diverted or depleted water like the WaDE dataset (two curves), ii) the entire county seasonally across 11 demand sites (WEAP Model 2017), iii) part of the county monthly in one or five sites as in the WEAP 2010 and WASH 2017 models, respectively. Users can query many agriculture water use estimates in multiple datasets and use values that match their models required data for the entire county or part of it, monthly or annually, and for diverted or depleted flow. 
+
+In addition to demand data, the query also can return water rights data from the WaDE data source under the controlled Object Type “Demand Site” and attribute name of “Flow”. For example, the “WATER RESEARCH LAB. UTAH STATE UNIVERSITY” has two water rights. One of them is 84 AF/Year and 146 cfs for the beneficiary use descriptor value of “Power”. So WaMDaM organizes descriptive and numeric data for water rights.
+
+
+| Use Case        | Query           | Result  |
+| ------------- |:-------------:| -----:|
+|IdentifyDemandSites     | [Query][31] | [Result][41] csv |
+| Identify Demand Sites Seasonal Values     | [Query][51] | [Result][61] csv |
+| Identify DemandSites Time Series Values     | [Query][71] | [Result][81] csv |
+| Water Rights     | [Query][91] | [Result][101] csv |
+
+
+| Use Case figure       | Python Script   | Interactive figure  |
+| ------------|:----------:| -----:|
+|Figure a     | [script][111] | [Figure][211]  |
+
+
+![](/UseCases/images/UseCase2.2.png) 
+**Figure 3:** Aggregated water demand for Cache County Utah across WEAP and WASH models and the WaDE dataset. Color-coded from light to dark blue for low to high water use. Native attribute terms are in quotes 
+
+
+[111]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/6Figures_Python/3.3dentifyDemandSites_TimeSeriesValues.py
+[211]:http://htmlpreview.github.io/?https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/7Figures_HTML/3.3dentifyDemandSites_TimeSeriesValues.html
+
+[31]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/3.1IdentifyDemandSites.sql
+[41]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/3.1IdentifyDemandSites.csv
+
+[51]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/3.2dentifyDemandSites_SeasonalValues.sql
+[61]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/3.2dentifyDemandSites_SeasonalValues.csv
+
+[71]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/3.3dentifyDemandSites_TimeSeriesValues.sql
+[81]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/3.3dentifyDemandSites_TimeSeriesValues.csv
+
+
+[91]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/3.4WaterRights.sql
+[101]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/3.4WaterRights.csv
+
+
+
+## Use Case 2.3    
+**What differences are there across datasets in volume and elevation curves of a reservoir?**    
+
+Molders also search for data describing multi-attribute series such as reservoir bathymetry (elevation versus storage) to represent the physical capacity of reservoirs in their models. Here, we use the controlled instance name of Hyrum Reservoir and controlled attribute names Volume and Elevation to identify five volume-elevation curves for Hyrum Reservoir from three datasets: USBOR, Utah Dams, and WEAP model datasets. The USBOR Water Info dataset has two time series of storage and elevation, which have the same daily time step from January 2010 to May 2017. We plotted both series to empirically derive a storage and elevation curve for this dataset (Figure 8). 
+Metadata indicate the five curves originate from two sources: the Utah Dams dataset and USBOR who owns the dam. The WEAP model instance used older curves from the UDWR while Utah Dams and USBOR datasets used USBOR source. Next, we discuss the following three comparison insights, which are related to semantics, range of data, and its date of measurement. 
+Looking more closely at the Figure 8 results, first, there is a systematic displacement in volume and elevation between the upper red and lower brown sets of curves. The upper red curves indicate “live storage” which does not account for “dead storage”, while the lower brown curves reflect “total storage”. The USBOR reported dead storage as 3012 acre-feet at the elevation of 4629.6 feet. We verified this interpretation by subtracting or adding dead storage below the elevation of 4629.6 feet, which reproduced similar lower or upper curves. In the WEAP and WASH models, dead storage is termed “Top of Inactive” and MinCap.   
+
+Second, the Figure 8 curves cover different ranges of volume and elevation. The BOR Water Info Sys. (2017) derived curve represents operational ranges of elevation and storage. The Utah Dams (2016) curve and its equivalent BOR Reservoirs Dataset (2006) curve both represent the full bathymetry range. The identical WEAP model curves have a physical range that extend longer up to 70,000 acre-feet volume and 4,750 feet elevation (not shown). Metadata suggest that this extension could have represented a future scenario that raised the dam height.   
+
+Third, the methods metadata show there have been two different bathymetry surveys in 1935 and 2016, which are reflected in the BOR Reservoirs Dataset (2006) and USU WEAP Model 2017 curves (both for total storage). The BOR Reservoirs Dataset (2006) curve has less total storage than the other identical curves in the WEAP model instances that use the 1935 survey. Total storage decreased by 1,179 acre-feet which is 6% of the original storage due to decrease in both the dead and live storage potential. The percentage of dead storage to total storage is relatively high, about 17% in this small reservoir and misrepresenting the total or live storage could affect modeling results.   
+
+WaMDaM used the features of CVs, metadata, and multiple data types to readily identify and compare multi-attribute bathymetry curves across datasets that had different semantics, measurement periods, and extrapolated versus measured methods. The comparison helps identify differences in the datasets, improve our contextual understanding of reported data values, and help to select the appropriate curve for modeling. Modelers can follow this data analysis exercise to correctly represent the bathymetry curve for other reservoirs in their models and account for dead and live storage. 
+
+
+
+![](/UseCases/images/UseCase2.3.png) 
+**Figure 4**: Five volume-elevation curves for Hyrum Reservoir, Utah. Red and brown color-coded curves lighter to darker indicate larger volume at the same elevation. Blue shadings indicate Dead, Live, and Total storage zones for the 2006 BOR survey.
+
+
+
+| Use Case        | Query (SQL)          | Result (csv)  |
+| ------------- |:-------------:| -----:|
+|NumericValues_otherTypes     | [Query][300] | [Result][400]  |
+|MultiAttributeValues    | [Query][500] | [Result][600]  |
+|MergeTimeSeriesValues     | [Query][700] | [Result][800]  |
+|NumericValues_Metadata   | [Query][900] | [Result][1000]  |
+|MultipleTimeSeriesColumnsSameTimeStamp   | [Query][1100] | [Result][1200]  |
+
+
+
+| Use Case figure       | Python Script   | Interactive figure  |
+| ------------|:----------:| -----:|
+|Figure     | [script][1000] | [Figure][2000]  |
+
+
+
+[100]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/6Figures_Python/4_HyrumReservoir_Curves.py
+[200]:http://htmlpreview.github.io/?https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/7Figures_HTML/4_HyrumReservoir_Curves.py.html
+
+
+[300]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.1NumericValues_otherTypes.sql
+[400]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.1NumericValues_otherTypes.csv
+
+
+[500]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.2MultiAttributeValues.sql
+[600]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.2MultiAttributeValues.csv
+
+
+[700]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.3MergeTimeSeriesValues.sql
+[800]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.3MergeTimeSeriesValues.csv
+
+
+[900]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.4NumericValues_Metadata.sql
+[1000]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.4NumericValues_Metadata.csv
+
+
+[1100]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.5MultipleTimeSeriesColumnsSameTimeStamp.sql
+[1200]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.5MultipleTimeSeriesColumnsSameTimeStamp.csv
+
+
+[1300]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.6MultipleDescriptorValues_HydroPower.sql
+[1400]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.6MultipleDescriptorValues_HydroPower.csv
+
+
+## Use Case 2.4    
+**What differences are there across datasets in dam heights, installed hydropower capacity, and number of generators for two reservoirs?**    
+
+Modelers may search for attributes with numeric and descriptive values to correctly understand and represent the functions of water systems like modeling hydropower in dams. In this case, we use the controlled Instances of Shasta Reservoir, California and Flaming Gorge Reservoir, Utah to identify, compare, and relate their dam heights, installed hydropower capacity, and number of generators across both the US Dams and the National Hydropower Datasets (Table 5). The dam for Shasta Reservoir is 100 feet higher, has four more installed generators, and five times the installed generation capacity as Flaming Gorge Reservoir. 
+
+The Hydropower Dataset should be used to update the US Dams dataset to include Hydropower as a purpose for reservoirs like Hyrum and Jordanelle in Utah that have capacities of 0.5 and 13 Megawatts. The US Dams Dataset has only nine reservoirs in Utah and 127 in California with a Hydropower purpose while the Hydropower dataset has 73 in Utah and 413 plants in California. We used the WaMDaM features of controlled vocabularies of Instance name and multiple data types in descriptor values: “Hydropower”, “UT”, “CA” to enable comparisons across two datasets in both Utah and California.
+
+**Table x**: Companion between two major US dams’ height and hydropower from two datasets 
+![](/UseCases/images/UseCase2.4.png) 
+
+
+
+| Use Case        | Query           | Result  |
+| ------------- |:-------------:| -----:|
+|MultipleDescriptorValues_HydroPower  | [Query][1113] | [Result][1114] csv |
+
+[1113]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.6MultipleDescriptorValues_HydroPower.sql
+[1114]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.6MultipleDescriptorValues_HydroPower.csv
+
+

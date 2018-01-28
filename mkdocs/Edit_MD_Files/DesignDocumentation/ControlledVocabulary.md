@@ -1,4 +1,13 @@
+# Controlled vocabularies registry
+
+We deployed an online-hosted controlled vocabularies system under our full control to physically implement the controlled vocabularies design (Feature # 6), allow multiple users to access, and reuse consistent vocabularies across WaMDaM database instances and machines. We adapted an existing online registry to manage WaMDaM controlled vocabularies across users and database instances at http://vocabulary.wamdam.org (Horsburgh et al., 2016; Horsburgh et al., 2014). Controlled vocabularies for water management data in WaMDaM can be more extensive and specific than existing controlled vocabularies in CUAHSI. First, WaMDaM users have Object Type more specifically (e.g., Reservoir) than the equivalent Site Type (e.g., Lake, Reservoir, Impoundment) in CUAHSI. Second, WaMDaM “Attributes” extend beyond the often-quantitative time series data of CUAHSI “Variables” and can include qualitative descriptive data (e.g., Dam Purpose) (Feature #5). Third, WaMDaM controls the Instance name whereas the CUAHSI site code is uncontrolled. Fourth, WaMDaM has additional categories of vocabularies beyond Object Type, Attributes, Instances (not shown in Figure 3 for simplicity) that do not exist in CUAHSI like the Attribute Data Type, Descriptor value, and season name that control categorical data values. 
+
+Modelers have the option to use WaMDaM controlled vocabularies, submit suggestions to add new terms within the online registry, or use their own native vocabularies without registering them with WaMDaM’s. We populated the system with example WaMDaM controlled vocabularies for the datasets used in the use cases. Molders can use the CV system seamlessly as they populate their datasets into the Excel Workbook template. Within the Excel template, there is Visual Basic script button that downloads and updates look-up menus for all controlled vocabularies so users can register their native terms in each Excel workbook sheet. 
+
+This WaMDaM controlled vocabularies system may serve as a basis for a system the water resources systems community can use to review existing terms and add new terms. For example, a user can view the controlled vocabularies and their definitions for the Object Types table at http://vocabulary.wamdam.org/objecttype/. If the user wants to use a new controlled Object Type, they can click New and fill out and submit a form that includes the term, its definition, and other metadata that describe its source. Once submitted, we will receive an email of the submission and decide to accept, add, or reject it (see Horsburgh et al. (2014) for more details). 
+
 # Controlled Vocabulary tables
+
 
 The three key controlled vocabulary that are needed to basic data quries are:  
 CV_AttributeName, CV_InstanceName, and CV_ObjectType
@@ -50,11 +59,8 @@ A term for describing a geographic reference to all the node instances that belo
 A term for describing the name of the Unit of data value of an attribute.
 
 
-# Application
-A Python/Django web application and REST API for managing the WaMDaM Controlled Vocabularies. This repository contains the source code for the master controlled vocabulary registry for the Water Management Data Model (WaMDaM).  
-The configuration and deployment of the original repository have been significantly changed to be much simplified and automated using Ansible and Docker. A developer now can configure and deploy the app many times if they wish much easier than before.     
 
-The production Controlled Vocabulary website for WaMDaM (which uses this code) can be accessed at: http://vocabulary.wamdam.org/
-This online moderated registry aims to promote consistent terminology (i.e., Controlled Vocabularies-(CVs)) to describe water system components and their attributes across datasets, models, and users, while still retaining the native terms. Registering your model's native terms against these CVs will allow you to relate, query, and compare all of your water management data within a single database. 
+![](/DesignDocumentation/images/how-it-works-1.png)
 
 
+![](/DesignDocumentation/images/how-it-works-2.png)

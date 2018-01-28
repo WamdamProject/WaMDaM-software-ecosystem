@@ -12,7 +12,7 @@ This heterogeneity hampers potential synthesis of information from multiple stud
 The specificity in practices often makes them not readily reusable or applicable to other datasets and modes in the domain of water management data. 
 
 
-![](/images/Current_proposed.jpg)
+![](/images/Fig1_current_wamdam.jpg)
 **Figure 1:** Schematic of a systems water management network with two scenarios
 
 
@@ -22,7 +22,7 @@ The water management data domain fundamentally includes natural and built water 
 The domain also includes using multiple data types that represent quantitative and qualitative attributes of the system components like time series, seasonal parameters, and multi variable arrays. Example attribute data types are, time series of inflow and outflow of reservoirs, multi variable series of reservoir storage and surface area that change with elevation, and monthly seasonal reservoir evaporation across years. 
 
 ![](/images/wmd.png)
-**Figure 2:** (A) Current practices use different systems and data manipulation methods for each data source and study area while WaMDaM method (B) will synthesize and compare data for multiple sources and study areas using one querying method 
+**Figure 2:** systems water management data
 
 
 ## Solution

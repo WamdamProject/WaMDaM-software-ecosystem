@@ -22,7 +22,7 @@ repo_url: https://github.com/WamdamProject/WaMDaM-software-ecosystem
 edit_uri: "https://github.com/WamdamProject/WaMDaM-software-ecosystem/tree/master/mkdocs/Edit_MD_Files"
 
 # Copyright
-copyright: 'Copyright &copy; 2017 Adel M. Abdallah'
+copyright: 'Copyright &copy; 2018 Adel M. Abdallah'
 
 # Project information
 site_name: WaMDaM Docs
@@ -58,15 +58,14 @@ pages:
     - Use case 2: usecases/use_case_2.md
     - Use case 3: usecases/use_case_3.md
     - Use case 4: usecases/use_case_4.md
-    - Use case 5: usecases/use_case_5.md
-    - Use case 6: usecases/use_case_6.md
   - Design documentation: 
     - Design Requirment: DesignDocumentation/Desing_Req.md
-    - Design documentation: DesignDocumentation/info_model.md
+    - Design Approach: DesignDocumentation/DesignApproach.md
     - Information Model: DesignDocumentation/info_model.md
     - Logical Model Schema: DesignDocumentation/logical_Model.md
     - Physical Model Implementations: DesignDocumentation/Physical_Model.md
     - Controlled Vocabulary: DesignDocumentation/ControlledVocabulary.md
+    - WaMDaM Wizard: DesignDocumentation/WaMDaM_Wizard.md
   - About: 
     - About: About.md 
 
