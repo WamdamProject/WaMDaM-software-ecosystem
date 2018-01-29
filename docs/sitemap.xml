@@ -4,7 +4,7 @@
     
     <url>
      <loc>http://docs.wamdam.org/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>http://docs.wamdam.org/Why_WaMDaM/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,15 +20,15 @@
     
     <url>
      <loc>http://docs.wamdam.org/Rationale/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>http://docs.wamdam.org/Team/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <loc>http://docs.wamdam.org/Authors/</loc>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -36,7 +36,7 @@
     
     <url>
      <loc>http://docs.wamdam.org/Publications/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -44,7 +44,7 @@
     
     <url>
      <loc>http://docs.wamdam.org/OpenSource/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -52,7 +52,7 @@
     
     <url>
      <loc>http://docs.wamdam.org/Limitations/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -60,7 +60,7 @@
     
     <url>
      <loc>http://docs.wamdam.org/SponsorsCredit/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -68,7 +68,7 @@
     
     <url>
      <loc>http://docs.wamdam.org/License/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -77,37 +77,37 @@
         
     <url>
      <loc>http://docs.wamdam.org/Getting_started/Steps/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://docs.wamdam.org/Getting_started/PrepareData/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://docs.wamdam.org/Getting_started/Use_Wizard/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://docs.wamdam.org/Getting_started/CompareScenarios/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://docs.wamdam.org/Getting_started/Best_practices/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://docs.wamdam.org/Getting_started/controlled_vocabularies/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <loc>http://docs.wamdam.org/Getting_started/Use_controlled_vocabularies/</loc>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -117,37 +117,37 @@
         
     <url>
      <loc>http://docs.wamdam.org/UseCases/Application/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://docs.wamdam.org/UseCases/Download/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://docs.wamdam.org/usecases/use_case_1/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://docs.wamdam.org/usecases/use_case_2/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://docs.wamdam.org/usecases/use_case_3/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://docs.wamdam.org/usecases/use_case_4/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -157,43 +157,43 @@
         
     <url>
      <loc>http://docs.wamdam.org/DesignDocumentation/Desing_Req/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://docs.wamdam.org/DesignDocumentation/DesignApproach/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://docs.wamdam.org/DesignDocumentation/info_model/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://docs.wamdam.org/DesignDocumentation/logical_Model/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://docs.wamdam.org/DesignDocumentation/Physical_Model/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://docs.wamdam.org/DesignDocumentation/ControlledVocabulary/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://docs.wamdam.org/DesignDocumentation/WaMDaM_Wizard/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -203,7 +203,7 @@
         
     <url>
      <loc>http://docs.wamdam.org/About/</loc>
-     <lastmod>2018-01-27</lastmod>
+     <lastmod>2018-01-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

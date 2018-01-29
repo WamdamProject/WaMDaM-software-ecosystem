@@ -17,8 +17,9 @@ WaMDaM here enabled a more readily and consistent method to search for water sys
 
 | Use Case        | Query           | Result  |
 | ------------- |:-------------:| -----:|
-|NumericValues_otherTypes     | [Query][1] | [Result][2] csv |
-|MultiAttributeValues    | [Query][3] | [Result][4] csv |
+|Hyrum Reservoir, Utah     | [Query][1] | [Result][4] csv |
+|Bear River Migratory Bird Refuge, Utah    | [Query][2] | [Result][4] csv |
+|Shasta Reservoir, California    | [Query][3] | [Result][6] csv |
 
 
 
@@ -29,9 +30,8 @@ WaMDaM here enabled a more readily and consistent method to search for water sys
 The next use case allows users to compare similarities and differences in network topology, metadata, and data values between two scenarios of any model in WaMDaM. 
 
 
-[1]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/5.1FindNodeLinkInstances_Hyrum.sql
-[2]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/5.1FindNodeLinkInstances_Hyrum.csv
+[1]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase3/1_FindNodeLinkInstances_Hyrum.sql
+[2]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase3/2_FindNodeLinkInstances_refuge.sql
 
-
-[3]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/5.2FindNodeLinkInstances_refuge.sql
-[4]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/5.2FindNodeLinkInstances_refuge.csv
+[3]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase3/3_FindNodeLinkInstances_Shasta.sql
+[4]:

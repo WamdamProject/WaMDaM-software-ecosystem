@@ -10,7 +10,7 @@ The WaMDaM Wizard is a desktop data loader from a spreadsheet template to SQLite
 It enables users to manage and integrate data: CUAHSI time series data, network connectivity, water rights, hydropower, cost, seasonal data, multi-dimension arrays. WaMDaM does not replace existing specialized data systems but rather it brings their data together for the use in water management models   
 
 
-## [Team](/Team)
+## [Authors](/Authors)
 WaMDaM is developed and maintained primarily by Adel Abdallah for his PhD dissertation. Many professors and developers at Utah State University, Logan, Utah and other institutions nationally and internationally provided feedback. 
 
 ## [Funding](/SponsorsCredit):thumbsup: :heart:

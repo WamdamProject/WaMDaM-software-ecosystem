@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.1.0">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.3">
     
     
       
@@ -42,13 +42,13 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-3368aa6b74.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.aa3de92b.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-95ad5566f9.palette.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.792431c1.css">
       
     
     
-      <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       
@@ -61,11 +61,10 @@
     
   </head>
   
+  
     
     
-    
-      <body data-md-color-primary="blue" data-md-color-accent="indigo">
-    
+    <body dir="ltr" data-md-color-primary="blue" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -78,6 +77,11 @@
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#physical-model-implementation" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -113,11 +117,13 @@
             
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner">
+  <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -164,6 +170,9 @@
 </header>
     
     <div class="md-container">
+      
+        
+      
       
         
 
@@ -338,8 +347,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Team/" title="The Team" class="md-nav__link">
-      The Team
+    <a href="../../Authors/" title="Authors" class="md-nav__link">
+      Authors
     </a>
   </li>
 
@@ -489,8 +498,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Getting_started/controlled_vocabularies/" title="Controlled Vocabulary" class="md-nav__link">
-      Controlled Vocabulary
+    <a href="../../Getting_started/Use_controlled_vocabularies/" title="Use Controlled Vocabularies" class="md-nav__link">
+      Use Controlled Vocabularies
     </a>
   </li>
 
@@ -838,7 +847,10 @@
                 
                 <h1 id="physical-model-implementation">Physical Model Implementation<a class="headerlink" href="#physical-model-implementation" title="Permanent link">&para;</a></h1>
 <h2 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Permanent link">&para;</a></h2>
-<p>We implemented the logical data model schema represented in XML into four physical Relational Database Management Systems (RDBMS: PostgreSQL, MySQL, Microsoft SQL Server, and SQLite) to demonstrate that WaMDaM is independent of the RDBMS and increase value to users. First, we selected a physical data type for each field in the logical model entities (e.g., integer, character, binary) and we imposed physical constraints on each field (e.g., value cannot be null) by following the physical data types convention in ODM2 (Horsburgh et al., 2016). Second, we adapted an existing Python 2.7 script (Horsburgh et al., 2016; Tony Castronova, 2015) to forward engineer the logical model XML schema format into the Data Definition Language (DDL) which is a set of create statements for WaMDaM tables for each of the four RDBMS. Finally, we executed the DDL script within each RDBMS to create a physical blank WaMDaM database that users can then load with data.</p>
+<p>We implemented the logical data model schema represented in XML into four physical Relational Database Management Systems (RDBMS: PostgreSQL, MySQL, Microsoft SQL Server, and SQLite) to demonstrate that WaMDaM is independent of the RDBMS and increase value to users. First, we selected a physical data type for each field in the logical model entities (e.g., integer, character, binary) and we imposed physical constraints on each field (e.g., value cannot be null) by following the physical data types convention in ODM2 (Horsburgh et al., 2016). </p>
+<p>Second, we adapted an existing Python 2.7 script <a href="https://github.com/ODM2/ODM2/tree/master/src/build_schemas">ODM2-build_schemas</a> to forward engineer the logical model XML schema format into the Data Definition Language (DDL) which is a set of create statements for WaMDaM tables for each of the four RDBMS. Finally, we executed the DDL script within each RDBMS to create a physical blank WaMDaM database that users can then load with data.</p>
+<p>The adapted script and a GUI to use it for other desings will be posted here
+<a href="https://github.com/WamdamProject/WaMDaM_DDL_generator_Wizard">https://github.com/WamdamProject/WaMDaM_DDL_generator_Wizard</a></p>
 <h2 id="copies-of-wamdam-dbs">Copies of WaMDaM Dbs<a class="headerlink" href="#copies-of-wamdam-dbs" title="Permanent link">&para;</a></h2>
 <p>Script to create blank WaMDaM databases OR copies of each database to restore <br />
 1. <a href="https://github.com/WamdamProject/WaMDaM_Information_Model/tree/master/database_schemas/MS_SQL_Server">Microsoft SQL Server</a>  <br />
@@ -930,14 +942,14 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application-a5397a53ce.js"></script>
+      <script src="../../assets/javascripts/application.f041762f.js"></script>
       
       <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
       
     
     
       
-      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
       
     
   </body>

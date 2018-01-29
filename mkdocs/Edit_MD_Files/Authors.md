@@ -1,4 +1,4 @@
-## The WaMDaM Team
+## WaMDaM Authors
 
 Adel M. Abdallah has been the lead in WaMDaM development as part of his PhD dissertation at Utah State University under the advising of Dr. David Rosenberg.  
 
@@ -12,4 +12,6 @@ email: amabdallah@aggiemail.usu.edu
 Associate Professor: Systems Analysis  
 email: david.rosenberg@usu.edu
 
+![](/images/Authors.jpg)   
 
+David Rosenberg (left) and Adel Abdallah (right)

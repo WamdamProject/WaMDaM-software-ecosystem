@@ -25,7 +25,7 @@ We introduce WaMDaM method as a beginning to solve the problem within the bounde
 Although the development of WaMDaM has focused on water management data, none of the information model concepts are necessarily exclusive to water management. In principal, WaMDaM could be used for other systems based data like for water, energy, and food nexus but that is yet to be tested and demonstrated with use cases. 
 
 ## Invitation
-We invite the systems modeling and hydroinformatics community to experiment with and provide feedback on WaMDaM to improve it and work towards the goal of developing a standard as the basis for a software ecosystem to organize, visualize, publish, and discover systems water management data over the web. 
+We invite the systems modeling and hydroinformatics community to experiment with and provide feedback on WaMDaM to improve it and work towards the goal of developing a standard as the basis for a software ecosystem to organize, visualize, publish, and discover systems water management data over the web. Interested users can submit suggestions by creating issues on GitHub at https://github.com/WamdamProject/WaMDaM-software-ecosystem/issues.
 
 
 

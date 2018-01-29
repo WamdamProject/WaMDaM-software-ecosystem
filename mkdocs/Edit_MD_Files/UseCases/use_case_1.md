@@ -59,14 +59,14 @@ This use case demonstrates how WaMDaM provides a more readily automated and cons
 This first step searched for input data to models. Next, users can further query specific nodes and attributes like streamflow, demand, reservoir storage, natural and built infrastructure connectivity with the reservoir and prepare it as input to their model as shown in the next use cases
 
 
-[1]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/1.01Identify_WEAPmodel_requirements.sql
-[2]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/1.111WHICHAvailableDataForModel_WEAP.sql
-[3]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/1.112WHEREAvailableDataForModel_WEAP.sql
-[4]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/1.21AdditionalDataForModel_WEAP.sql
-[5]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/1.02Identify_WASHmodel_requirements.sql
-[6]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/1.121WHICHAvailableDataForModel_WASH.sql
-[7]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/1.122WHEREAvailableDataForModel_WASH.sql
-[8]: https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/1.22AdditionalDataForModel_WASH.sql
+[1]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.1_Identify_WEAPmodel_requirements.sql
+[2]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.2_WHICHAvailableDataForModel_WEAP.sql
+[3]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.3_AdditionalDataForModel_WEAP.sql
+[4]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.4_Identify_WASHmodel_requirements.sql
+[5]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.5_WHEREAvailableDataForModel_WASH.sql
+[6]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.6_WHICHAvailableDataForModel_WASH.sql
+[7]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.7_WHEREAvailableDataForModel_WEAP.sql
+[8]: https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.8_AdditionalDataForModel_WASH.sql
 
 
 [9]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/1.01Identify_WEAPmodel_requirements.csv

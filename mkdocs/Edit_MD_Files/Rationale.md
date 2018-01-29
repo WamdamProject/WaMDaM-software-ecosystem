@@ -31,7 +31,7 @@ Add iUtah
 ## Context
 The timing, availability of funds, expertise, and passion for WaMDaM development were incredible by all means. Along the way of WaMDaM development, there has been a real interest from national and international scientists and practitioners in standardizing the way we communicate systems water management data.
 
-We were fortunate to discuss the development of WaMDaM with these research groups and agencies listed below. WaM-DaM and these projects complement each other and there is a big room for real future collaboration. We hope that our discussions with them continue so we can achieve our common goal of having a standard to communicate systems water management data. 
+We were fortunate to discuss the development of WaMDaM with these research groups and agencies listed below. WaMDaM and these projects complement each other and there is a big room for real future collaboration. We hope that our discussions with them continue so we can achieve our common goal of having a standard to communicate systems water management data. 
 
 
 

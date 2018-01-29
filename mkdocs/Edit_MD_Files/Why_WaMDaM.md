@@ -1,22 +1,21 @@
 # Why WaMDaM?
 
 ## Problem
-Data analysis and synthesis are foundational in developing water resources management models (Loucks et al., 2005), and the way data are organized can enable or inhibit the analysis that water managers and researchers perform (Horsburgh et al., 2008).   
+Water resources modelers and researchers seek to solve integrated water management problems in an area of interest. Current practices to identify and analyze input data for water resources ssystems models are often dataset specific, stored in different formats, described using different vocabularies, require time-intensive, manual data manipulations, and cannot be reused despite the fact that basic data elements are similar across models
 
-Current practices to organize, manipulate and compare water resources data to develop water resources systems models are often specific to the data sources, models, and study location (Brown et al., 2015).   
+**None of the existing data management methods can help modelers answer these these questions for data query, comparison, and model building activities:** 
 
-Source-, model-, and study area-specific practices arise because models have different data requirements for their components, store data in different file formats, have varying spatial coverage, use inconsistent metadata to describe methods, sources, and units, and use different vocabulary to name similar system components and their attributes (Laituri and Sternlieb, 2014; Maidment, 2016; Miller et al., 2004).   
-
-This heterogeneity hampers potential synthesis of information from multiple studies (Brown et al., 2015), and source-, model-, and study area-specific practices often require considerable effort and time to develop models (Beniston et al., 2012; CUAHSI, 2005; Draper et al., 2003; Hey et al., 2009; Leonard and Duffy, 2013; Maidment, 2008; Michener, 2006; Miller et al., 2004; Ridley and Stoker, 2001; Watkins, 2013).   
-
-The specificity in practices often makes them not readily reusable or applicable to other datasets and modes in the domain of water management data. 
+1.	What data are available to develop a model in a study area?
+2.	How do data values for properties of system components differ across datasets? 
+3.	What differences are there across datasets in connectivity of natural and built infrastructure components in a particular area? 
+4.	What differences are there in network topology, metadata, and input data between two scenarios of a model instance?
 
 
 ![](/images/Fig1_current_wamdam.jpg)
 **Figure 1:** Schematic of a systems water management network with two scenarios
 
 
-## Water Management Data Domain
+## What are the Water Management Data?
 The water management data domain fundamentally includes natural and built water system components like water supply, infrastructure, and demand sites, represented through nodes and links (Brown et al., 2015; Loucks et al., 2005; Rosenberg and Madani, 2014).    
 
 The domain also includes using multiple data types that represent quantitative and qualitative attributes of the system components like time series, seasonal parameters, and multi variable arrays. Example attribute data types are, time series of inflow and outflow of reservoirs, multi variable series of reservoir storage and surface area that change with elevation, and monthly seasonal reservoir evaporation across years. 

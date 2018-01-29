@@ -16,8 +16,11 @@ We implemented the information model into a logical data model by defining a tab
 ![](/DesignDocumentation/images/WaMDaM_logical.jpg)
 
 
-## Schema 
+## Schema interactive diagram
 WaMDaM schema or entity relationship diagram is available at this interactive site. Check out the interactive schema [Schema](http://schema.wamdam.org/diagrams/01_WaMDaM.html) 
+
+## Schema XML file 
+WaMDaM schema was designed using [DbWrench](http://www.dbwrench.com/). Check out the [XML file](https://github.com/WamdamProject/WaMDaM_Information_Model/tree/master/XML_schema)
 
 
 ### Dataset Structure  

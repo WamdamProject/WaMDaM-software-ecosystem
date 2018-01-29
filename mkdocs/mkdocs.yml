@@ -38,7 +38,7 @@ pages:
   - Home: index.md
   - Why WaMDaM?: Why_WaMDaM.md
   - Rationale: Rationale.md
-  - The Team: Team.md  
+  - Authors: Authors.md  
   - Publications: Publications.md 
   - Open Source: OpenSource.md
   - Limitations: Limitations.md
@@ -50,7 +50,7 @@ pages:
     - Use Wizard: Getting_started/Use_Wizard.md
     - Compare Scenarios: Getting_started/CompareScenarios.md  
     - Best Practices: Getting_started/Best_practices.md
-    - Controlled Vocabulary: Getting_started/controlled_vocabularies.md
+    - Use Controlled Vocabularies: Getting_started/Use_controlled_vocabularies.md
   - Use cases:
     - Application: UseCases/Application.md
     - Download: UseCases/Download.md
