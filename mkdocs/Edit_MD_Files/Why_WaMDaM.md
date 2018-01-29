@@ -1,7 +1,7 @@
 # Why WaMDaM?
 
 ## Problem
-Water resources modelers and researchers seek to solve integrated water management problems in an area of interest. Current practices to identify and analyze input data for water resources ssystems models are often dataset specific, stored in different formats, described using different vocabularies, require time-intensive, manual data manipulations, and cannot be reused despite the fact that basic data elements are similar across models
+Water resources modelers and researchers seek to solve integrated water management problems in an area of interest. Current practices to identify and analyze input data for water resources systems models are often dataset specific, stored in different formats, described using different vocabularies, require time-intensive, manual data manipulations, and cannot be reused despite the fact that basic data elements are similar across models
 
 **None of the existing data management methods can help modelers answer these these questions for data query, comparison, and model building activities:** 
 
