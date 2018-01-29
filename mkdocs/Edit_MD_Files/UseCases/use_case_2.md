@@ -30,7 +30,7 @@ Flow data in water management datasets also exist in derived seasonal form and m
 
 | Use Case        | Query           | Result  |
 | ------------- |:-------------:| -----:|
-|Identify TimeSeries Seasonal Dual data      | [Query][1] | [Result][4] csv |
+| Identify TimeSeries Seasonal Dual data      | [Query][1] | [Result][4] csv |
 | Identify aggregate TimeSeries Values      | [Query][2] | [Result][5] csv |
 | Identify Seasonal Values | [Query][3] | [Result][6] csv |
 
@@ -63,14 +63,16 @@ To run the Python script, you need to be connected to the internet. The script r
 This use case demonstrated organizing water supply data, the next use case demonstrates organizing and comparing water demand data from multiple sources. 
 
 
-[1]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/2.1IdentifyTimeSeriesSeasonal_Dual.sql
+[1]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase2/UseCase2.1/1_IdentifyTimeSeriesSeasonal_Dual.sql
 
-[2]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/2.2Identify_aggregate_TimeSeriesValues.sql
+[2]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase2/UseCase2.1/2_Identify_aggregate_TimeSeriesValues.sql
 
-[3]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/2.3Identify_SeasonalValues.sql
+[3]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase2/UseCase2.1/3_Identify_SeasonalValues.sql
 
 [4]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/2.1IdentifyTimeSeriesSeasonal.csv
+
 [5]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/2.2Identify_aggregate_TimeSeriesValues.csv
+
 [6]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/2.3Identify_SeasonalValues.csv
 
 [7]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/6Figures_Python/2.2Identify_aggregate_TimeSeriesValues.py
@@ -95,7 +97,7 @@ In addition to demand data, the query also can return water rights data from the
 
 | Use Case        | Query           | Result  |
 | ------------- |:-------------:| -----:|
-|IdentifyDemandSites     | [Query][31] | [Result][41] csv |
+| IdentifyDemandSites     | [Query][31] | [Result][41] csv |
 | Identify Demand Sites Seasonal Values     | [Query][51] | [Result][61] csv |
 | Identify DemandSites Time Series Values     | [Query][71] | [Result][81] csv |
 | Water Rights     | [Query][91] | [Result][101] csv |
@@ -110,20 +112,25 @@ In addition to demand data, the query also can return water rights data from the
 **Figure 3:** Aggregated water demand for Cache County Utah across WEAP and WASH models and the WaDE dataset. Color-coded from light to dark blue for low to high water use. Native attribute terms are in quotes 
 
 
-[111]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/6Figures_Python/3.3dentifyDemandSites_TimeSeriesValues.py
-[211]:http://htmlpreview.github.io/?https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/7Figures_HTML/3.3dentifyDemandSites_TimeSeriesValues.html
+[111]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/6Figures_Python/UseCase2.2_dentifyDemandSites_TimeSeriesValues.py
 
-[31]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/3.1IdentifyDemandSites.sql
+[211]:http://htmlpreview.github.io/?https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/7Figures_HTML/UseCase2.2_identifyDemandSites_TimeSeriesValues.html
+
+[31]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase2/UseCase2.2/1_IdentifyDemandSites.sql
+
 [41]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/3.1IdentifyDemandSites.csv
 
-[51]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/3.2dentifyDemandSites_SeasonalValues.sql
+[51]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase2/UseCase2.2/2_IdentifyDemandSites_SeasonalValues.sql
+
 [61]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/3.2dentifyDemandSites_SeasonalValues.csv
 
-[71]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/3.3dentifyDemandSites_TimeSeriesValues.sql
+[71]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase2/UseCase2.2/3_IdentifyDemandSites_TimeSeriesValues.sql
+
 [81]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/3.3dentifyDemandSites_TimeSeriesValues.csv
 
 
-[91]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/3.4WaterRights.sql
+[91]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase2/UseCase2.2/4_WaterRights.sql
+
 [101]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/3.4WaterRights.csv
 
 
@@ -165,26 +172,31 @@ WaMDaM used the features of CVs, metadata, and multiple data types to readily id
 
 
 [100]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/6Figures_Python/4_HyrumReservoir_Curves.py
-[200]:http://htmlpreview.github.io/?https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/7Figures_HTML/4_HyrumReservoir_Curves.py.html
+[2000]:http://htmlpreview.github.io/?https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/7Figures_HTML/UseCase2.3_HyrumReservoir_Curves.html
 
 
-[300]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.1NumericValues_otherTypes.sql
+[300]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase2/UseCase2.3/1_NumericValues_otherTypes.sql
+
 [400]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.1NumericValues_otherTypes.csv
 
 
-[500]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.2MultiAttributeValues.sql
+[500]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase2/UseCase2.3/4_MultiAttributeValues.sql
+
 [600]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.2MultiAttributeValues.csv
 
 
-[700]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.3MergeTimeSeriesValues.sql
+[700]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase2/UseCase2.3/3_MergeTimeSeriesValues.sql
+
 [800]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.3MergeTimeSeriesValues.csv
 
 
-[900]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.4NumericValues_Metadata.sql
+[900]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase2/UseCase2.3/2_NumericValues_Metadata.sql
+
 [1000]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.4NumericValues_Metadata.csv
 
 
-[1100]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.5MultipleTimeSeriesColumnsSameTimeStamp.sql
+[1100]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase2/UseCase2.3/3_MultipleTimeSeriesColumnsSameTimeStamp.sql
+
 [1200]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.5MultipleTimeSeriesColumnsSameTimeStamp.csv
 
 
@@ -208,7 +220,8 @@ The Hydropower Dataset should be used to update the US Dams dataset to include H
 | ------------- |:-------------:| -----:|
 |MultipleDescriptorValues_HydroPower  | [Query][1113] | [Result][1114] csv |
 
-[1113]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/4.6MultipleDescriptorValues_HydroPower.sql
+[1113]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase2/UseCase2.4/1_MultipleDescriptorValues_HydroPower.sql
+
 [1114]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/4.6MultipleDescriptorValues_HydroPower.csv
 
 

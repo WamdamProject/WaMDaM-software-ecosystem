@@ -1,7 +1,7 @@
 # Download
 
 ## Steps to use the populated SQLite file
-1. Download the [SQLite database file][2] {40 MB}
+1. Download the [SQLite database file][2] {60 MB}
 
 2. Use the SQLite Manager Add-on to Mozilla Firefox to query the database. 
   
@@ -15,7 +15,7 @@
 
 
 
-[2]: https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/3SQLite_database/BearRiver_datasets.sqlite
+[2]: https://github.com/WamdamProject/WaMDaM_UseCases/raw/master/UseCases_files/3SQLite_database/BearRiverDatasets_Jan2018.sqlite
 
 [3]: https://download-installer.cdn.mozilla.net/pub/firefox/releases/56.0.2/win64/en-US/Firefox%20Setup%2056.0.2.exe
 

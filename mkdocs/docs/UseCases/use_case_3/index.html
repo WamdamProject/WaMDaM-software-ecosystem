@@ -13,7 +13,7 @@
         <meta name="description" content="Documentation of the Water Management Data Model (WaMDaM)">
       
       
-        <link rel="canonical" href="http://docs.wamdam.org/usecases/use_case_1/">
+        <link rel="canonical" href="http://docs.wamdam.org/usecases/use_case_3/">
       
       
         <meta name="author" content="Adel M. Abdallah">
@@ -38,7 +38,7 @@
     
     
       
-        <title>Use case 1 - WaMDaM Docs</title>
+        <title>Use case 3 - WaMDaM Docs</title>
       
     
     
@@ -100,7 +100,7 @@
                 WaMDaM Docs
               </span>
               <span class="md-header-nav__topic">
-                Use case 1
+                Use case 3
               </span>
             
           
@@ -549,6 +549,30 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../use_case_1/" title="Use case 1" class="md-nav__link">
+      Use case 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../use_case_2/" title="Use case 2" class="md-nav__link">
+      Use case 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -560,11 +584,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Use case 1
+        Use case 3
       </label>
     
-    <a href="./" title="Use case 1" class="md-nav__link md-nav__link--active">
-      Use case 1
+    <a href="./" title="Use case 3" class="md-nav__link md-nav__link--active">
+      Use case 3
     </a>
     
       
@@ -592,13 +616,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#significance" title="Significance" class="md-nav__link">
-    Significance
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#next" title="Next" class="md-nav__link">
     Next
   </a>
@@ -611,30 +628,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../use_case_2/" title="Use case 2" class="md-nav__link">
-      Use case 2
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../use_case_3/" title="Use case 3" class="md-nav__link">
-      Use case 3
-    </a>
   </li>
 
         
@@ -834,13 +827,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#significance" title="Significance" class="md-nav__link">
-    Significance
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#next" title="Next" class="md-nav__link">
     Next
   </a>
@@ -861,120 +847,47 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/WamdamProject/WaMDaM-software-ecosystem/tree/master/mkdocs/Edit_MD_Files/usecases/use_case_1.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/WamdamProject/WaMDaM-software-ecosystem/tree/master/mkdocs/Edit_MD_Files/usecases/use_case_3.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="use-case-1">Use case 1<a class="headerlink" href="#use-case-1" title="Permanent link">&para;</a></h1>
-<p><strong>What data are available to develop a model in a particular watershed?</strong>   </p>
+                <h1 id="use-case-3">Use case 3<a class="headerlink" href="#use-case-3" title="Permanent link">&para;</a></h1>
+<p><strong>How does connectivity of natural and built infrastructure components compare in a particular area across datasets?</strong>   </p>
 <h3 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h3>
-<p>Building a water resources model to solve water management and planning problems requires acquiring input data that describe the system. In existing practices, once a modeler selects a model and identifies its required types of input data, they manually search for datasets that contain relevant data. Then a modeler manually maps out the term for each attribute in their model with equivalent attributes in other datasets to math them.  </p>
+<p>After identifying data values that describe water systems components, researchers must determine how water supply, demand, and other system components are connected to correctly represent components in models. </p>
 <h3 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">&para;</a></h3>
-<p>This use case shows how a modeler can use WaMDaM extensible Objects, Attributes, and controlled vocabularies to more readily and consistently identify available data from the 13 loaded datasets for WEAP and WASH models. Users can use identified data to expand existing WEAP and WASH model instances in the Lower Bear River Watershed Utah (light red in Figure 4) to the entire Watershed (darker red in Figure 4).  </p>
-<p>First, provide the model name (e.g., Dataset name is WEAP) and a min and max longitudes and latitudes of the study area (e.g., Box that includes Bear River Watershed). Second, execute the use case script that uses the registered controlled vocabularies to search for equivalent Attributes that have data values in all the datasets within the provided boundary. The script also identifies the list of Object Types and Attributes required by the model but do not have available data in WaMDaM database.  </p>
-<p>For the two models in this use case, the WEAP model has 11 Object Types with 127 Attributes whiles the WASH model has three Object Types with 54 attributes. Using the Reservoir controlled term as a mediator between and the 13 datasets returns all the local native terms: Dam from the US Dams dataset and Reservoir Node from the BRSDM model instance. Similarly, the controlled attribute Volume returns Max_STOR from US Major Dam’s dataset, STORG_ACFT and Capacity from Utah Dams dataset, and Max Storage Capacity from the BRSDM model instance. </p>
-<p><img alt="" src="../../UseCases/images/UseCase1.jpg" />
-<strong>Figure 1:</strong> Example conceptual mapping showing how the use of controlled vocabulary can help retrieve different available native attributes in datasets for reservoirs in the WEAP model instance. </p>
-<p>In the query results, WaMDaM shows that five datasets can provide data for 22 attributes in the Bear River WEAP model and there are still 105 attributes that are needed to expand the WEAP model (Table 1). The five datasets are: US Dams Dataset, BRSDM model instance, Utah Dams Dataset, WaDE, and Idaho Flows dataset. Users can also select Categories to narrow their search for available data. For example, searching only for attributes in the Physical and Operational categories and excluding the Water Quality and Cost categories focuses on 65 attributes required in WEAP which reduces the search for the actually needed data in a model instance. The use case also shows that the five data sources can provide for six attributes in the Bear River WASH model while 48 more attributes are still needed. The WASH model uses many ecologic parameters that do not have data values among the datasets in WaMDaM. </p>
-<p><strong>Table 1:</strong> Summary of data availability to expand WEAP and WASH models in the Bear River Watershed. Full list is available the use cases online page   </p>
+<p>This use case employs the features of controlled vocabularies and the connectivity of nodes and links through networks to help modelers search for water system components and their connectivity across datasets. For example, what links flow into and out of Hyrum Reservoir in the Little Bear River Utah? </p>
+<p>Results show that Hyrum Reservoir supplies two demand sites in the WEAP 2010 model and three different demand sites in the USU WEAP 2017 and WASH models (Figure 9). The latter two models also return flow back into Hyrum Reservoir from Hyrum and Paradise Canals. The WASH model has the same schematic as the USU WEAP 2017 model but uses different labels for its nodes and links (Figure 9-C). Identifying and comparing connectivity between supply and demand sites across datasets can assist molders to more accurately incorporate simplified representations of supply and demand relationships like the WEAP 2010 model or more detailed representations like WEAP 2017 and WASH models into their water allocation models.</p>
+<p>WaMDaM here enabled a more readily and consistent method to search for water system components as nodes and links and compare their connectivity across sources. This connectivity aspect of is an important improvement over the existing time series data discovery tools which identifies standalone nodes. With WaMDaM, users can identify how and where water flows from and into nodes. Future software tools may help users visualize and filter the results based on model, scenario, object type and categories. </p>
 <table>
 <thead>
 <tr>
-<th>Availability</th>
-<th align="center">WEAP</th>
-<th align="center">WASH</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td align="center">count of unique attributes</td>
-<td align="center">count of unique attributes</td>
-</tr>
-<tr>
-<td>Required</td>
-<td align="center">127</td>
-<td align="center">54</td>
-</tr>
-<tr>
-<td>Available</td>
-<td align="center">105</td>
-<td align="center">6</td>
-</tr>
-<tr>
-<td>No data for them</td>
-<td align="center">43</td>
-<td align="center">48</td>
-</tr>
-</tbody>
-</table>
-<p><strong>SQL queries for the WEAP Model</strong>   </p>
-<table>
-<thead>
-<tr>
-<th>Question</th>
+<th>Use Case</th>
 <th align="center">Query</th>
-<th align="right">Result (CSV)</th>
+<th align="right">Result</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Identify model data requirements</td>
-<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.1_Identify_WEAPmodel_requirements.sql">script</a></td>
-<td align="right"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/1.01Identify_WEAPmodel_requirements.csv">Result</a></td>
+<td>Hyrum Reservoir, Utah</td>
+<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase3/1_FindNodeLinkInstances_Hyrum.sql">Query</a></td>
+<td align="right"><a href="">Result</a> csv</td>
 </tr>
 <tr>
-<td>Which attributes have available data</td>
-<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.2_WHICHAvailableDataForModel_WEAP.sql">script</a></td>
-<td align="right"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/1.111WHICHAvailableDataForModel_WEAP.csv">Result</a></td>
+<td>Bear River Migratory Bird Refuge, Utah</td>
+<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase3/2_FindNodeLinkInstances_refuge.sql">Query</a></td>
+<td align="right"><a href="">Result</a> csv</td>
 </tr>
 <tr>
-<td>Where the data is available in datasets</td>
-<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.3_AdditionalDataForModel_WEAP.sql">script</a></td>
-<td align="right"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/1.112WHEREAvailableDataForModel_WEAP.csv">Result</a></td>
-</tr>
-<tr>
-<td>What additional data are needed</td>
-<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.4_Identify_WASHmodel_requirements.sql">script</a></td>
-<td align="right"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/1.21AdditionalDataForModel_WEAP.csv">Result</a></td>
+<td>Shasta Reservoir, California</td>
+<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase3/3_FindNodeLinkInstances_Shasta.sql">Query</a></td>
+<td align="right">[Result][6] csv</td>
 </tr>
 </tbody>
 </table>
-<p><strong>SQL queries for the WASH Model</strong>  </p>
-<table>
-<thead>
-<tr>
-<th>Question</th>
-<th align="center">Query</th>
-<th align="right">Result (CSV)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Identify model data requirements</td>
-<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.5_WHEREAvailableDataForModel_WASH.sql">script</a></td>
-<td align="right"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/1.02Identify_WASHmodel_requirements.csv">Result</a></td>
-</tr>
-<tr>
-<td>Which attributes have available data</td>
-<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.6_WHICHAvailableDataForModel_WASH.sql">script</a></td>
-<td align="right"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/1.121WHICHAvailableDataForModel_WASH.csv">Result</a></td>
-</tr>
-<tr>
-<td>Where the data is available in datasets</td>
-<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.7_WHEREAvailableDataForModel_WEAP.sql">script</a></td>
-<td align="right"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/1.122WHEREAvailableDataForModel_WASH.csv">Result</a></td>
-</tr>
-<tr>
-<td>What additional data are needed</td>
-<td align="center"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.8_AdditionalDataForModel_WASH.sql">script</a></td>
-<td align="right"><a href="https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/5Results_CSV/1.21AdditionalDataForModel_WEAP.csv">Result</a></td>
-</tr>
-</tbody>
-</table>
-<h3 id="significance">Significance<a class="headerlink" href="#significance" title="Permanent link">&para;</a></h3>
-<p>This use case demonstrates how WaMDaM provides a more readily automated and consistent method to identify available (or unavailable) data in multiple datasets that are required by models in a study area. Note that the value of data in WaMDaM increases as far as identifying it for other models, as users add coordinates and register it with controlled vocabulary.  </p>
+<p><img alt="" src="../../UseCases/images/networks.png" /> 
+<strong>Figure 1</strong>: Schematics of water system node and link components that flow in or out of Hyrum Reservoir for three models in the Lower Bear River Watershed, Utah. Arrows indicate directions of flow. Nodes or links with the same color and shape belong to same controlled Object Type across models.</p>
 <h3 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h3>
-<p>This first step searched for input data to models. Next, users can further query specific nodes and attributes like streamflow, demand, reservoir storage, natural and built infrastructure connectivity with the reservoir and prepare it as input to their model as shown in the next use cases</p>
+<p>The next use case allows users to compare similarities and differences in network topology, metadata, and data values between two scenarios of any model in WaMDaM. </p>
                 
                   
                 
@@ -993,7 +906,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../Download/" title="Download" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../use_case_2/" title="Use case 2" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1002,19 +915,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Download
+                Use case 2
               </span>
             </div>
           </a>
         
         
-          <a href="../use_case_2/" title="Use case 2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../use_case_4/" title="Use case 4" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Use case 2
+                Use case 4
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

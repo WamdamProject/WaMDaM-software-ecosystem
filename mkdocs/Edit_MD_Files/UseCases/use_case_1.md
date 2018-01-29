@@ -32,7 +32,7 @@ In the query results, WaMDaM shows that five datasets can provide data for 22 at
 
 **SQL queries for the WEAP Model**   
 
-| Question        | Query           | Result  |
+| Question        | Query           | Result (CSV) |
 | ------------- |:-------------:| -----:|
 | Identify model data requirements     | [script][1] | [Result][9] |
 | Which attributes have available data     | [script][2]      |   [Result][10] |
@@ -42,7 +42,7 @@ In the query results, WaMDaM shows that five datasets can provide data for 22 at
 
 **SQL queries for the WASH Model**  
 
-| Question        | Query           | Result  |
+| Question        | Query           | Result (CSV) |
 | ------------- |:-------------:| -----:|
 | Identify model data requirements     | [script][5] | [Result][13] |
 | Which attributes have available data     | [script][6]      |   [Result][14] |
