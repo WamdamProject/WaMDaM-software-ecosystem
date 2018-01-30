@@ -54,10 +54,10 @@ pages:
   - Use cases:
     - Application: UseCases/Application.md
     - Download: UseCases/Download.md
-    - Use case 1: usecases/use_case_1.md
-    - Use case 2: usecases/use_case_2.md
-    - Use case 3: usecases/use_case_3.md
-    - Use case 4: usecases/use_case_4.md
+    - Use case 1: UseCases/use_case_1.md
+    - Use case 2: UseCases/use_case_2.md
+    - Use case 3: UseCases/use_case_3.md
+    - Use case 4: UseCases/use_case_4.md
   - Design documentation: 
     - Design Requirment: DesignDocumentation/Desing_Req.md
     - Design Approach: DesignDocumentation/DesignApproach.md
