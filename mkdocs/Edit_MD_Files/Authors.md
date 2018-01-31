@@ -12,6 +12,6 @@ email: amabdallah@aggiemail.usu.edu
 Associate Professor: Systems Analysis  
 email: david.rosenberg@usu.edu
 
-![](/images/Wizard.PNG)
+![](/images/authors2.PNG)
 
 David Rosenberg (left) and Adel Abdallah (right)
