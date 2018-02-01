@@ -4,7 +4,7 @@ Adel M. Abdallah has been the lead in WaMDaM development as part of his PhD diss
 
 The timing, availability of funding, expertise, and passion for WaMDaM development were incredible by all means. We were encouraged by a great interest from national and international scientists and practitioners in standardizing the way we work with and communicate systems water management data.
 
-[Adel M. Abdallah](http://rosenberg.usu.edu/students.htm)   
+[Adel M. Abdallah](http://rosenberg.usu.edu/students.htm#AdelAbdallah)   
 PhD Candidate: Systems Analysis Hydroinformatics  
 email: amabdallah@aggiemail.usu.edu
 
