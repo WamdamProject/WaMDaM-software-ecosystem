@@ -52,6 +52,8 @@ These talented people helped in implementing and testing different aspects of th
 ## Appreciation
 Adel M. Abdallah is especially thankful to the following organizations for their funding through scholarships and awards  
   
+* American Public Works Association, Intermountain Section. Diversity Graduate Scholarship, 2018  
+
 * American Public Works Association, Utah Chapter Graduate Scholarship, 2016  
 
 * President's Award and Scholarship. Utah State University Student Association, 2015  

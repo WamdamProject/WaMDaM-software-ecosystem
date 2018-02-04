@@ -8,7 +8,8 @@ They also reflect the type and number of audiences that WaMDaM was presented to 
 ## Peer reviewed journal articles   		 
 * Preparing to submit: A New Information Model to Manage Data for Water Resources Systems Modeling. Journal of Environmental Modeling and Software  		
  		
-* In preparation: A Vision for a Software Ecosystem for Water Systems Models and Data		
+* In preparation: A Vision for a Software Ecosystem to Publish and Discover Data and Models for Water Resources Systems
+	
  		
   		
 * In preparation: Workflows to Automate Data Preparation for Comparison Systems Water Management Models 		
