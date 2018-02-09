@@ -12,10 +12,12 @@ We used the WaMDaM CVs, Workbook templates, and the WaMDaM Wizard to prepare and
 
 We prepared each dataset into an Excel Workbook template and registered example native terms with CVs. We then used the WaMDaM Wizard to populate all the data sources into a single WaMDaM SQLite database file on a local computer. The database file is 50 Megabytes with 60 Object Types, 455 Attributes, 16,000 instances, and 210,000 records in the central Mappings table. Once the disparate datasets were loaded into a WaMDaM database, we selected a few locations with water management significance in the Bear River Watershed to query and compare data reported from multiple sources.   
 
-The locations included: 1) Stewart Dam in Idaho which represents the legal beginning of the Lower Bear River Division (Bear River Commission, 1980). Interestingly, the State of Utah datasets include Stewart Dam site in Idaho and the State of Idaho datasets include sites in the Lower Bear River in Utah which offer a good comparison opportunity like for the Stewart Dam, 2) Hyrum Reservoir which is an important facility to store irrigation water in Cache Valley, Utah, 3) Cache County, Utah which is a major water user in the Bear River Watershed, and 4) Flaming Gorge and Shasta large reservoirs outside the Bear River Watershed in Utah/Wyoming and California to verify that WaMDaM is scalable and applicable outside the Bear River Watershed.
+The locations included: 1) Stewart Dam in Idaho which represents the legal beginning of the Lower Bear River Division (Bear River Commission, 1980). Interestingly, the State of Utah datasets include Stewart Dam site in Idaho and the State of Idaho datasets include sites in the Lower Bear River in Utah which offer a good comparison opportunity like for the Stewart Dam, 2) Hyrum Reservoir which is an important facility to store irrigation water in Cache Valley, Utah, 3) Cache County, Utah which is a major water user in the Bear River Watershed, and 4) Flaming Gorge and Shasta large reservoirs outside the Bear River Watershed in Utah/Wyoming and California to verify that WaMDaM is scalable and applicable outside the Bear River Watershed.      
 
-![](/UseCases/images/BearWatershed.jpg)  
-**Figure 2**: The Bear River Watershed in the Western US and example available data sources used to demonstrate WaMDaM. Use cases are for the entire watershed, Lower Bear, Cache County. Large stars from top to bottom are for sites referred to in use cases: Stewart Dam site, Hyrum Reservoir, and the Bear River Migratory Bird Refuge. 
+
+###Figure 2
+![](/UseCases/images/BearWatershed.jpg)   
+**Figure 2** The Bear River Watershed in the Western US and example available data sources used to demonstrate WaMDaM. Use cases are for the entire watershed, Lower Bear, Cache County. Large stars from top to bottom are for sites referred to in use cases: Stewart Dam site, Hyrum Reservoir, and the Bear River Migratory Bird Refuge. 
 
 ## Datasets and models   
 We loaded twelve different and models into a single WaMDaM database SQLite file. The datasets cover natural and built water supply and demand, infrastructure connectivity, with different data types, networks and scenarios that cover the WaMDaM capabilities. 
@@ -25,7 +27,7 @@ Each of the [datasets on GitHub][1] below is prepared and copied into a WaMDaM E
 Table 1: Summary of example water management datasets used to demonstrate use cases to organize and compare heterogeneous and disparate data sources using WaMDaM to integrate them into a single WaMDaM SQLite database.   
 
 ## Download the SQLite file and SQLite Manager  
-Follow the [steps](/UseCases/download) here to use to execute the use cases next
+Follow the [steps](/UseCases/Download) here to use to execute the use cases next
 
 
 ## Use Cases in the Bear River Watershed, Utah 

@@ -12,7 +12,7 @@ There is an increasing interest to decouple the three components to allow the re
     
 
 ## Rationale
-The early ideas for a solution like WaMDaM came out from the work on [HydraPlatform][1] by UC Davis PhD Graduates between 2008 to 2010. HydraPlatform as an Open-Source Software Platform for Water Resource Management Models focused on providing a generic database, user interface, and data exporters to models. [Hydra][2] in 2014-2016 improved HydroPlatform into a web-service. [OpenAgua][2] uses Hydra into web-based application for modeling water systems for water resources planning and management.
+The early ideas for a solution like WaMDaM came out from the work on [HydraPlatform][1] by UC Davis PhD Graduates between 2008 to 2010. HydraPlatform as an Open-Source Software Platform for Water Resource Management Models focused on providing a generic database, user interface, and data exporters to models. [Hydra][2] in 2014-2016 improved HydroPlatform into a web-service. [OpenAgua][3] uses Hydra into web-based application for modeling water systems for water resources planning and management.
 
 Systems water management data lack a standardized method to organize and communicate its diverse and disparate data. Developing a persistent data model for water management data is an important step to advance how we communicate such vital data across disciplines. So the C-WATER team at Utah State University took the task to develop WaMDaM.
 

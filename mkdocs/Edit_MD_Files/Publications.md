@@ -5,17 +5,16 @@ They reflect the progression of ideas and discussions over five years that shape
 
 They also reflect the type and number of audiences that WaMDaM was presented to and ultimately benefited from their feedback.    
   
-## Peer reviewed journal articles   		 
+## Peer-reviewed journal articles   		 
 * Preparing to submit: A New Information Model to Manage Data for Water Resources Systems Modeling. Journal of Environmental Modeling and Software  		
  		
-* In preparation: A Vision for a Software Ecosystem to Publish and Discover Data and Models for Water Resources Systems
+* Drafted: A Vision for a Software Ecosystem to Publish and Discover Data and Models for Water Resources Systems
 	
- 		
-  		
+   		
 * In preparation: Workflows to Automate Data Preparation for Comparison Systems Water Management Models 		
  		
  		
-## Peer reviewed conference articles   		
+## Peer-reviewed conference articles   		
 * Adel M. Abdallah and David E. Rosenberg (2014). [WaMDaM: A Data Model to Organize and Synthesize Water Management Data][1]. 7th International Congress on Environmental Modelling and Software. International Environmental Modelling and Software Society (iEMSs)		
  		
 [1]:https://github.com/WamdamProject/WaMDaM_Publications/raw/master/Files/Writings/04iemss2014_submission_406.pdf		

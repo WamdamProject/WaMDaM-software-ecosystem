@@ -6,7 +6,10 @@ WaMDaM and related software designs have been developed under funding from sever
 
 
 ## Acknowledgment
-The following people at eight institutions provided valuable feedback and insights into earlier designs and materials, they shared models and datasets, or exchanged informal discussions on WaMDaM design and its software at different stages of its development   
+
+The WaMDaM work presented here represents a five-year effort with coordination and involvement from water resources engineers and modelers who are similarly trying to advance water modeling and data capabilities.  
+
+The following people at eight institutions provided valuable feedback and insights into earlier designs and materials, they shared models and datasets, or exchanged informal discussions on WaMDaM design and its software at different stages of its development.   
 
 1. **Utah Water Research Laboratory and Utah State University**   
 David Tarboton, Jeffery Horsburgh, Pabitra Dash, Toney Castronova, Stephanie Reeder     
@@ -26,11 +29,13 @@ Craig Miller
 6. **University of Utah**   
 Steve Burian, Erfan Goharian     
 
-7. **Brigham Young University, Utah**   
+7. **University of Wyoming**   
+Fred Ogden, Yoshiyuki Zen Igarashi 
+
+8. **Brigham Young University, Utah**   
 Dan Ames, Nathan Swain
 
-8. **University of Wyoming**   
-Fred Ogden, Yoshiyuki Zen Igarashi 
+
 
 
 Special thanks to the [ODM2](http://www.odm2.org/) team for promoting #OpenScience by publishing their source code. There is no doubt that WaMDaM development has benefited from the ideas and tools used in ODM2.
@@ -52,20 +57,20 @@ These talented people helped in implementing and testing different aspects of th
 ## Appreciation
 Adel M. Abdallah is especially thankful to the following organizations for their funding through scholarships and awards  
   
-* American Public Works Association, Intermountain Section. Diversity Graduate Scholarship, 2018  
+1. American Public Works Association, Intermountain Section. Diversity Graduate Scholarship, 2018  
 
-* American Public Works Association, Utah Chapter Graduate Scholarship, 2016  
+2. American Public Works Association, Utah Chapter Graduate Scholarship, 2016  
 
-* President's Award and Scholarship. Utah State University Student Association, 2015  
+3. President's Award and Scholarship. Utah State University Student Association, 2015  
 
-* Paper Competition Scholarship, "2015 J. Paul Riley AWRA Utah Section: Student Water
+4. Paper Competition Scholarship, "2015 J. Paul Riley AWRA Utah Section: Student Water
 Conference & Paper Competition" 2015
 
-* Utah Water Users Association Scholarship, 2013  
+5. Utah Water Users Association Scholarship, 2013  
 
-* Graduate Enhancement Award. Graduate Student Senate at Utah State University, 2013 
+6. Graduate Enhancement Award. Graduate Student Senate at Utah State University, 2013 
 
-* PhD Research Assistantship. Utah State University 2012-2018
+7. PhD Research Assistantship. Utah State University 2012-2018
 
 
 

@@ -20,6 +20,7 @@ The [Getting Started](/Getting_started/Steps.md) section guides you how to set u
 ## Application and use cases  
 Check out the [use cases](/UseCases/Application.md) that demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets 
 
+![](/images/Graphical_abstract3.jpg)
 
    
 ##  Information Model  
@@ -43,10 +44,8 @@ A Python-based Graphical User Interface to validate and load water management da
 * [WaMDaM Wizard](https://github.com/WamdamProject/WaMDaM_Wizard) 
 By using the Wizard, users are not expected to understand the underlying WaMDaM database of schema. Users just need to understand how to fit their data into these concepts: ObjectType, Attribute, Instance, Network, and Scenario. 
 
-![](images/Use_WaMDaM.jpg)
-
 
 
 ## Feedback   
-Do you have feedback on WaMDaM? [The Team](/Team) would love to hear from you.  
-Let us know what interest you in WaMDaM in this [Quick survey](https://goo.gl/forms/SQROuovc2Cs4bmZB3)
+Do you have feedback on WaMDaM? [The authors](/authors) would love to hear from you.  
+Let us know what interest you in WaMDaM by submitting [comments on GitHub here](https://github.com/WamdamProject/WaMDaM-software-ecosystem/issues/new)

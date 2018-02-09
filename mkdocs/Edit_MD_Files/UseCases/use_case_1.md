@@ -5,7 +5,7 @@
 Building a water resources model to solve water management and planning problems requires acquiring input data that describe the system. In existing practices, once a modeler selects a model and identifies its required types of input data, they manually search for datasets that contain relevant data. Then a modeler manually maps out the term for each attribute in their model with equivalent attributes in other datasets to math them.  
 
 ### Solution
-This use case shows how a modeler can use WaMDaM extensible Objects, Attributes, and controlled vocabularies to more readily and consistently identify available data from the 13 loaded datasets for WEAP and WASH models. Users can use identified data to expand existing WEAP and WASH model instances in the Lower Bear River Watershed Utah (light red in Figure 4) to the entire Watershed (darker red in Figure 4).  
+This use case shows how a modeler can use WaMDaM extensible Objects, Attributes, and controlled vocabularies to more readily and consistently identify available data from the 13 loaded datasets for WEAP and WASH models. Users can use identified data to expand existing WEAP and WASH model instances in the Lower Bear River Watershed Utah (light red in [the Bear River Figure](/UseCases/Application/#figure-2) to the entire Watershed (darker red in [the Bear River Figure](/UseCases/Application/#figure-2)).  
 
 First, provide the model name (e.g., Dataset name is WEAP) and a min and max longitudes and latitudes of the study area (e.g., Box that includes Bear River Watershed). Second, execute the use case script that uses the registered controlled vocabularies to search for equivalent Attributes that have data values in all the datasets within the provided boundary. The script also identifies the list of Object Types and Attributes required by the model but do not have available data in WaMDaM database.  
 
@@ -15,6 +15,27 @@ For the two models in this use case, the WEAP model has 11 Object Types with 127
 ![](/UseCases/images/UseCase1.jpg)
 **Figure 1:** Example conceptual mapping showing how the use of controlled vocabulary can help retrieve different available native attributes in datasets for reservoirs in the WEAP model instance. 
 
+
+####SQL queries/WEAP Model   
+
+| Question        | Query           | Result (CSV) |
+| ------------- |:-------------:| -----:|
+| Identify model data requirements     | [script][1] | [Result][9] |
+| Which attributes have available data     | [script][2]      |   [Result][10] |
+| Where the data is available in datasets | [script][3]      |    [Result][11] |
+| What additional data are needed | [script][4]      |    [Result][12] |
+
+
+####SQL queries/WASH Model
+
+| Question        | Query           | Result (CSV) |
+| ------------- |:-------------:| -----:|
+| Identify model data requirements     | [script][5] | [Result][13] |
+| Which attributes have available data     | [script][6]      |   [Result][14] |
+| Where the data is available in datasets | [script][7]      |    [Result][15] |
+| What additional data are needed | [script][8]      |    [Result][16] |
+
+### Results
 
 In the query results, WaMDaM shows that five datasets can provide data for 22 attributes in the Bear River WEAP model and there are still 105 attributes that are needed to expand the WEAP model (Table 1). The five datasets are: US Dams Dataset, BRSDM model instance, Utah Dams Dataset, WaDE, and Idaho Flows dataset. Users can also select Categories to narrow their search for available data. For example, searching only for attributes in the Physical and Operational categories and excluding the Water Quality and Cost categories focuses on 65 attributes required in WEAP which reduces the search for the actually needed data in a model instance. The use case also shows that the five data sources can provide for six attributes in the Bear River WASH model while 48 more attributes are still needed. The WASH model uses many ecologic parameters that do not have data values among the datasets in WaMDaM. 
  
@@ -30,42 +51,17 @@ In the query results, WaMDaM shows that five datasets can provide data for 22 at
 
 
 
-**SQL queries for the WEAP Model**   
-
-| Question        | Query           | Result (CSV) |
-| ------------- |:-------------:| -----:|
-| Identify model data requirements     | [script][1] | [Result][9] |
-| Which attributes have available data     | [script][2]      |   [Result][10] |
-| Where the data is available in datasets | [script][3]      |    [Result][11] |
-| What additional data are needed | [script][4]      |    [Result][12] |
-
-
-**SQL queries for the WASH Model**  
-
-| Question        | Query           | Result (CSV) |
-| ------------- |:-------------:| -----:|
-| Identify model data requirements     | [script][5] | [Result][13] |
-| Which attributes have available data     | [script][6]      |   [Result][14] |
-| Where the data is available in datasets | [script][7]      |    [Result][15] |
-| What additional data are needed | [script][8]      |    [Result][16] |
-
-
-
 ### Significance
 This use case demonstrates how WaMDaM provides a more readily automated and consistent method to identify available (or unavailable) data in multiple datasets that are required by models in a study area. Note that the value of data in WaMDaM increases as far as identifying it for other models, as users add coordinates and register it with controlled vocabulary.  
-
-
-### Next
-This first step searched for input data to models. Next, users can further query specific nodes and attributes like streamflow, demand, reservoir storage, natural and built infrastructure connectivity with the reservoir and prepare it as input to their model as shown in the next use cases
 
 
 [1]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.1_Identify_WEAPmodel_requirements.sql
 [2]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.2_WHICHAvailableDataForModel_WEAP.sql
 [3]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.3_AdditionalDataForModel_WEAP.sql
 [4]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.4_Identify_WASHmodel_requirements.sql
-[5]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.5_WHEREAvailableDataForModel_WASH.sql
+[5]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.5_Identify_WASHmodel_requirements.sql
 [6]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.6_WHICHAvailableDataForModel_WASH.sql
-[7]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.7_WHEREAvailableDataForModel_WEAP.sql
+[7]:https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.7_WHEREAvailableDataForModel_WASH.sql
 [8]: https://github.com/WamdamProject/WaMDaM_UseCases/blob/master/UseCases_files/4Queries_SQL/UseCase1/1.8_AdditionalDataForModel_WASH.sql
 
 

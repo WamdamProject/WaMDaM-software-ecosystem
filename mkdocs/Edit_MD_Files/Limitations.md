@@ -1,9 +1,9 @@
 # Limitations and Future Work
 
-The design of WaMDaM and its quest towards generality have limitations in these two main areas which constitute opportunities for future work. 
+The design of WaMDaM and its quest towards generality have three main limitations which constitute opportunities for future work. 
 
-## Limitation 1: Use cases
-The identified six use cases are basic examples and do not necessarily cover the complexity of the domain of systems water management nor do they cover all the possibilities of how the community of users want to use data. The reviewed data systems and the key features are not necessarily comprehensive of the large inventory of existing systems and the complexity of their data. The used twelve data sources are example datasets and do not necessarily represent the diversity of used data in the field. The example controlled vocabulary are preliminary and need a robust method on how to define and expand them. 
+## Limitation 1: Use cases/datasets
+The identified four use cases are basic examples and do not necessarily cover the complexity of the domain of systems water management nor do they cover all the possibilities of how the community of users want to use data. The reviewed data systems and the key features are not necessarily comprehensive of the large inventory of existing systems and the complexity of their data. The used twelve data sources are example datasets and do not necessarily represent the diversity of used data in the field. The example controlled vocabulary are preliminary and need a robust method on how to define and expand them. 
 
 Future work may test and improve WaMDaM abilities to work with a larger set of use cases, other models and their results, and data sources in other study areas. With a larger set of data, future work is needed to create a more robust method to define, relate, specify terms for water management data and expand the list of available vocabularies similar to the work on semantic annotation for hydrologic sciences by Piasecki and Beran (2009). This is especially needed for the “Instance Name” controlled term because of the large number of infrastructure instances that could reach thousands or even millions. So there is a need for a robust method to name and organize a potentially growing controlled instance names. The method could benefit from the USGS convention of naming their gage stations that include the institution, site code, name and nearby town or and state.
 
