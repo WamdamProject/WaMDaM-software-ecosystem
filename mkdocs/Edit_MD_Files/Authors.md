@@ -12,7 +12,7 @@ email: amabdallah@aggiemail.usu.edu
 Associate Professor: Systems Analysis  
 email: david.rosenberg@usu.edu
 
-![](/images/authors2.jpg)
+![](/images/authors3.jpg)
 
 David Rosenberg (left) and Adel Abdallah (right)
 receiving the Best Research-Oriented Paper of the Year from the Environmental and Water Resources Institute, 2015. [Earlier work]   
