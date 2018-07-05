@@ -60,5 +60,5 @@ By using the Wizard, users are not expected to understand the underlying WaMDaM 
 
 
 ## Feedback   
-Do you have feedback on WaMDaM? [The authors](/authors) would love to hear from you :ear:
+Do you have feedback on WaMDaM? [The authors](/Authors) would love to hear from you :ear:
 Let us know what interest you in WaMDaM by submitting [comments on GitHub here](https://github.com/WamdamProject/WaMDaM-software-ecosystem/issues/new)
