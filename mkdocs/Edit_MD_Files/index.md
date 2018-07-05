@@ -14,13 +14,26 @@ These are the high level steps to use WaMDaM
 
 ## Getting Started
 
-The [Getting Started](/Getting_started/Steps.md) section guides you how to set up a WaMDaM Wizard and load your data into a SQLite database. 
+The [Getting Started](/GetStarted/Download.md) section guides you how to set up a WaMDaM Wizard and load your data into a SQLite database. 
 
 
 ## Application and use cases  
-Check out the [use cases](/UseCases/Application.md) that demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets 
-
+WaMDaM is demonstrated in three use case deriven applications	
+	  
+1.	[Query multipe datasets at once, compare them, and select data as input to models][5]	  
+It demonstrate how WaMDaM enables systematic data query and comparisons across multiple different models and datasets 
 ![](/images/Graphical_abstract3.jpg)
+
+2.	[Automate preparing and serving data in WaMDaM database into comparison mdoels in a study area][6]	
+	  
+3.	[Visualzie networks and data of models hosted in WaMDaM in a web-app and publish data into HydroShare][7]		    
+
+
+[5]:/QuerySelect/UseCases/
+[6]:/ServeToModels/UseCases/
+[7]:/VisualizePublish/UseCases/
+
+
 
    
 ##  Information Model  
@@ -47,5 +60,5 @@ By using the Wizard, users are not expected to understand the underlying WaMDaM 
 
 
 ## Feedback   
-Do you have feedback on WaMDaM? [The authors](/authors) would love to hear from you.  
+Do you have feedback on WaMDaM? [The authors](/authors) would love to hear from you :ear:
 Let us know what interest you in WaMDaM by submitting [comments on GitHub here](https://github.com/WamdamProject/WaMDaM-software-ecosystem/issues/new)

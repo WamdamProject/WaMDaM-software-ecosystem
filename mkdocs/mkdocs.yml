@@ -44,21 +44,29 @@ pages:
   - Limitations: Limitations.md
   - Sponsors and Credit: SponsorsCredit.md
   - License: License.md
-  - Getting Started: 
-    - Steps: Getting_started/Steps.md
-    - Prepare Data: Getting_started/PrepareData.md 
-    - Use Wizard: Getting_started/Use_Wizard.md
-    - Compare Scenarios: Getting_started/CompareScenarios.md  
-    - Best Practices: Getting_started/Best_practices.md
-    - Use Controlled Vocabularies: Getting_started/Use_controlled_vocabularies.md
-  - Use cases:
-    - Application: UseCases/Application.md
-    - Download: UseCases/Download.md
-    - Use case 1: UseCases/use_case_1.md
-    - Use case 2: UseCases/use_case_2.md
-    - Use case 3: UseCases/use_case_3.md
-    - Use case 4: UseCases/use_case_4.md
-  - Design documentation: 
+  - Get Started:
+    - Download: GetStarted/Download.md
+    - Prepare Data: GetStarted/PrepareData.md 
+    - Use Wizard: GetStarted/Use_Wizard.md
+    - Compare Scenarios: GetStarted/CompareScenarios.md  
+    - Best Practices: GetStarted/Best_practices.md
+    - Use Controlled Vocabularies: GetStarted/Use_controlled_vocabularies.md
+  - Query & Select:
+    - Use Cases: QuerySelect/UseCases.md
+    - Use case 1: QuerySelect/use_case_1.md
+    - Use case 2: QuerySelect/use_case_2.md
+    - Use case 3: QuerySelect/use_case_3.md
+    - Use case 4: QuerySelect/use_case_4.md
+  - Serve to Models: 
+    - Use Cases: ServeToModels/UseCases.md
+    - WEAP: ServeToModels/WEAP.md 
+    - WASH: ServeToModels/WASH.md 
+  - Visualize & Publish: 
+    - Use Cases: VisualizePublish/UseCases.md 
+    - OpenAgua: VisualizePublish/OpenAgua.md
+    - HydroShare: VisualizePublish/HydroShare.md
+    - WEAP: VisualizePublish/WEAP.md
+  - Documentation: 
     - Design Requirment: DesignDocumentation/Desing_Req.md
     - Design Approach: DesignDocumentation/DesignApproach.md
     - Information Model: DesignDocumentation/info_model.md
@@ -67,9 +75,7 @@ pages:
     - Controlled Vocabulary: DesignDocumentation/ControlledVocabulary.md
     - WaMDaM Wizard: DesignDocumentation/WaMDaM_Wizard.md
   - About: 
-    - About: About.md 
-
-
+    - About: About.md    
 # Customization
 extra:
   social:
