@@ -14,7 +14,7 @@ These are the high level steps to use WaMDaM
 
 ## Getting Started
 
-The [Getting Started](/GetStarted/Download.md) section guides you how to set up a WaMDaM Wizard and load your data into a SQLite database. 
+The [Getting Started](/GetStarted/Steps.md) section guides you how to set up a WaMDaM Wizard and load your data into a SQLite database. 
 
 
 ## Application and use cases  

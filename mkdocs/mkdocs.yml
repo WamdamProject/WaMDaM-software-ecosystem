@@ -45,7 +45,7 @@ pages:
   - Sponsors and Credit: SponsorsCredit.md
   - License: License.md
   - Get Started:
-    - Download: GetStarted/Download.md
+    - Steps: GetStarted/Steps.md
     - Prepare Data: GetStarted/PrepareData.md 
     - Use Wizard: GetStarted/Use_Wizard.md
     - Compare Scenarios: GetStarted/CompareScenarios.md  

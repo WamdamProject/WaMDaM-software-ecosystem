@@ -37,14 +37,17 @@ Follow the [instructions here][2] on how to prepare your data into WaMDaM Excel 
 ## 5. Use the Wizard importers 
 * Import from Excel workbooks your prepared in Step 4
 * Importers time series data from CUAHSI
-* Import reservoir related data from the US Reclamation Water Information System. 
+* Import reservoir related data from the US Reclamation Water Information System. *
 
 
 ## 6. Open the SQLite database
-Use the SQLite Manager to inspect the loaded data into WaMDaM. If you dont have it, download and install the Mozilla Firefox SQLite Manager Add-on and use it to open the SQLite database file. 
-Follow these [steps][3] here.    
+Download and install the [DB Browser For SQLite][3] to query the database and view its tables. 
 
-[3]:http://docs.wamdam.org/UseCases/Download/
+
+[3]: https://sqlitebrowser.org/
+
+
+Use the DB Browser For SQLite to inspect the loaded data into WaMDaM. 
 
 
 ## 7. Execute use case queries

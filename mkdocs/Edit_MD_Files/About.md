@@ -38,7 +38,7 @@ WaMDaM has been primarily funded by the National Science Foundation.
 
 
 ## Disclaimer :worried: :innocent:
-Although I spent the last six years working very hard on WaMDaM and its software days and nights, it is provided as-is. Although the software has been tested extensively, it is still a proof of concept and requires significant improvements to facilitate the user experience. I am very committed to taking it to then next level as part of my upcoming career path.   
+Although I spent the last six years working very hard on WaMDaM and its software, days and nights, it is provided as-is with many limitations. Although the software has been tested extensively, it is still a proof of concept and requires significant improvements to facilitate the user experience. I am very committed to taking this work to next level as part of my upcoming career path.   
 
 ## [License](/OpenSource) :point_left:
 WaMDaM and its software are Free!   

@@ -246,67 +246,67 @@
             "title": "BSD 3-Clause License"
         }, 
         {
-            "location": "/GetStarted/Download/", 
-            "text": "Getting Started\n\n\nFollow these eight steps in order to install WaMDaM Wizard, populate your data into WaMDaM SQLite database, and implement use cases. \n\n\n1. Download and Install the WaMDaM Wizard V 1.02\n\n\nWaMDaM Wizard is a desktop data loader from a spreadsheet template to a SQLite database. The SQLite database is created based on the WaMDaM data model. \nDownload the software for Windows 7 or 10 64 bit from the table below. You also can find out all the \nWaMDaM_Wizard releases\n on GitHub.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChoose one\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\nExecutable (.exe) [230 MB]\n\n\nDownload\n\n\nGood option if you don't have Admin access to install it\n\n\n\n\n\n\nInstaller (msi) [160 MB]\n\n\nDownload\n\n\nLighter to donwload and probably faster to run\n\n\n\n\n\n\nRun from source code\n\n\n\n\nGood option to debug potential issues and improve it\n\n\n\n\n\n\n\n\n2. Launch WaMDaM Wizard\n\n\nOnce you installed the Wizard, double click at the Wizard's shortcut and this main window should appear.   \n\n\nNavigate the top tabs and see the Wizard's capabilites to prepare data for and import it into WaMDaM, and to export data to models.    \n\n\n\n\n3. Connect to SQLite\n\n\nIn WaMDaM Wizard you can either create and connect to a new or existing SQLite database instance on your machine. The Wizard automatically creats a blank WaMDaM SQLite file for you based on WaMDaM data model schema. Connecting to MySQL although it should work fine, it is not supported in this version.    \n\n\n4. Prepare your data into Excel\n\n\nFollow the \ninstructions here\n on how to prepare your data into WaMDaM Excel Workbook and register terms with controlled vocabulary. \n\n\n5. Use the Wizard importers\n\n\n\n\nImport from Excel workbooks your prepared in Step 4\n\n\nImporters time series data from CUAHSI\n\n\nImport reservoir related data from the US Reclamation Water Information System. \n\n\n\n\n6. Open the SQLite database\n\n\nUse the SQLite Manager to inspect the loaded data into WaMDaM. If you dont have it, download and install the Mozilla Firefox SQLite Manager Add-on and use it to open the SQLite database file. \nFollow these \nsteps\n here.    \n\n\n7. Execute use case queries\n\n\nUse and adapt queries from WaMDaM use cases and execute them in the SQLite Manager. \n\n\n8. Compare scenarios\n\n\n9. Query WaMDaM\n\n\nUse and adapt Python scripts to v\n\n\n10. Export Data to Models\n\n\n11. Publish Models to OpenAgua", 
-            "title": "Download"
+            "location": "/GetStarted/Steps/", 
+            "text": "Getting Started\n\n\nFollow these eight steps in order to install WaMDaM Wizard, populate your data into WaMDaM SQLite database, and implement use cases. \n\n\n1. Download and Install the WaMDaM Wizard V 1.02\n\n\nWaMDaM Wizard is a desktop data loader from a spreadsheet template to a SQLite database. The SQLite database is created based on the WaMDaM data model. \nDownload the software for Windows 7 or 10 64 bit from the table below. You also can find out all the \nWaMDaM_Wizard releases\n on GitHub.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChoose one\n\n\n\n\nNote\n\n\n\n\n\n\n\n\n\n\nExecutable (.exe) [230 MB]\n\n\nDownload\n\n\nGood option if you don't have Admin access to install it\n\n\n\n\n\n\nInstaller (msi) [160 MB]\n\n\nDownload\n\n\nLighter to donwload and probably faster to run\n\n\n\n\n\n\nRun from source code\n\n\n\n\nGood option to debug potential issues and improve it\n\n\n\n\n\n\n\n\n2. Launch WaMDaM Wizard\n\n\nOnce you installed the Wizard, double click at the Wizard's shortcut and this main window should appear.   \n\n\nNavigate the top tabs and see the Wizard's capabilites to prepare data for and import it into WaMDaM, and to export data to models.    \n\n\n\n\n3. Connect to SQLite\n\n\nIn WaMDaM Wizard you can either create and connect to a new or existing SQLite database instance on your machine. The Wizard automatically creats a blank WaMDaM SQLite file for you based on WaMDaM data model schema. Connecting to MySQL although it should work fine, it is not supported in this version.    \n\n\n4. Prepare your data into Excel\n\n\nFollow the \ninstructions here\n on how to prepare your data into WaMDaM Excel Workbook and register terms with controlled vocabulary. \n\n\n5. Use the Wizard importers\n\n\n\n\nImport from Excel workbooks your prepared in Step 4\n\n\nImporters time series data from CUAHSI\n\n\nImport reservoir related data from the US Reclamation Water Information System. *\n\n\n\n\n6. Open the SQLite database\n\n\nDownload and install the \nDB Browser For SQLite\n to query the database and view its tables. \n\n\nUse the DB Browser For SQLite to inspect the loaded data into WaMDaM. \n\n\n7. Execute use case queries\n\n\nUse and adapt queries from WaMDaM use cases and execute them in the SQLite Manager. \n\n\n8. Compare scenarios\n\n\n9. Query WaMDaM\n\n\nUse and adapt Python scripts to v\n\n\n10. Export Data to Models\n\n\n11. Publish Models to OpenAgua", 
+            "title": "Steps"
         }, 
         {
-            "location": "/GetStarted/Download/#getting-started", 
+            "location": "/GetStarted/Steps/#getting-started", 
             "text": "Follow these eight steps in order to install WaMDaM Wizard, populate your data into WaMDaM SQLite database, and implement use cases.", 
             "title": "Getting Started"
         }, 
         {
-            "location": "/GetStarted/Download/#1-download-and-install-the-wamdam-wizard-v-102", 
+            "location": "/GetStarted/Steps/#1-download-and-install-the-wamdam-wizard-v-102", 
             "text": "WaMDaM Wizard is a desktop data loader from a spreadsheet template to a SQLite database. The SQLite database is created based on the WaMDaM data model. \nDownload the software for Windows 7 or 10 64 bit from the table below. You also can find out all the  WaMDaM_Wizard releases  on GitHub.       Choose one   Note      Executable (.exe) [230 MB]  Download  Good option if you don't have Admin access to install it    Installer (msi) [160 MB]  Download  Lighter to donwload and probably faster to run    Run from source code   Good option to debug potential issues and improve it", 
             "title": "1. Download and Install the WaMDaM Wizard V 1.02"
         }, 
         {
-            "location": "/GetStarted/Download/#2-launch-wamdam-wizard", 
+            "location": "/GetStarted/Steps/#2-launch-wamdam-wizard", 
             "text": "Once you installed the Wizard, double click at the Wizard's shortcut and this main window should appear.     Navigate the top tabs and see the Wizard's capabilites to prepare data for and import it into WaMDaM, and to export data to models.", 
             "title": "2. Launch WaMDaM Wizard"
         }, 
         {
-            "location": "/GetStarted/Download/#3-connect-to-sqlite", 
+            "location": "/GetStarted/Steps/#3-connect-to-sqlite", 
             "text": "In WaMDaM Wizard you can either create and connect to a new or existing SQLite database instance on your machine. The Wizard automatically creats a blank WaMDaM SQLite file for you based on WaMDaM data model schema. Connecting to MySQL although it should work fine, it is not supported in this version.", 
             "title": "3. Connect to SQLite"
         }, 
         {
-            "location": "/GetStarted/Download/#4-prepare-your-data-into-excel", 
+            "location": "/GetStarted/Steps/#4-prepare-your-data-into-excel", 
             "text": "Follow the  instructions here  on how to prepare your data into WaMDaM Excel Workbook and register terms with controlled vocabulary.", 
             "title": "4. Prepare your data into Excel"
         }, 
         {
-            "location": "/GetStarted/Download/#5-use-the-wizard-importers", 
-            "text": "Import from Excel workbooks your prepared in Step 4  Importers time series data from CUAHSI  Import reservoir related data from the US Reclamation Water Information System.", 
+            "location": "/GetStarted/Steps/#5-use-the-wizard-importers", 
+            "text": "Import from Excel workbooks your prepared in Step 4  Importers time series data from CUAHSI  Import reservoir related data from the US Reclamation Water Information System. *", 
             "title": "5. Use the Wizard importers"
         }, 
         {
-            "location": "/GetStarted/Download/#6-open-the-sqlite-database", 
-            "text": "Use the SQLite Manager to inspect the loaded data into WaMDaM. If you dont have it, download and install the Mozilla Firefox SQLite Manager Add-on and use it to open the SQLite database file. \nFollow these  steps  here.", 
+            "location": "/GetStarted/Steps/#6-open-the-sqlite-database", 
+            "text": "Download and install the  DB Browser For SQLite  to query the database and view its tables.   Use the DB Browser For SQLite to inspect the loaded data into WaMDaM.", 
             "title": "6. Open the SQLite database"
         }, 
         {
-            "location": "/GetStarted/Download/#7-execute-use-case-queries", 
+            "location": "/GetStarted/Steps/#7-execute-use-case-queries", 
             "text": "Use and adapt queries from WaMDaM use cases and execute them in the SQLite Manager.", 
             "title": "7. Execute use case queries"
         }, 
         {
-            "location": "/GetStarted/Download/#8-compare-scenarios", 
+            "location": "/GetStarted/Steps/#8-compare-scenarios", 
             "text": "", 
             "title": "8. Compare scenarios"
         }, 
         {
-            "location": "/GetStarted/Download/#9-query-wamdam", 
+            "location": "/GetStarted/Steps/#9-query-wamdam", 
             "text": "Use and adapt Python scripts to v", 
             "title": "9. Query WaMDaM"
         }, 
         {
-            "location": "/GetStarted/Download/#10-export-data-to-models", 
+            "location": "/GetStarted/Steps/#10-export-data-to-models", 
             "text": "", 
             "title": "10. Export Data to Models"
         }, 
         {
-            "location": "/GetStarted/Download/#11-publish-models-to-openagua", 
+            "location": "/GetStarted/Steps/#11-publish-models-to-openagua", 
             "text": "", 
             "title": "11. Publish Models to OpenAgua"
         }, 
@@ -922,7 +922,7 @@
         }, 
         {
             "location": "/About/", 
-            "text": "About\n\n\nWhat is WaMDaM? \n\n\nThe Water Management Data Model (WaMDaM) is a novel method that describes and implements a database design with software to help modelers  \n\n\n\n\nOrganize and compare multiple water resources systems datasets to select it as input for models \n\n\nAutomate preparing and serving input data into comparison models (\nWEAP\n and \nGAMS\n) and  \n\n\nVisualize water management networks and their data online at \nOpenAgua\n and publish them on \nHydroShare\n. \n\n\n\n\nFor more info, see here \nWhy WaMDaM\n\n\nHow to use it?\n \n\n\nThe WaMDaM Wizard is a free and open-source  Windows-based desktop software that helps modelers \n\n\n\n\nPrepare and load data from a spreadsheet template and direct importers into a WaMDaM SQLite database \n\n\nDirectly export loaded and integrated data in WaMDaM into WEAP and WASH models \n\n\nVisualize models in WaMDaM into OpenAgua sharing platform.    \n\n\n\n\nBenefits  \n\n\n\n\nOrganize your data and metadata once and reuse it many times   \n\n\nReduce time and effort to populate data to multiple models \n\n\nEasily visualize your model and share it with the world \n\n\nUltimately, it supports your efforts in building transparent and reproducible modeling and conclusions\n\n\n\n\nAuthors\n \n\n\nWaMDaM and its software are developed and maintained primarily by Adel Abdallah as part of his PhD dissertation (and beyond \n \n) \n\n\nFunding\n \n\n\nWaMDaM has been primarily funded by the National Science Foundation.    \n\n\nDisclaimer \n \n\n\nAlthough I spent the last six years working very hard on WaMDaM and its software days and nights, it is provided as-is. Although the software has been tested extensively, it is still a proof of concept and requires significant improvements to facilitate the user experience. I am very committed to taking it to then next level as part of my upcoming career path.   \n\n\nLicense\n \n\n\nWaMDaM and its software are Free! \n\nThe software and source-code are released under the New Berkeley Software Distribution (BSD) 3-Clause License, which allows for liberal reuse. All source code, use cases, and documentation can be accessed at \nWaMDaM.org", 
+            "text": "About\n\n\nWhat is WaMDaM? \n\n\nThe Water Management Data Model (WaMDaM) is a novel method that describes and implements a database design with software to help modelers  \n\n\n\n\nOrganize and compare multiple water resources systems datasets to select it as input for models \n\n\nAutomate preparing and serving input data into comparison models (\nWEAP\n and \nGAMS\n) and  \n\n\nVisualize water management networks and their data online at \nOpenAgua\n and publish them on \nHydroShare\n. \n\n\n\n\nFor more info, see here \nWhy WaMDaM\n\n\nHow to use it?\n \n\n\nThe WaMDaM Wizard is a free and open-source  Windows-based desktop software that helps modelers \n\n\n\n\nPrepare and load data from a spreadsheet template and direct importers into a WaMDaM SQLite database \n\n\nDirectly export loaded and integrated data in WaMDaM into WEAP and WASH models \n\n\nVisualize models in WaMDaM into OpenAgua sharing platform.    \n\n\n\n\nBenefits  \n\n\n\n\nOrganize your data and metadata once and reuse it many times   \n\n\nReduce time and effort to populate data to multiple models \n\n\nEasily visualize your model and share it with the world \n\n\nUltimately, it supports your efforts in building transparent and reproducible modeling and conclusions\n\n\n\n\nAuthors\n \n\n\nWaMDaM and its software are developed and maintained primarily by Adel Abdallah as part of his PhD dissertation (and beyond \n \n) \n\n\nFunding\n \n\n\nWaMDaM has been primarily funded by the National Science Foundation.    \n\n\nDisclaimer \n \n\n\nAlthough I spent the last six years working very hard on WaMDaM and its software, days and nights, it is provided as-is with many limitations. Although the software has been tested extensively, it is still a proof of concept and requires significant improvements to facilitate the user experience. I am very committed to taking this work to next level as part of my upcoming career path.   \n\n\nLicense\n \n\n\nWaMDaM and its software are Free! \n\nThe software and source-code are released under the New Berkeley Software Distribution (BSD) 3-Clause License, which allows for liberal reuse. All source code, use cases, and documentation can be accessed at \nWaMDaM.org", 
             "title": "About"
         }, 
         {
@@ -957,7 +957,7 @@
         }, 
         {
             "location": "/About/#disclaimer", 
-            "text": "Although I spent the last six years working very hard on WaMDaM and its software days and nights, it is provided as-is. Although the software has been tested extensively, it is still a proof of concept and requires significant improvements to facilitate the user experience. I am very committed to taking it to then next level as part of my upcoming career path.", 
+            "text": "Although I spent the last six years working very hard on WaMDaM and its software, days and nights, it is provided as-is with many limitations. Although the software has been tested extensively, it is still a proof of concept and requires significant improvements to facilitate the user experience. I am very committed to taking this work to next level as part of my upcoming career path.", 
             "title": "Disclaimer"
         }, 
         {
