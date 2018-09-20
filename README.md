@@ -8,6 +8,10 @@ The Water Management Data Model (WaMDaM) is an information model and a couple of
 Think of WaMDaM as a repository of water management data (blue cylinder) and a translator between numerous data sources on the left and different models on the right. WaMDaM translates two aspects of the data: the syntax (i.e., structure) and semantics (terminology). WaMDaM intends to speed the time to find, organize, and synthesize data from different data sources, and prepare data for modeling.
 ![](/mkdocs/Edit_MD_Files/images/Workflow.png)
 
+## Replicate WaMDaM paper results    
+https://github.com/WamdamProject/WaMDaM_JupyterNotebooks/blob/master/1_QuerySelect/00_WaMDaM_Directions_and_Use_Cases.ipynb
+
+
 
 [1]:/mkdocs
 [2]:/docs
