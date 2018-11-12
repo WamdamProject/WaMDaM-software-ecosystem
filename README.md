@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/108618345.svg)](https://zenodo.org/badge/latestdoi/108618345)
+
 # Welcome to the WaMDaM Organization
 This is a meta-repository to help users navigate the many repositories under the [WaMDaMProject GitHub Organization](https://github.com/WamdamProject).
 
